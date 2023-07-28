@@ -1,16 +1,19 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "@types/node": "^18.17.0",
-    "nuxt": "^3.6.5"
-  }
+	"name": "starter-kit-vue-bridge",
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"devDependencies": {
+		"@invictus.codes/nuxt-vuetify": "^0.2.23",
+		"@nuxt/devtools": "latest",
+		"@types/node": "^18.17.0",
+		"dayjs-nuxt": "^1.1.2",
+		"nuxt": "^3.6.5",
+		"sass": "^1.63.6"
+	}
 }
