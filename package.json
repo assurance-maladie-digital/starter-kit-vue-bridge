@@ -11,6 +11,7 @@
 	"devDependencies": {
 		"@invictus.codes/nuxt-vuetify": "^0.2.23",
 		"@nuxt/devtools": "latest",
+		"@nuxtjs/i18n": "8.0.0-rc.1",
 		"@types/node": "^18.17.0",
 		"dayjs-nuxt": "^1.1.2",
 		"nuxt": "^3.6.5",
