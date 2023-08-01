@@ -4,6 +4,9 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     ssr: false,
     modules: ['@invictus.codes/nuxt-vuetify', 'dayjs-nuxt'],
+	plugins: [
+		{ src: '~/plugins/vuex-persist', ssr: false }
+	],
     vuetify: {
         /* vuetify options */
         vuetifyOptions: {
