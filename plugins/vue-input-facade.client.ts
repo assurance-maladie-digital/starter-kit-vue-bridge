@@ -1,11 +1,5 @@
-import { InputFacade, facade, filter } from 'vue-input-facade'
+import InputFacade from 'vue-input-facade';
 
 export default defineNuxtPlugin((nuxtApp) => {
-	return {
-		provide: {
-			InputFacade,
-			facade,
-			filter
-		},
-	};
+	nuxtApp.vueApp.use(InputFacade);
 });
