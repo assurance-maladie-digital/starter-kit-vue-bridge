@@ -12,9 +12,11 @@
 		"@invictus.codes/nuxt-vuetify": "^0.2.23",
 		"@nuxt/devtools": "latest",
 		"@types/node": "^18.17.0",
+		"axios": "^1.4.0",
 		"dayjs-nuxt": "^1.1.2",
 		"nuxt": "^3.6.5",
 		"sass": "^1.63.6",
 		"vuex": "^4.0.2"
+		"vue-facing-decorator": "^3.0.2"
 	}
 }

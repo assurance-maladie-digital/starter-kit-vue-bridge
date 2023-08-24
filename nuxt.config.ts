@@ -3,7 +3,10 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi';
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 	ssr: false,
-	modules: ['@invictus.codes/nuxt-vuetify', 'dayjs-nuxt'],
+	modules: [
+		'@invictus.codes/nuxt-vuetify',
+		'dayjs-nuxt'
+	],
 
 	vuetify: {
 		/* vuetify options */
@@ -38,5 +41,8 @@ export default defineNuxtConfig({
 		defaultTimezone: 'Europe/Paris',
 	},
 
-	plugins: ['~/plugins/vuex.ts'],
+	plugins: [
+    '~/plugins/axios.ts',
+    '~/plugins/vuex.ts',
+  ],
 });
