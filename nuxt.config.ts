@@ -41,5 +41,8 @@ export default defineNuxtConfig({
 		defaultTimezone: 'Europe/Paris',
 	},
 
-	plugins: ['~/plugins/axios.ts'],
+	plugins: [
+		'~/plugins/axios.ts',
+		'~/plugins/vuex.ts',
+	],
 });

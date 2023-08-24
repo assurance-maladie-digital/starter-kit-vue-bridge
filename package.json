@@ -16,6 +16,7 @@
 		"dayjs-nuxt": "^1.1.2",
 		"nuxt": "^3.6.5",
 		"sass": "^1.63.6",
-		"vue-facing-decorator": "^3.0.2"
+		"vue-facing-decorator": "^3.0.2",
+		"vuex": "^4.1.0"
 	}
 }

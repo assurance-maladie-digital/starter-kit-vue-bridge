@@ -29,6 +29,9 @@ devDependencies:
   vue-facing-decorator:
     specifier: ^3.0.2
     version: 3.0.2(vue@3.3.4)
+  vuex:
+    specifier: ^4.1.0
+    version: 4.1.0(vue@3.3.4)
 
 packages:
 
@@ -6510,6 +6513,15 @@ packages:
         optional: true
     dependencies:
       vite-plugin-vuetify: 1.0.2(vite@4.4.7)(vue@3.3.4)(vuetify@3.3.10)
+      vue: 3.3.4
+    dev: true
+
+  /vuex@4.1.0(vue@3.3.4):
+    resolution: {integrity: sha512-hmV6UerDrPcgbSy9ORAtNXDr9M4wlNP4pEFKye4ujJF8oqgFFuxDCdOLS3eNoRTtq5O3hoBDh9Doj1bQMYHRbQ==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.5.0
       vue: 3.3.4
     dev: true
 
