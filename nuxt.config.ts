@@ -44,5 +44,6 @@ export default defineNuxtConfig({
 	plugins: [
 		'~/plugins/axios.ts',
 		'~/plugins/vuex.ts',
+		{ src: '~/plugins/vuex-persist', ssr: false },
 	],
 });
