@@ -41,10 +41,6 @@ export default defineNuxtConfig({
 		defaultTimezone: 'Europe/Paris',
 	},
 
-	i18n: {
-		vueI18n: './i18n.config.ts'
-	},
-
 	plugins: [
 		'~/plugins/axios.ts',
 		'~/plugins/vuex.ts',
