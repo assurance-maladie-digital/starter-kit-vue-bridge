@@ -42,7 +42,7 @@ export default defineNuxtConfig({
 	},
 
 	plugins: [
-    '~/plugins/axios.ts',
-    '~/plugins/vuex.ts',
-  ],
+		'~/plugins/axios.ts',
+		'~/plugins/vuex.ts',
+	],
 });
