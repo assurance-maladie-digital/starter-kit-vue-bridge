@@ -1,27 +1,20 @@
 module.exports = {
 	preset: 'ts-jest',
-	moduleFileExtensions: [
-		'js',
-		'json',
-		'vue',
-		'ts',
-		'tsx',
-	],
-	transform: {
-		// process `*.vue` files with `vue-jest`
-		'^.+\\.vue$': 'vue-jest',
-		// process TypeScript with `ts-jest`
-		'\\.(ts|tsx)$': 'ts-jest',
-		'.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$':
-			'jest-transform-stub',
+	testEnvironment: 'jsdom',
+	testEnvironmentOptions: {
+		customExportConditions: ['node', 'node-addons'],
 	},
-	testMatch: [
-		'<rootDir>/src/**/tests/*.spec.ts',
-	],
-	setupFiles: [
-		'<rootDir>/tests/setup-jest.ts',
-	],
+	moduleFileExtensions: ['js', 'json', 'vue', 'ts', 'tsx'],
 	moduleNameMapper: {
-		'^@/(.*)$': '<rootDir>/$1',
+		'^@/(.*)': '<rootDir>/$1',
+		'#app': '<rootDir>/node_modules/nuxt3/dist/app/index.mjs',
 	},
+	transform: {
+		'^.+\\.(js|jsx|mjs)$': 'babel-jest',
+		'^.+\\.(ts|tsx)$': 'ts-jest',
+		'.+\\.(css|scss|png|jpg|svg)$': 'jest-transform-stub',
+		'.*\\.(vue)$': '@vue/vue3-jest',
+	},
+	transformIgnorePatterns: ['node_modules/(?!(nuxt3|unenv))'],
+	testMatch: ['<rootDir>/tests/*.spec.ts'],
 };
