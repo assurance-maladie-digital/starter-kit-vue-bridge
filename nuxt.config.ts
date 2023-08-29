@@ -3,7 +3,11 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi';
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 	ssr: false,
-	modules: ['@invictus.codes/nuxt-vuetify', 'dayjs-nuxt'],
+	modules: [
+		'@invictus.codes/nuxt-vuetify',
+		'dayjs-nuxt',
+		'@nuxtjs/i18n',
+	],
 
 	vuetify: {
 		/* vuetify options */
@@ -37,5 +41,11 @@ export default defineNuxtConfig({
 		defaultLocale: 'fr',
 		defaultTimezone: 'Europe/Paris',
 	},
-	plugins: ['~/plugins/vue-input-facade.client.ts'],
+
+	plugins: [
+		'~/plugins/axios.ts',
+		'~/plugins/vuex.ts',
+		{ src: '~/plugins/vuex-persist', ssr: false },
+		'~/plugins/vue-input-facade.ts',
+	],
 });
