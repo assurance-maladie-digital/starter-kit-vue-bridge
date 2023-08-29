@@ -46,6 +46,6 @@ export default defineNuxtConfig({
 		'~/plugins/axios.ts',
 		'~/plugins/vuex.ts',
 		{ src: '~/plugins/vuex-persist', ssr: false },
-		'~/plugins/vue-input-facade.ts',
+		{ src: '~/plugins/vue-input-facade.ts', mode: 'client' },
 	],
 });
