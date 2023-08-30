@@ -3,7 +3,11 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi';
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 	ssr: false,
-	modules: ['@invictus.codes/nuxt-vuetify', 'dayjs-nuxt', '@nuxtjs/i18n'],
+	modules: [
+		'@invictus.codes/nuxt-vuetify',
+		'dayjs-nuxt',
+		'@nuxtjs/i18n'
+	],
 
 	vuetify: {
 		/* vuetify options */
