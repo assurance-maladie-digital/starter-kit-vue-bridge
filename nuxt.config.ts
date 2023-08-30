@@ -3,10 +3,7 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi';
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 	ssr: false,
-	modules: [
-		'@invictus.codes/nuxt-vuetify',
-		'dayjs-nuxt'
-	],
+	modules: ['@invictus.codes/nuxt-vuetify', 'dayjs-nuxt', '@nuxtjs/i18n'],
 
 	vuetify: {
 		/* vuetify options */
@@ -44,7 +41,6 @@ export default defineNuxtConfig({
 	plugins: [
 		'~/plugins/axios.ts',
 		'~/plugins/vuex.ts',
-		'@nuxtjs/i18n',
-		{ src: '~/plugins/vuex-persist', ssr: false },
+		{ src: '~/plugins/vuex-persist', ssr: false }
 	],
 });
