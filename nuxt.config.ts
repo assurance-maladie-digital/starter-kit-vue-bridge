@@ -5,7 +5,8 @@ export default defineNuxtConfig({
 	ssr: false,
 	modules: [
 		'@invictus.codes/nuxt-vuetify',
-		'dayjs-nuxt'
+		'dayjs-nuxt',
+		'@nuxtjs/i18n',
 	],
 
 	vuetify: {
@@ -44,7 +45,6 @@ export default defineNuxtConfig({
 	plugins: [
 		'~/plugins/axios.ts',
 		'~/plugins/vuex.ts',
-		'@nuxtjs/i18n',
 		{ src: '~/plugins/vuex-persist', ssr: false },
 	],
 });
