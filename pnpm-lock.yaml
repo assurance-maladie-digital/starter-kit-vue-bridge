@@ -28,6 +28,9 @@ devDependencies:
   vue-facing-decorator:
     specifier: 3.0.2
     version: 3.0.2(vue@3.3.4)
+  vue-input-facade:
+    specifier: 3.0.0-beta.3
+    version: 3.0.0-beta.3
   vuex:
     specifier: 4.1.0
     version: 4.1.0(vue@3.3.4)
@@ -7399,6 +7402,10 @@ packages:
       '@intlify/vue-devtools': 9.3.0-beta.27
       '@vue/devtools-api': 6.5.0
       vue: 3.3.4
+    dev: true
+
+  /vue-input-facade@3.0.0-beta.3:
+    resolution: {integrity: sha512-QRNdQOCZgisXdY3KqzelvHpIEynMj4kg0szb3gvy7g8UNILk/gcan+W/mmpEbKnWk1w98b4HT7lX3RaEIDDLLA==}
     dev: true
 
   /vue-router@4.2.4(vue@3.3.4):
