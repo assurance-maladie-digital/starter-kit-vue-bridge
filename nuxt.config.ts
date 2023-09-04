@@ -29,7 +29,7 @@ export default defineNuxtConfig({
 			/* vite-plugin-vuetify options */
 			styles: true,
 			autoImport: true,
-			importLabComponents: true,
+			useVuetifyLabs: true,
 		},
 	},
 
