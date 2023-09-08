@@ -9,6 +9,7 @@
 		"postinstall": "nuxt prepare"
 	},
 	"devDependencies": {
+		"synapse-bridge": "../design-system/packages/synapse-bridge",
 		"@invictus.codes/nuxt-vuetify": "0.3.0",
 		"@nuxt/devtools": "0.8.2",
 		"@nuxtjs/i18n": "8.0.0-rc.4",

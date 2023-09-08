@@ -1,6 +1,13 @@
 <template>
-	<div>
-		<v-icon icon="mdi-home-outline" />
-		<v-btn variant="tonal"> Button </v-btn>
-	</div>
+	<PageContainer>
+		<VCard class="pa-8">
+			Contenu de la page.
+		</VCard>
+	</PageContainer>
+	<br />
+	<VSheet>Test</VSheet>
 </template>
+
+<script setup lang="ts">
+import { PageContainer } from 'synapse-bridge/elements';
+</script>
