@@ -1,4 +1,4 @@
-import type { Config } from '@jest/types';
+import type { Config } from '@jest/types'
 
 const config: Config.InitialOptions = {
 	testEnvironment: 'jsdom',
@@ -46,6 +46,6 @@ const config: Config.InitialOptions = {
 	globals: {
 		API_URL: 'http://localhost:8080'
 	}
-};
+}
 
-export default config;
+export default config
