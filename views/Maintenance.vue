@@ -1,5 +1,5 @@
 <template>
-	<h1>Accueil</h1>
+	<h1>Maintenance</h1>
 	<nuxt-link to="/">Home</nuxt-link>
 	<br/>
 	<nuxt-link to="/a-propos">A propos</nuxt-link>
