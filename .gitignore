@@ -23,10 +23,5 @@ logs
 *.sln
 *.sw?
 
-# Local env files
-.env
-.env.*
-!.env.example
-
 # Tests coverage
 **/tests/**/coverage/
