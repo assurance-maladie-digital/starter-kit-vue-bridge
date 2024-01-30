@@ -1,6 +1,7 @@
 {
 	"extends": "./.nuxt/tsconfig.json",
 	"compilerOptions": {
-		"experimentalDecorators": true
+		"experimentalDecorators": true,
+		"types": ["@types/jest"]
 	}
 }
