@@ -1,4 +1,6 @@
 import vuetify from 'vite-plugin-vuetify'
+import Components from 'unplugin-vue-components/vite'
+
 
 export default defineNuxtConfig({
 	ssr: false,
@@ -10,14 +12,15 @@ export default defineNuxtConfig({
 		'~/plugins/vuex.ts',
 		'~/plugins/axios.ts',
 		{ src: '~/plugins/vuex-persist', mode: 'client' },
-		{ src: '~/plugins/vue-input-facade', mode: 'client' }
 	],
 	build: {
 		transpile: ['vuetify']
 	},
 	vite: {
 		plugins: [
-			vuetify()
+			vuetify(),
+			// change the component dirs to match our project layout
+			Components({ dts: true, dirs: ['~/components']})
 		]
 	},
 	css: [
