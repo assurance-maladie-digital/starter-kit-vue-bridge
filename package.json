@@ -12,7 +12,9 @@
 		"preview": "nuxi preview",
 		"analyze": "nuxi analyze",
 		"postinstall": "nuxi prepare",
-		"test:unit": "jest"
+		"test:unit": "jest",
+		"test:e2e": "cypress run",
+		"cypress:open": "cypress open"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "7.22.15",
@@ -24,6 +26,7 @@
 		"@vue/test-utils": "2.4.1",
 		"@vue/vue3-jest": "29.2.6",
 		"axios": "1.5.0",
+		"cypress": "^12.17.4",
 		"dayjs-nuxt": "1.1.2",
 		"jest": "29.7.0",
 		"jest-environment-jsdom": "29.7.0",
