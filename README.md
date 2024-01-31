@@ -1,6 +1,6 @@
 # Starter Kit Vue Bridge
 
-🗃️ Starter Kit Nuxt pour la migration d'un projet en Vue 2 vers la Vue 3
+🗃️ Ce Starter Kit contient les composants du Design System de l'Assurance Maladie réécrits en Vue 3, ainsi que les outils nécessaires pour migrer un projet Vue 2 vers Vue 3.
 
 # Prérequis
 
