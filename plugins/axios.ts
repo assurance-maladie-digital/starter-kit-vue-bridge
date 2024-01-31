@@ -1,9 +1,9 @@
-import axios from 'axios'
+import axios from 'axios';
 
-export default defineNuxtPlugin(async () => {
+export default defineNuxtPlugin(() => {
 	return {
 		provide: {
 			axios
 		}
-	}
-})
+	};
+});
