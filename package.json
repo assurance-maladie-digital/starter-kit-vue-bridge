@@ -19,7 +19,7 @@
 	"devDependencies": {
 		"@babel/preset-env": "7.22.15",
 		"@mdi/js": "7.2.96",
-		"@nuxt/devtools": "0.8.2",
+		"@nuxt/devtools": "latest",
 		"@nuxtjs/i18n": "8.0.0-rc.4",
 		"@types/jest": "29.5.4",
 		"@types/node": "18.17.0",
