@@ -30,3 +30,6 @@ logs
 
 # Tests coverage
 **/tests/**/coverage/
+
+# Cypress
+cypress
