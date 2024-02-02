@@ -16,8 +16,11 @@
 		"test:e2e": "cypress run",
 		"cypress:open": "cypress open"
 	},
-	"devDependencies": {
+	"dependencies": {
 		"synapse-bridge": "../design-system/packages/synapse-bridge",
+		"david-bridge": "^0.0.0"
+	},
+	"devDependencies": {
 		"@invictus.codes/nuxt-vuetify": "0.3.0",
 		"@babel/preset-env": "7.22.15",
 		"@mdi/js": "7.2.96",

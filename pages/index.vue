@@ -4,10 +4,9 @@
 			Contenu de la page.
 		</VCard>
 	</PageContainer>
-	<br />
-	<VSheet>Test</VSheet>
+	<VAlert text="Test" type="success"/>
 </template>
 
 <script setup lang="ts">
-import { PageContainer } from 'synapse-bridge/elements';
+import {PageContainer} from 'david-bridge';
 </script>
