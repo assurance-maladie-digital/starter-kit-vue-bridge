@@ -4,9 +4,10 @@
 			Contenu de la page.
 		</VCard>
 	</PageContainer>
+	<BackBtn/>
 	<VAlert text="Test" type="success"/>
 </template>
 
 <script setup lang="ts">
-import {PageContainer} from 'david-bridge';
+import {PageContainer, BackBtn} from 'david-bridge';
 </script>

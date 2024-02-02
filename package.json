@@ -21,7 +21,6 @@
 		"david-bridge": "^0.0.0"
 	},
 	"devDependencies": {
-		"@invictus.codes/nuxt-vuetify": "0.3.0",
 		"@babel/preset-env": "7.22.15",
 		"@mdi/js": "7.2.96",
 		"@nuxt/devtools": "latest",
