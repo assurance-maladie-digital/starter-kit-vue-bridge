@@ -9,5 +9,5 @@
 </template>
 
 <script setup lang="ts">
-import {PageContainer, BackBtn} from 'david-bridge';
+import {PageContainer, BackBtn} from 'bridge-david';
 </script>

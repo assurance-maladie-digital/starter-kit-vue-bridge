@@ -18,7 +18,7 @@
 	},
 	"dependencies": {
 		"synapse-bridge": "../design-system/packages/synapse-bridge",
-		"david-bridge": "^0.0.0"
+		"bridge-david": "^0.0.3"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "7.22.15",

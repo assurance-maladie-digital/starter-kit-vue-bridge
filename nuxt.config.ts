@@ -1,7 +1,6 @@
 import vuetify from 'vite-plugin-vuetify'
 import Components from 'unplugin-vue-components/vite'
 
-
 export default defineNuxtConfig({
 	ssr: false,
 	modules: [
@@ -11,7 +10,7 @@ export default defineNuxtConfig({
 	plugins: [
 		'~/plugins/vuex.ts',
 		'~/plugins/axios.ts',
-		{ src: '~/plugins/vuex-persist', mode: 'client' },
+		{src: '~/plugins/vuex-persist', mode: 'client'},
 	],
 	build: {
 		transpile: ['vuetify']
@@ -20,7 +19,7 @@ export default defineNuxtConfig({
 		plugins: [
 			vuetify(),
 			// change the component dirs to match our project layout
-			Components({ dts: true, dirs: ['~/components']})
+			Components({dts: true, dirs: ['~/components']})
 		]
 	},
 	css: [
