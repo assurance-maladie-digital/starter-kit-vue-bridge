@@ -17,6 +17,7 @@
 		"cypress:open": "cypress open"
 	},
 	"dependencies": {
+		"@cnamts/design-tokens": "2.12.0",
 		"synapse-bridge": "../design-system/packages/synapse-bridge",
 		"bridge-david": "^0.0.3"
 	},
