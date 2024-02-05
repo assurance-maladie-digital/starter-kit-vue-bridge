@@ -1,14 +1,12 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
+const props = defineProps({
+	parentMessage: String
+})
 
-export default defineComponent({
-	name: "HelloWorld",
-	props: {
-		msg: String,
-	},
-});
+const parentMessage = ref(props.parentMessage || 'Hello World!')
 </script>
 
 <template>
-	<h1>{{ msg }}</h1>
+	<h1>{{ parentMessage }}</h1>
 </template>
+
