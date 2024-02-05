@@ -41,9 +41,51 @@ Le fichier `app/router.options.ts` est chargé automatiquement par Nuxt, et perm
 Pour plus d'informations, voir [cette page de documentation de Nuxt](https://nuxt.com/docs/guide/going-further/custom-routing).
 
 
-# Migration des composants
+## Migration des composants
 
 Pour faciliter la migration des composants Vuetify, ce starter kit intègre le plugin [eslint-plugin-vuetify](https://github.com/vuetifyjs/eslint-plugin-vuetify).
 Il permet de faire remonter certains problèmes tels que des props qui n'existent plus ou dont le nom a changé. Certains changements peuvent être effectués automatiquement.
 
 > `pnpm run lint:fix`
+
+Voici un aperçu des changements qui seront effectués par le script:
+
+```diff
+// passage de la syntaxe vue2 a vue3 pour la réactivité :
+- value
++ modelValue
+
+- xxx.sync
++ v-model:xxx
+
+// Changement de nom de certaines props :
+- outlined
++ variant="outlined"
+- accordion
++ variant="accordion"
+- text
++ variant="text"
+- background-color="xxx"
++ bg-color="xxx"
+- top
++ location="top"
+- large
++ size="large"
+...
+
+// Autres changements concernants les props :
+- validate-on-blur
++ :validate-on="blur"
+
+// Changement concernants les events :
+- @change
++ @update:model-value
+
+// Changement de nom de certains composants :
+- VExpansionPanelHeader
++ VExpansionPanelTitle
+- VExpansionPanelContent
++ VExpansionPanelText
+- VSimpleCheckbox
++ VCheckboxBtn
+...
