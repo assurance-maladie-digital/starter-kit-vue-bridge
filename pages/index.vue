@@ -1,4 +1,9 @@
 <template>
+	<PageContainer>
+		<VCard class="pa-8">
+			Contenu de la page.
+		</VCard>
+	</PageContainer>
 	<PageContainer size="m">
 		<VCard class="pa-8">
 			Contenu de la page.
