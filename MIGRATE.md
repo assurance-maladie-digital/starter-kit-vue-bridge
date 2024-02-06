@@ -1,5 +1,5 @@
-# Migration
-Etapes de migration
+# Etapes de migration
+
 
 ## Mise en place
 
@@ -16,12 +16,12 @@ Par exemple, pour créer une route par défaut :
 ``` ts
 // src/router/index.ts
 [
-... // les routes existantes
-{
-  path: '/*',
-  name: 'test',
-  component: () => import('@/views/Test.vue')
-},
+  ... // les routes existantes
+  {
+    path: '/*',
+    name: 'test',
+    component: () => import('@/views/Test.vue')
+  },
 ]
 ```
 
