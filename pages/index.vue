@@ -27,9 +27,9 @@
 import {PageContainer, BackBtn, CopyBtn} from 'bridge-david';
 import {useDisplay} from 'vuetify'
 
-const display = useDisplay();
+const {mobile} = useDisplay()
 
 onMounted(() => {
-	console.log(display.name.value);
+	console.log(mobile.value) // false
 });
 </script>
