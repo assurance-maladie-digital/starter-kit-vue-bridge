@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.12.0
     version: 2.12.0
   bridge-david:
-    specifier: ^0.0.5
-    version: 0.0.5(vue@3.4.15)(vuetify@3.3.16)
+    specifier: ^0.0.6
+    version: 0.0.6(vue@3.4.15)(vuetify@3.3.16)
   synapse-bridge:
     specifier: ../design-system/packages/synapse-bridge
     version: link:../design-system/packages/synapse-bridge
@@ -4874,8 +4874,8 @@ packages:
     dependencies:
       fill-range: 7.0.1
 
-  /bridge-david@0.0.5(vue@3.4.15)(vuetify@3.3.16):
-    resolution: {integrity: sha512-nzKSNIy/ztaliwghLV/LtTr610iW3fYwO5yEQTn0HqOpEvVctzYSoGMsg0p7oVHd2PpR8i9C4+xUPDnprJhG8A==}
+  /bridge-david@0.0.6(vue@3.4.15)(vuetify@3.3.16):
+    resolution: {integrity: sha512-taAE8Kg3YyVSR+sfwB3iJcXL4CbR7heRaRVONp5TMpNpfMIxqhECOZNiDgXRmKS3PyXI3CCQLV51N7PmGmflPQ==}
     peerDependencies:
       vue: ^3.3.0
       vuetify: ^3.3.0
