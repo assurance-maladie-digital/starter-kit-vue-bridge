@@ -20,7 +20,7 @@ export default defineNuxtConfig({
 		plugins: [
 			vuetify(),
 			// change the component dirs to match our project layout
-			Components({ dts: true, dirs: ['~/components']})
+			Components({ dts: true, dirs: ['~/components', 'src/components'] })
 		]
 	},
 	css: [
