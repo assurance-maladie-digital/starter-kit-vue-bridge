@@ -4,11 +4,11 @@ import { defineComponent } from "vue";
 export default defineComponent({
 	name: "HelloWorld",
 	props: {
-		parentMessage: String,
+		msg: String,
 	},
 });
 </script>
 
 <template>
-	<h1>{{ parentMessage }}</h1>
+	<h1>{{ msg }}</h1>
 </template>

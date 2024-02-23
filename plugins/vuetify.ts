@@ -1,6 +1,7 @@
 import 'vuetify/styles'
-import { createVuetify } from 'vuetify'
-import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
+import {createVuetify} from 'vuetify'
+import {aliases, mdi} from 'vuetify/iconsets/mdi-svg'
+import {colorTheme} from '@cnamts/design-tokens/src/colors'
 
 export default defineNuxtPlugin(nuxtApp => {
 	const vuetify = createVuetify({
@@ -11,7 +12,15 @@ export default defineNuxtPlugin(nuxtApp => {
 			sets: {
 				mdi
 			}
-		}
+		},
+		theme: {
+			defaultTheme: 'light',
+			themes: {
+				light: {
+					colors: colorTheme,
+				},
+			},
+		},
 	})
 
 	nuxtApp.vueApp.use(vuetify)

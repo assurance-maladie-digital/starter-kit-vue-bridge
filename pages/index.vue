@@ -1,5 +1,6 @@
 <template>
 	<div>
-	  <HelloWorldBis parentMessage="Test depuis src" />
+		<HelloWorld msg="Un titre"/>
+		<HelloWorldBis parentMessage="Test depuis src"/>
 	</div>
 </template>
