@@ -3,6 +3,7 @@ import Components from 'unplugin-vue-components/vite';
 
 export default defineNuxtConfig({
 	ssr: false,
+	devtools: {enabled: true},
 	modules: [
 		'dayjs-nuxt',
 		'@nuxtjs/i18n'
@@ -32,9 +33,6 @@ export default defineNuxtConfig({
 		plugins: ['relativeTime', 'utc', 'timezone'],
 		defaultLocale: 'fr',
 		defaultTimezone: 'Europe/Paris'
-	},
-	devtools: {
-		enabled: true
 	},
 	alias: {
 		'@': '/src'

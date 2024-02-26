@@ -3,16 +3,20 @@
 		<h1 class="text-primary">Home</h1>
 		<HelloWorld msg="Un titre"/>
 		<HelloWorldBis parent-message="Test depuis src"/>
+		<ChipList :items="[{text: 'toto', value: 'toto'}]"/>
+		<FranceConnectBtn href="https://app.franceconnect.gouv.fr/"/>
 	</PageContainer>
 </template>
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import {PageContainer} from "bridge-david";
+import {PageContainer, ChipList, FranceConnectBtn} from "bridge-david";
 
 export default defineComponent({
 	components: {
-		PageContainer
+		PageContainer,
+		ChipList,
+		FranceConnectBtn,
 	}
 });
 </script>
