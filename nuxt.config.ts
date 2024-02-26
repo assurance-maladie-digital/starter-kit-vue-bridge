@@ -10,7 +10,8 @@ export default defineNuxtConfig({
 	plugins: [
 		'~/plugins/vuex.ts',
 		'~/plugins/axios.ts',
-		{src: '~/plugins/vuex-persist', mode: 'client'},
+		{ src: '~/plugins/vuex-persist', mode: 'client' },
+		{ src: '~/plugins/vue-input-facade', mode: 'client' }
 	],
 	build: {
 		transpile: ['vuetify']
@@ -33,5 +34,8 @@ export default defineNuxtConfig({
 	},
 	devtools: {
 		enabled: true
-	}
+	},
+	alias: {
+		'@': '/src'
+	},
 })
