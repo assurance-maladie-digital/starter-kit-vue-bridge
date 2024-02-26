@@ -4,7 +4,10 @@ import { defineComponent } from "vue";
 export default defineComponent({
 	name: "HelloWorldBis",
 	props: {
-		parentMessage: String,
+		parentMessage: {
+			type: String,
+			default: ""
+		}
 	},
 });
 </script>
