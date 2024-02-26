@@ -5,7 +5,9 @@
 		"verbatimModuleSyntax": false,
 		"types": ["@types/jest"],
 		"paths": {
-			"@/*": ["./src/*"]
+			"@/*": [
+				"./src/*"
+			]
 		}
 	}
 }
