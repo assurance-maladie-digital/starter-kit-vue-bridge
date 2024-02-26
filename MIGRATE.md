@@ -84,4 +84,59 @@ export default defineNuxtComponent({
 	...
 ```
 
+## Migration des tags meta
 
+Nuxt intègre son propre système de gestion des tags meta.
+
+Pour des metas déclarés de cette façon :
+
+```typescript
+  @Meta
+  metaInfo(): MetaInfo {
+    return {
+      title: 'Page title',
+      meta: [
+        {
+          name: 'description',
+          vmid: 'description',
+          content: 'This is my page description.'
+        }
+      ]
+    };
+  }
+```
+
+Il faut les migrer de la façon suivante :
+
+```typescript
+export default defineNuxtComponent({
+  ...
+  head() {
+    return {
+      title: 'Page title',
+      meta: [
+        {
+          name: 'description',
+          content: 'This is my page description.'
+        }
+      ]
+    }
+  }
+});
+```
+
+Pour localiser les informations :
+
+```typescript
+  head(nuxtApp) {
+    return {
+      title: nuxtApp.i18n.t('page.currentPage.meta.title'),
+      meta: [
+        {
+          name: 'description',
+          content: nuxtApp.i18n.t('page.currentPage.meta.description')
+        }
+      ]
+    }
+  }
+```
