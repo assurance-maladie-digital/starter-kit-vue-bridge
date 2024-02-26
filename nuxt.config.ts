@@ -1,5 +1,5 @@
-import vuetify from 'vite-plugin-vuetify'
-import Components from 'unplugin-vue-components/vite'
+import vuetify from 'vite-plugin-vuetify';
+import Components from 'unplugin-vue-components/vite';
 
 export default defineNuxtConfig({
 	ssr: false,
@@ -20,7 +20,7 @@ export default defineNuxtConfig({
 		plugins: [
 			vuetify(),
 			// change the component dirs to match our project layout
-			Components({dts: true, dirs: ['~/components', 'src/components']})
+			Components({ dts: true, dirs: ['~/components', 'src/components'] })
 		]
 	},
 	css: [
@@ -38,4 +38,4 @@ export default defineNuxtConfig({
 	alias: {
 		'@': '/src'
 	},
-})
+});
