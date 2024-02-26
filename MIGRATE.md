@@ -27,6 +27,7 @@ a été remplacé par :
 ``` ts
   ...
   path: '/:pathMatch(.*)*',
+  ...
 ```
 
 Voir [le guide de migration de vue-router](https://router.vuejs.org/guide/migration/) pour plus d'informations.
@@ -38,6 +39,44 @@ Nuxt.
 Pour plus d'informations,
 voir [cette page de documentation de Nuxt](https://nuxt.com/docs/guide/going-further/custom-routing).
 
+### Transitions css des pages
+
+Si le projet utise des transitions de page,
+
+1 - Retirer le composent '<transition>' dans le fichier 'app.vue'
+
+2 - Configurer une transition de page dans le fichier 'nuxt.config.ts'
+
+``` ts
+// nuxt.config.ts
+export default defineNuxtConfig({
+  ...
+  app: {
+    ...
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
+    }
+  }
+```
+
+3 - Définir le style de la transition dans le fichier 'app.vue' ou dans un fichier de style global.
+
+``` css
+/* app.vue */
+.page-enter-active,
+.page-leave-active {
+	transition-duration: .15s;
+	transition-property: opacity;
+	transition-timing-function: ease;
+}
+
+.page-enter,
+.page-leave-active {
+	opacity: 0;
+}
+```
+
 ## Migration des composants
 
 Pour faciliter la migration des composants Vuetify, ce starter kit intègre le
@@ -45,9 +84,9 @@ plugin [eslint-plugin-vuetify](https://github.com/vuetifyjs/eslint-plugin-vuetif
 Il permet de faire remonter certains problèmes tels que des props qui n'existent plus ou dont le nom a changé. Certains
 changements peuvent être effectués automatiquement.
 
-> `pnpm lint:migrate:fix`
+``` $ pnpm lint:migrate:fix```
 
-Voici un aperçu des changements qui seront effectués par le script:
+Voici un aperçu des changements qui seront effectués par le script :
 
 ```diff
 // passage de la syntaxe vue2 a vue3 pour la réactivité :
@@ -88,3 +127,5 @@ Voici un aperçu des changements qui seront effectués par le script:
 - VSimpleCheckbox
 + VCheckboxBtn
 ...
+```
+Ces changements seront uniquement effectuéssur les composants Vuetify.
