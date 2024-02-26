@@ -3,8 +3,8 @@
  * of the application. If you want to only use the nuxt default routing system,
  * you can remove this file.
  */
-import type { RouterConfig } from "@nuxt/schema";
-import { routes } from "@/router/routes"; // Update to match your router configuration file path
+import type {RouterConfig} from "@nuxt/schema";
+import routes from "@/router"; // Update to match your router configuration file path
 
 export default <RouterConfig>{
 	// https://router.vuejs.org/api/interfaces/routeroptions.html#routes

@@ -3,7 +3,9 @@
 	"compilerOptions": {
 		"experimentalDecorators": true,
 		"verbatimModuleSyntax": false,
-		"types": ["@types/jest"],
+		"types": [
+			"@types/jest"
+		],
 		"paths": {
 			"@/*": [
 				"./src/*"
