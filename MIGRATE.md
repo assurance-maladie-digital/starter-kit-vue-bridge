@@ -4,6 +4,20 @@
 
 1 - Copier votre dossier `src` dans votre nouveau projet de migration.
 
+2 - Dans le fichier `nuxt.config.ts`, ajouter le lien vers votre fichier de style global.
+
+``` ts
+// nuxt.config.ts
+export default defineNuxtConfig({
+  ...
+  css: [
+    ...
+    '@/theme/styles.scss' // chemin vers votre fichier de style global
+  ],
+  ...
+})
+```
+
 ## Migration du routeur
 
 1 - Mettre à jour le tableau de déclaration des routes vue-router avec la version 4.
@@ -67,10 +81,9 @@ export default defineNuxtConfig({
   }
 ```
 
-3 - Définir le style de la transition dans le fichier 'app.vue' ou dans un fichier de style global.
+3 - Définir le style de la transition dans un fichier de style global.
 
 ``` css
-/* app.vue */
 .page-enter-active,
 .page-leave-active {
 	transition-duration: .15s;
