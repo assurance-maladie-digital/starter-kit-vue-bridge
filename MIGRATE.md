@@ -39,6 +39,13 @@ Nuxt.
 Pour plus d'informations,
 voir [cette page de documentation de Nuxt](https://nuxt.com/docs/guide/going-further/custom-routing).
 
+3 - Dans la version 4 de vue-router, certains types ont été remplacés. Il faut effectuer les changements de types dans le projet.
+
+- `RouteConfig` devient `RouteRecordRaw`,
+- `Location` devient `RouteLocation`,
+- `Route` devient `RouteLocationNormalized`.
+
+
 ### Transitions css des pages
 
 Si le projet utise des transitions de page,
@@ -76,6 +83,7 @@ export default defineNuxtConfig({
 	opacity: 0;
 }
 ```
+
 
 ## Migration des composants
 
