@@ -3,4 +3,4 @@ export default defineI18nConfig(() => ({
 	globalInjection: true,
 	locale: 'fr',
 	messages: {}
-}))
+}));
