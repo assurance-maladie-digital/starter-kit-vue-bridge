@@ -25,7 +25,7 @@ export default defineNuxtConfig({
 		]
 	},
 	css: [
-		'bridge-david/style.css',
+		'@cnamts/synapse-bridge/style.css',
 		'~/assets/styles/index.scss',
 	],
 	dayjs: {

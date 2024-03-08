@@ -8,9 +8,9 @@ dependencies:
   '@cnamts/design-tokens':
     specifier: 2.12.0
     version: 2.12.0
-  bridge-david:
-    specifier: 0.0.17
-    version: 0.0.17(vue@3.4.20)(vuetify@3.5.6)
+  '@cnamts/synapse-bridge':
+    specifier: 1.0.0-alpha.0
+    version: 1.0.0-alpha.0(vue@3.4.20)(vuetify@3.5.6)
 
 devDependencies:
   '@babel/preset-env':
@@ -1369,6 +1369,19 @@ packages:
 
   /@cnamts/design-tokens@2.12.0:
     resolution: {integrity: sha512-ea8LBxb4SfUdxwMzkqR+AwFdVoSuzwZUjPBEib/GXg3tEFctlvAZDoHpC8F8zan4SPtcaKK4rSfwwf89X31UZg==}
+    dev: false
+
+  /@cnamts/synapse-bridge@1.0.0-alpha.0(vue@3.4.20)(vuetify@3.5.6):
+    resolution: {integrity: sha512-B2mzQYLt4u+/6DOtXQkSyZc9CBy6+Le1WLHIkpExeeCVGQswO+CDWvIgDr+sTjnN1uKq8JbtnHhSJL56gz+/eA==}
+    peerDependencies:
+      vue: ^3.3.0
+      vuetify: ^3.3.0
+    dependencies:
+      '@cnamts/design-tokens': 2.12.0
+      consola: 2.15.3
+      vue: 3.4.20(typescript@5.3.3)
+      vue-router: 4.2.5(vue@3.4.20)
+      vuetify: 3.5.6(typescript@5.3.3)(vite-plugin-vuetify@1.0.2)(vue@3.4.20)
     dev: false
 
   /@colors/colors@1.5.0:
@@ -4649,19 +4662,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       fill-range: 7.0.1
-
-  /bridge-david@0.0.17(vue@3.4.20)(vuetify@3.5.6):
-    resolution: {integrity: sha512-wsVnkDuiiDFNOKcFfNfrKFs8F+PoVXnYhIs2fehyNXZdsyt8d8Dq3ffIjXib4CFSZx7niJoTlWsOog6+0nMWSg==}
-    peerDependencies:
-      vue: ^3.3.0
-      vuetify: ^3.3.0
-    dependencies:
-      '@cnamts/design-tokens': 2.12.0
-      consola: 2.15.3
-      vue: 3.4.20(typescript@5.3.3)
-      vue-router: 4.2.5(vue@3.4.20)
-      vuetify: 3.5.6(typescript@5.3.3)(vite-plugin-vuetify@1.0.2)(vue@3.4.20)
-    dev: false
 
   /browserslist@4.23.0:
     resolution: {integrity: sha512-QW8HiM1shhT2GuzkvklfjcKDiWFXHOeFCIA/huJPwHsslwcydgk7X+z2zXpEijP98UCY7HbubZt5J2Zgvf0CaQ==}
