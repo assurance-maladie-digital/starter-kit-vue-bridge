@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import {PageContainer, ChipList, FranceConnectBtn} from "bridge-david";
+import {PageContainer, ChipList, FranceConnectBtn} from "@cnamts/synapse-bridge";
 
 export default defineComponent({
 	components: {
