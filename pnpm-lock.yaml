@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.12.0
     version: 2.12.0
   '@cnamts/synapse-bridge':
-    specifier: 1.1.4-alpha.0
-    version: 1.1.4-alpha.0(vue@3.4.21)(vuetify@3.5.9)(vuex@4.1.0)
+    specifier: 1.1.5-alpha.0
+    version: 1.1.5-alpha.0(vue@3.4.21)(vuetify@3.5.9)(vuex@4.1.0)
 
 devDependencies:
   '@babel/preset-env':
@@ -1386,8 +1386,8 @@ packages:
     resolution: {integrity: sha512-ea8LBxb4SfUdxwMzkqR+AwFdVoSuzwZUjPBEib/GXg3tEFctlvAZDoHpC8F8zan4SPtcaKK4rSfwwf89X31UZg==}
     dev: false
 
-  /@cnamts/synapse-bridge@1.1.4-alpha.0(vue@3.4.21)(vuetify@3.5.9)(vuex@4.1.0):
-    resolution: {integrity: sha512-xwMnsMT+UAZTPNyzDoO1lm6VRFnmiPWKRTRyB6WZBgMe/6drHwOArisRLj5M5p55lc22F1Aqkr6g6IATH3l2fw==}
+  /@cnamts/synapse-bridge@1.1.5-alpha.0(vue@3.4.21)(vuetify@3.5.9)(vuex@4.1.0):
+    resolution: {integrity: sha512-N222rgGHiGWQ/iZHBzVnJgXYLHXxlSEN0+/A4KGgcsLKwsZ/FuCjaGzlh79YYR46dRL0FRqZv8yiJMM7N4lhQw==}
     peerDependencies:
       vue: ^3.3.0
       vuetify: ^3.3.0
@@ -2112,8 +2112,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/message-compiler': 9.10.1
-      '@intlify/shared': 9.10.1
+      '@intlify/message-compiler': 9.10.2
+      '@intlify/shared': 9.10.2
       acorn: 8.11.3
       escodegen: 2.1.0
       estree-walker: 2.0.2
@@ -2142,11 +2142,11 @@ packages:
       '@intlify/shared': 9.3.0-beta.27
     dev: true
 
-  /@intlify/message-compiler@9.10.1:
-    resolution: {integrity: sha512-b68UTmRhgZfswJZI7VAgW6BXZK5JOpoi5swMLGr4j6ss2XbFY13kiw+Hu+xYAfulMPSapcHzdWHnq21VGnMCnA==}
+  /@intlify/message-compiler@9.10.2:
+    resolution: {integrity: sha512-ntY/kfBwQRtX5Zh6wL8cSATujPzWW2ZQd1QwKyWwAy5fMqJyyixHMeovN4fmEyCqSu+hFfYOE63nU94evsy4YA==}
     engines: {node: '>= 16'}
     dependencies:
-      '@intlify/shared': 9.10.1
+      '@intlify/shared': 9.10.2
       source-map-js: 1.0.2
     dev: true
 
@@ -2158,8 +2158,8 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /@intlify/shared@9.10.1:
-    resolution: {integrity: sha512-liyH3UMoglHBUn70iCYcy9CQlInx/lp50W2aeSxqqrvmG+LDj/Jj7tBJhBoQL4fECkldGhbmW0g2ommHfL6Wmw==}
+  /@intlify/shared@9.10.2:
+    resolution: {integrity: sha512-ttHCAJkRy7R5W2S9RVnN9KYQYPIpV2+GiS79T4EE37nrPyH6/1SrOh3bmdCRC1T3ocL8qCDx7x2lBJ0xaITU7Q==}
     engines: {node: '>= 16'}
     dev: true
 
