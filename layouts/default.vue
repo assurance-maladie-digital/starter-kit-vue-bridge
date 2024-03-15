@@ -1,5 +1,5 @@
 <template>
-	<div>
-		<slot />
-	</div>
+	<VApp>
+		<slot/>
+	</VApp>
 </template>
