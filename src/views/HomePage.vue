@@ -41,22 +41,22 @@
 					<h2>DataListGroup</h2>
 					<DataListGroup :items="dataListGroupItems"></DataListGroup>
 				</div>
-				<div class="bg-grey-lighten-1">
-					<h2>FooterWrapper</h2>
-					<FooterWrapper>
-						<FooterBtn>
-							Mentions légales
-						</FooterBtn>
+<!--				<div class="bg-grey-lighten-1">-->
+<!--					<h2>FooterWrapper</h2>-->
+<!--					<FooterWrapper>-->
+<!--						<FooterBtn>-->
+<!--							Mentions légales-->
+<!--						</FooterBtn>-->
 
-						<FooterBtn>
-							CGU
-						</FooterBtn>
+<!--						<FooterBtn>-->
+<!--							CGU-->
+<!--						</FooterBtn>-->
 
-						<FooterBtn inert>
-							Version 1.0.0
-						</FooterBtn>
-					</FooterWrapper>
-				</div>
+<!--						<FooterBtn inert>-->
+<!--							Version 1.0.0-->
+<!--						</FooterBtn>-->
+<!--					</FooterWrapper>-->
+<!--				</div>-->
 				<div class="ml-4">
 					<h2>SubHeader</h2>
 					<SubHeader
@@ -69,7 +69,7 @@
 				</div>
 				<div class="mt-4">
 					<h2>France connect Btn</h2>
-					<FranceConnectBtn />
+					<FranceConnectBtn href="https://app.franceconnect.gouv.fr/" />
 				</div>
 				<div class="bg-grey-lighten-1 mt-4">
 					<h2>CopyBtn</h2>
@@ -95,7 +95,7 @@
 					<div class="d-flex flex-wrap align-center justify-center">
 						<CookieBanner
 							v-if="active"
-							cookies-route="/templates/cookies-page"
+							cookies-route=""
 							@reject="active = false"
 							@accept="active = false"
 						/>
@@ -111,7 +111,10 @@
 				</div>
 				<div class="mt-4 my-4">
 					<h2>Logo Brand Section</h2>
-					<LogoBrandSection />
+					<LogoBrandSection
+						service-sub-title="Documentation du Design System"
+						service-title="Design System"
+					/>
 				</div>
 				<div class="mt-4 my-4 bg-grey-lighten-1">
 					<h2>ChipList</h2>
