@@ -41,22 +41,22 @@
 					<h2>DataListGroup</h2>
 					<DataListGroup :items="dataListGroupItems"></DataListGroup>
 				</div>
-<!--				<div class="bg-grey-lighten-1">-->
-<!--					<h2>FooterWrapper</h2>-->
-<!--					<FooterWrapper>-->
-<!--						<FooterBtn>-->
-<!--							Mentions légales-->
-<!--						</FooterBtn>-->
+				<div class="bg-grey-lighten-1">
+					<h2>FooterWrapper</h2>
+					<FooterWrapper>
+						<VBtn variant="tonal" class="mr-6">
+							Mentions légales
+						</VBtn>
 
-<!--						<FooterBtn>-->
-<!--							CGU-->
-<!--						</FooterBtn>-->
+						<VBtn variant="tonal" class="mr-6">
+							CGU
+						</VBtn>
 
-<!--						<FooterBtn inert>-->
-<!--							Version 1.0.0-->
-<!--						</FooterBtn>-->
-<!--					</FooterWrapper>-->
-<!--				</div>-->
+						<VBtn variant="tonal" inert>
+							Version 1.0.0
+						</VBtn>
+					</FooterWrapper>
+				</div>
 				<div class="ml-4">
 					<h2>SubHeader</h2>
 					<SubHeader
@@ -65,11 +65,11 @@
 				</div>
 				<div class="bg-grey-lighten-1 mt-4">
 					<h2>BackBtn</h2>
-					<BackBtn />
+					<BackBtn/>
 				</div>
 				<div class="mt-4">
 					<h2>France connect Btn</h2>
-					<FranceConnectBtn href="https://app.franceconnect.gouv.fr/" />
+					<FranceConnectBtn href="https://app.franceconnect.gouv.fr/"/>
 				</div>
 				<div class="bg-grey-lighten-1 mt-4">
 					<h2>CopyBtn</h2>
@@ -80,15 +80,15 @@
 				</div>
 				<div class="mt-4">
 					<h2>Logo</h2>
-					<Logo />
+					<Logo/>
 				</div>
 				<div class="bg-grey-lighten-1 mt-4 my-4">
 					<h2>HeaderLoading</h2>
-					<HeaderLoading width="300px" height="30px" />
+					<HeaderLoading width="300px" height="30px"/>
 				</div>
 				<div class="mt-4 my-4">
 					<h2>BackToTopBtn</h2>
-					<BackToTopBtn />
+					<BackToTopBtn/>
 				</div>
 				<div class="bg-grey-lighten-1">
 					<h2>CookieBanner</h2>
@@ -118,11 +118,11 @@
 				</div>
 				<div class="mt-4 my-4 bg-grey-lighten-1">
 					<h2>ChipList</h2>
-					<ChipList :items="chipItems" />
+					<ChipList :items="chipItems"/>
 				</div>
 				<div class="mt-4 my-4">
 					<h2>MaintenancePage</h2>
-					<MaintenancePage />
+					<MaintenancePage/>
 				</div>
 			</div>
 		</PageContainer>
@@ -193,11 +193,11 @@ export default defineComponent({
 	data() {
 		return {
 			active: true,
-			dialog:false,
+			dialog: false,
 			chipItems: [
-				{ text: 'Item 1', value: 'item1' },
-				{ text: 'Item 2', value: 'item2' },
-				{ text: 'Item 3', value: 'item3' },
+				{text: 'Item 1', value: 'item1'},
+				{text: 'Item 2', value: 'item2'},
+				{text: 'Item 3', value: 'item3'},
 			],
 			navigationItems: [
 				{
