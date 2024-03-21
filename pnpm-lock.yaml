@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.12.0
     version: 2.12.0
   '@cnamts/synapse-bridge':
-    specifier: 1.1.7-alpha.0
-    version: 1.1.7-alpha.0(vue@3.4.21)(vuetify@3.5.9)(vuex@4.1.0)
+    specifier: 1.1.8-alpha.0
+    version: 1.1.8-alpha.0(vue@3.4.21)(vuetify@3.5.9)(vuex@4.1.0)
 
 devDependencies:
   '@babel/preset-env':
@@ -1386,11 +1386,11 @@ packages:
     resolution: {integrity: sha512-ea8LBxb4SfUdxwMzkqR+AwFdVoSuzwZUjPBEib/GXg3tEFctlvAZDoHpC8F8zan4SPtcaKK4rSfwwf89X31UZg==}
     dev: false
 
-  /@cnamts/synapse-bridge@1.1.7-alpha.0(vue@3.4.21)(vuetify@3.5.9)(vuex@4.1.0):
-    resolution: {integrity: sha512-mSMGo4CLmVI3i+uWCPoTunpO3YB/zj/q5YFJ1vkBjyXH14ORyZWeQFgnW6uZvxHGzEx89uxPucl+soSI4aDytw==}
+  /@cnamts/synapse-bridge@1.1.8-alpha.0(vue@3.4.21)(vuetify@3.5.9)(vuex@4.1.0):
+    resolution: {integrity: sha512-XRxx8df+nsQFMXxgrmWIoGRteYzSzAVP4NWYHEPIu3W3ftUQdkAIo7qlk3Sx0X5y2JUbh3YO1UV1j/IamkuO5g==}
     peerDependencies:
       vue: ^3.3.0
-      vuetify: ^3.3.0
+      vuetify: 3.5.10
       vuex: ^4.1.0
     dependencies:
       '@cnamts/design-tokens': 2.12.0
