@@ -61,6 +61,7 @@
 					<h2>SubHeader</h2>
 					<SubHeader
 						back-btn-text="Back"
+						title-text="Paul Dupont"
 						sub-title-text="1 69 08 75 125 456 75"/>
 				</div>
 				<div class="bg-grey-lighten-1 mt-4">
@@ -123,6 +124,18 @@
 				<div class="mt-4 my-4">
 					<h2>MaintenancePage</h2>
 					<MaintenancePage/>
+				</div>
+				<div class="mt-4 my-4 bg-grey-lighten-1">
+					<h2>NotFoundPage</h2>
+					<NotFoundPage/>
+				</div>
+				<div class="mt-4 my-4">
+					<h2>ErrorPage</h2>
+					<ErrorPage
+						code="500"
+						message="La page ne fonctionne pas correctement."
+						page-title="Erreur serveur"
+					/>
 				</div>
 			</div>
 		</PageContainer>
