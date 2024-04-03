@@ -122,14 +122,34 @@
 					<ChipList :items="chipItems"/>
 				</div>
 				<div class="mt-4 my-4">
+					<h2>NotificationBar</h2>
+					<NotificationBar>
+						<template #action>
+							<VBtn
+								variant="outlined"
+								color="white"
+								@click="removeNotification"
+							>
+								2ème action
+							</VBtn>
+						</template>
+					</NotificationBar>
+					<VBtn
+						color="primary"
+						@click="createNotification"
+					>
+						Envoyer une notification
+					</VBtn>
+				</div>
+				<div class="mt-4 my-4 bg-grey-lighten-1">
 					<h2>MaintenancePage</h2>
 					<MaintenancePage/>
 				</div>
-				<div class="mt-4 my-4 bg-grey-lighten-1">
+				<div class="mt-4 my-4">
 					<h2>NotFoundPage</h2>
 					<NotFoundPage/>
 				</div>
-				<div class="mt-4 my-4">
+				<div class="mt-4 my-4 bg-grey-lighten-1">
 					<h2>ErrorPage</h2>
 					<ErrorPage
 						code="500"
@@ -153,6 +173,7 @@
 
 <script lang="ts">
 import {defineComponent} from "vue";
+import { mapActions, mapGetters } from "vuex";
 import {
 	PageContainer,
 	HeaderBar,
@@ -173,6 +194,7 @@ import {
 	CookiesPage,
 	LogoBrandSection,
 	ChipList,
+	NotificationBar,
 	ErrorPage,
 	MaintenancePage,
 	NotFoundPage
@@ -199,6 +221,7 @@ export default defineComponent({
 		CookiesPage,
 		LogoBrandSection,
 		ChipList,
+		NotificationBar,
 		ErrorPage,
 		MaintenancePage,
 		NotFoundPage
@@ -288,7 +311,26 @@ export default defineComponent({
 				}
 			]
 		}
-
+	},
+	computed: {
+		...mapGetters('notification', {
+			notification: 'notification',
+		}),
+	},
+	methods: {
+		...mapActions('notification', {
+			dispatchNotification: 'addNotification',
+			dispatchClearNotification: 'clearNotification',
+		}),
+		createNotification(): void {
+			this.dispatchNotification({
+				type: 'info',
+				message: 'Exemple de notification.',
+			})
+		},
+		removeNotification(): void {
+			this.dispatchClearNotification();
+		}
 	}
 });
 </script>
