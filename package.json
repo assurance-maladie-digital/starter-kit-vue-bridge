@@ -20,7 +20,7 @@
 	},
 	"dependencies": {
 		"@cnamts/design-tokens": "2.12.0",
-		"@cnamts/synapse-bridge": "1.1.8-alpha.0"
+		"@cnamts/synapse-bridge": "1.1.10-alpha.0"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "7.22.15",
