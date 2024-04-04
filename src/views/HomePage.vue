@@ -21,6 +21,7 @@
 <script lang="ts">
 import {defineComponent} from "vue";
 import {PageContainer, HeaderBar, FooterBar} from "@cnamts/synapse-bridge";
+
 export default defineComponent({
 	components: {
 		PageContainer,
