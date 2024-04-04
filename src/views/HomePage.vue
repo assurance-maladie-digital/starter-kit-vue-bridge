@@ -4,8 +4,8 @@
 		service-sub-title="Documentation du Design System"
 	/>
 	<PageContainer>
-		<h1 class="text-primary">Home</h1>
-		<HelloWorld msg="Un titre"/>
+		<h1 class="text-primary">{{ $config.public.title }}</h1>
+		<HelloWorld :msg="$config.public.message"/>
 	</PageContainer>
 	<FooterBar
 		hide-a11y-link
@@ -19,10 +19,9 @@
 </template>
 
 <script lang="ts">
-import {defineComponent} from "vue";
 import {PageContainer, HeaderBar, FooterBar} from "@cnamts/synapse-bridge";
 
-export default defineComponent({
+export default defineNuxtComponent({
 	components: {
 		PageContainer,
 		HeaderBar,

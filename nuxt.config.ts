@@ -3,6 +3,12 @@ import Components from 'unplugin-vue-components/vite';
 
 export default defineNuxtConfig({
 	ssr: false,
+	runtimeConfig: {
+		public: {
+			title: process.env.TITLE,
+			message: process.env.MESSAGE
+		}
+	},
 	devtools: {enabled: true},
 	modules: [
 		'dayjs-nuxt',
