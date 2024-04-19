@@ -156,6 +156,13 @@
 					page-title="Erreur serveur"
 				/>
 			</div>
+			<div class="mt-4 my-4">
+				<h2>PasswordField</h2>
+				<PasswordField
+					v-model="password"
+					@update:model-value="getValue($event)"
+				/>
+			</div>
 		</div>
 	</PageContainer>
 	<FooterBar
@@ -195,7 +202,8 @@ import {
 	NotificationBar,
 	ErrorPage,
 	MaintenancePage,
-	NotFoundPage
+	NotFoundPage,
+	PasswordField
 } from "@cnamts/synapse-bridge";
 
 export default defineComponent({
@@ -222,7 +230,8 @@ export default defineComponent({
 		NotificationBar,
 		ErrorPage,
 		MaintenancePage,
-		NotFoundPage
+		NotFoundPage,
+		PasswordField
 	},
 	data() {
 		return {
@@ -307,7 +316,8 @@ export default defineComponent({
 						}
 					]
 				}
-			]
+			],
+			password: null as string | null
 		}
 	},
 	computed: {
@@ -328,6 +338,9 @@ export default defineComponent({
 		},
 		removeNotification(): void {
 			this.dispatchClearNotification();
+		},
+		getValue(value: string): void {
+			console.log(value);
 		}
 	}
 });
