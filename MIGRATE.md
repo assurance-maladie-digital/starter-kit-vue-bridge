@@ -9,12 +9,12 @@
 ``` ts
 // nuxt.config.ts
 export default defineNuxtConfig({
-  ...
-  css: [
-    ...
-    '@/theme/styles.scss' // chemin vers votre fichier de style global
-  ],
-  ...
+	...
+	css: [
+		...
+		'@/theme/styles.scss' // chemin vers votre fichier de style global
+	],
+	...
 })
 ```
 
@@ -28,21 +28,21 @@ Par exemple, pour créer une route par défaut :
 ``` ts
 // src/router/index.ts
 [
-  ... // les routes existantes
-  {
-    path: '/*',
-    name: 'test',
-    component: () => import('@/views/Test.vue')
-  },
+	... // les routes existantes
+	{
+		path: '/*',
+		name: 'test',
+		component: () => import('@/views/Test.vue')
+	},
 ]
 ```
 
 a été remplacé par :
 
 ``` ts
-  ...
-  path: '/:pathMatch(.*)*',
-  ...
+	...
+	path: '/:pathMatch(.*)*',
+	...
 ```
 
 Voir [le guide de migration de vue-router](https://router.vuejs.org/guide/migration/) pour plus d'informations.
@@ -61,7 +61,7 @@ voir [cette page de documentation de Nuxt](https://nuxt.com/docs/guide/going-fur
 - `Route` devient `RouteLocationNormalized`.
 
 
-### Transitions css des pages
+### Animations des pages
 
 Si le projet utise des transitions de page,
 
@@ -72,14 +72,14 @@ Si le projet utise des transitions de page,
 ``` ts
 // nuxt.config.ts
 export default defineNuxtConfig({
-  ...
-  app: {
-    ...
-    pageTransition: {
-      name: 'page',
-      mode: 'out-in'
-    }
-  }
+	...
+	app: {
+		...
+		pageTransition: {
+			name: 'page',
+			mode: 'out-in'
+		}
+	}
 ```
 
 3 - Définir le style de la transition dans un fichier de style global.
@@ -98,7 +98,7 @@ export default defineNuxtConfig({
 }
 ```
 
-  
+	
 ## Utilisation du script [vue-class-migrator](https://github.com/getyourguide/vue-class-migrator)
 
 vue-class-migrator est un script permettant de migrer automatiquement les composants vueJs écris avec vue-class-component à la syntaxe native VueJs Option API
@@ -107,7 +107,7 @@ vue-class-migrator est un script permettant de migrer automatiquement les compos
 
 2. Executer la commande `npx vue-class-migrator -d .` à la racine de votre projet.
 
-3. Consulter les logs dans le terminal pour repérer les éventuels composants causants n'ayant pas pu être migré automatiquement.
+3. Consulter les logs dans le terminal pour repérer les éventuels composants causant des erreurs et n'ayant pas pu être migré automatiquement.
 
 4. Si vous avez déclaré vos props en tant que mixins dans vos composants en utilisant le helper 'mixin' de vue-class-componant, modifier l'import de la mixin dans le composant.
 
@@ -124,7 +124,7 @@ vue-class-migrator est un script permettant de migrer automatiquement les compos
 
 	const MixinsDeclaration = mixins(Props);
 
-    export default defineComponent({
+		export default defineComponent({
 		extends: MixinsDeclaration,
 ```
 
@@ -171,10 +171,12 @@ export default defineNuxtComponent({
 	head() {
 		return {
 			title: 'Page title',
-			meta: [{
-				name: 'description',
-				content: 'This is my page description.'
-			}]
+			meta: [
+				{
+					name: 'description',
+					content: 'This is my page description.'
+				}
+			]
 		}
 	}
 	...
@@ -187,54 +189,54 @@ Nuxt intègre son propre système de gestion des tags meta.
 Pour des metas déclarés de cette façon :
 
 ```typescript
-  @Meta
-  metaInfo(): MetaInfo {
-    return {
-      title: 'Page title',
-      meta: [
-        {
-          name: 'description',
-          vmid: 'description',
-          content: 'This is my page description.'
-        }
-      ]
-    };
-  }
+	@Meta
+	metaInfo(): MetaInfo {
+		return {
+			title: 'Page title',
+			meta: [
+				{
+					name: 'description',
+					vmid: 'description',
+					content: 'This is my page description.'
+				}
+			]
+		};
+	}
 ```
 
 Il faut les migrer de la façon suivante :
 
 ```typescript
 export default defineNuxtComponent({
-  ...
-  head() {
-    return {
-      title: 'Page title',
-      meta: [
-        {
-          name: 'description',
-          content: 'This is my page description.'
-        }
-      ]
-    }
-  }
+	...
+	head() {
+		return {
+			title: 'Page title',
+			meta: [
+				{
+					name: 'description',
+					content: 'This is my page description.'
+				}
+			]
+		}
+	}
 });
 ```
 
 Pour localiser les informations :
 
 ```typescript
-  head(nuxtApp) {
-    return {
-      title: nuxtApp.i18n.t('page.currentPage.meta.title'),
-      meta: [
-        {
-          name: 'description',
-          content: nuxtApp.i18n.t('page.currentPage.meta.description')
-        }
-      ]
-    }
-  }
+	head(nuxtApp) {
+		return {
+			title: nuxtApp.i18n.t('page.currentPage.meta.title'),
+			meta: [
+				{
+					name: 'description',
+					content: nuxtApp.i18n.t('page.currentPage.meta.description')
+				}
+			]
+		}
+	}
 ```
 
 ## Migration des composants Vuetify
