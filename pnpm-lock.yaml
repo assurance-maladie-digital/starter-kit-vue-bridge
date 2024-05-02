@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.12.0
     version: 2.12.0
   '@cnamts/synapse-bridge':
-    specifier: 1.2.0-alpha.0
-    version: 1.2.0-alpha.0(vue@3.4.21)(vuetify@3.5.14)(vuex@4.1.0)
+    specifier: 1.2.3-alpha.0
+    version: 1.2.3-alpha.0(vue@3.4.21)(vuetify@3.5.14)(vuex@4.1.0)
   '@mdi/js':
     specifier: 7.2.96
     version: 7.2.96
@@ -1374,8 +1374,8 @@ packages:
     resolution: {integrity: sha512-ea8LBxb4SfUdxwMzkqR+AwFdVoSuzwZUjPBEib/GXg3tEFctlvAZDoHpC8F8zan4SPtcaKK4rSfwwf89X31UZg==}
     dev: false
 
-  /@cnamts/synapse-bridge@1.2.0-alpha.0(vue@3.4.21)(vuetify@3.5.14)(vuex@4.1.0):
-    resolution: {integrity: sha512-J3kbiaUQ92FgCCbhAa0NfF4cHR8koM0naRI3GJoB49kiRMvk90o906iA0WJCjHIMDEqcXsSMfjHQUx52pZ9k5A==}
+  /@cnamts/synapse-bridge@1.2.3-alpha.0(vue@3.4.21)(vuetify@3.5.14)(vuex@4.1.0):
+    resolution: {integrity: sha512-bLKtzdItb+iqWZ7xM2gP30qGfb406GSta+mhetQ+Lidyk5m8NZj+a4Ru6d/8Du4FBetgctQ6eAErwjzhHAquuQ==}
     peerDependencies:
       vue: ^3.4.21
       vuetify: 3.5.10
@@ -1945,6 +1945,11 @@ packages:
       source-map-js: 1.2.0
     dev: false
 
+  /@intlify/shared@10.0.0-alpha.3:
+    resolution: {integrity: sha512-fi2q48i+C6sSCAt3vOj/9LD3tkr1wcvLt+ifZEHrpPiwHCyKLDYGp5qBNUHUBBA/iqFTeWdtHUbHE9z9OeTXkw==}
+    engines: {node: '>= 16'}
+    dev: false
+
   /@intlify/shared@9.11.0:
     resolution: {integrity: sha512-KHSNgi7sRjmSm7aD8QH8WFt9VfKaekJuJ473opbJlkGY3EDnDUU8ikIhG8PbasQbgNvbY3m3tWNGqk2omIdwMA==}
     engines: {node: '>= 16'}
@@ -1952,11 +1957,6 @@ packages:
 
   /@intlify/shared@9.3.0-beta.27:
     resolution: {integrity: sha512-hPMsmVCs+ZUVHHU5VORG6LopzXZT7zmyVNqc9OQG80YpA/N4lT/pkJ4B6DTNIsv2C7mwfGM7RdK+0qPki43YgA==}
-    engines: {node: '>= 16'}
-    dev: false
-
-  /@intlify/shared@9.4.1:
-    resolution: {integrity: sha512-A51elBmZWf1FS80inf/32diO9DeXoqg9GR9aUDHFcfHoNDuT46Q+fpPOdj8jiJnSHSBh8E1E+6qWRhAZXdK3Ng==}
     engines: {node: '>= 16'}
     dev: false
 
@@ -11504,7 +11504,7 @@ packages:
       vue-router:
         optional: true
     dependencies:
-      '@intlify/shared': 9.4.1
+      '@intlify/shared': 10.0.0-alpha.3
       '@intlify/vue-i18n-bridge': 0.8.0(vue-i18n@9.3.0-beta.27)
       '@intlify/vue-router-bridge': 0.8.0(vue@3.4.21)
       ufo: 1.5.3
