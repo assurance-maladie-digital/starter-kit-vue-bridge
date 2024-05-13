@@ -30,7 +30,7 @@ Clonez le dépôt : git clone https://github.com/assurance-maladie-digital/start
 
 # Migration d'un projet Vue 2 vers Vue 3
 
-- Voir les étapes de migration dans le fichier `MIGRATION.md`.
+- Voir les étapes de migration dans [la documentation du design system](https://digital-design-system.netlify.app/migration-bridge)
 - Voir le guide de migration officiel Vue3 : https://v3.vuejs.org/guide/migration/introduction.html
 - Voir le guide de migration officiel Vuetify3 : https://vuetifyjs.com/en/getting-started/migration/
 
