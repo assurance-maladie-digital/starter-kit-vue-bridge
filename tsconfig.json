@@ -4,6 +4,7 @@
 		"experimentalDecorators": true,
 		"verbatimModuleSyntax": false,
 		"moduleResolution": "node",
+		"noUncheckedIndexedAccess": true,
 		"allowJs": true,
 		"types": [
 			"@types/jest"

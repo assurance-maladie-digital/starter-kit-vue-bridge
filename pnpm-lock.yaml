@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.12.0
     version: 2.12.0
   '@cnamts/synapse-bridge':
-    specifier: 1.2.3-alpha.0
-    version: 1.2.3-alpha.0(vue@3.4.21)(vuetify@3.5.14)(vuex@4.1.0)
+    specifier: 1.2.5-alpha.0
+    version: 1.2.5-alpha.0(vue@3.4.21)(vuetify@3.5.14)(vuex@4.1.0)
   '@mdi/js':
     specifier: 7.2.96
     version: 7.2.96
@@ -1374,8 +1374,8 @@ packages:
     resolution: {integrity: sha512-ea8LBxb4SfUdxwMzkqR+AwFdVoSuzwZUjPBEib/GXg3tEFctlvAZDoHpC8F8zan4SPtcaKK4rSfwwf89X31UZg==}
     dev: false
 
-  /@cnamts/synapse-bridge@1.2.3-alpha.0(vue@3.4.21)(vuetify@3.5.14)(vuex@4.1.0):
-    resolution: {integrity: sha512-bLKtzdItb+iqWZ7xM2gP30qGfb406GSta+mhetQ+Lidyk5m8NZj+a4Ru6d/8Du4FBetgctQ6eAErwjzhHAquuQ==}
+  /@cnamts/synapse-bridge@1.2.5-alpha.0(vue@3.4.21)(vuetify@3.5.14)(vuex@4.1.0):
+    resolution: {integrity: sha512-YetU80aJnX1iPo09wYwfggo7RHE5IG3S0nrO5u0cUN0UTuap+1H64gRyP8++e2yIw4npwDsCPeLHTPmC3tPf1g==}
     peerDependencies:
       vue: ^3.4.21
       vuetify: 3.5.10
@@ -1384,7 +1384,6 @@ packages:
       '@cnamts/design-tokens': 2.12.0
       consola: 2.15.3
       vue: 3.4.21(typescript@5.4.3)
-      vue-router: 4.2.5(vue@3.4.21)
       vuetify: 3.5.14(typescript@5.4.3)(vite-plugin-vuetify@1.0.2)(vue@3.4.21)
       vuex: 4.1.0(vue@3.4.21)
     dev: false
@@ -1945,8 +1944,8 @@ packages:
       source-map-js: 1.2.0
     dev: false
 
-  /@intlify/shared@10.0.0-alpha.3:
-    resolution: {integrity: sha512-fi2q48i+C6sSCAt3vOj/9LD3tkr1wcvLt+ifZEHrpPiwHCyKLDYGp5qBNUHUBBA/iqFTeWdtHUbHE9z9OeTXkw==}
+  /@intlify/shared@10.0.0-alpha.5:
+    resolution: {integrity: sha512-uCXI2IM9B2fwR7whGJ+DNBGxI02cSgD4E0ItY1ls++Vubrt92rD86o/9AUb9S/6jyK2hy3kFaTzublQIylMAsA==}
     engines: {node: '>= 16'}
     dev: false
 
@@ -11504,7 +11503,7 @@ packages:
       vue-router:
         optional: true
     dependencies:
-      '@intlify/shared': 10.0.0-alpha.3
+      '@intlify/shared': 10.0.0-alpha.5
       '@intlify/vue-i18n-bridge': 0.8.0(vue-i18n@9.3.0-beta.27)
       '@intlify/vue-router-bridge': 0.8.0(vue@3.4.21)
       ufo: 1.5.3
@@ -11543,15 +11542,6 @@ packages:
       vue: ^3.0.0
     dependencies:
       vue: 3.4.21(typescript@5.4.3)
-
-  /vue-router@4.2.5(vue@3.4.21):
-    resolution: {integrity: sha512-DIUpKcyg4+PTQKfFPX88UWhlagBEBEfJ5A8XDXRJLUnZOvcpMF8o/dnL90vpVkGaPbjvXazV/rC1qBKrZlFugw==}
-    peerDependencies:
-      vue: ^3.2.0
-    dependencies:
-      '@vue/devtools-api': 6.6.1
-      vue: 3.4.21(typescript@5.4.3)
-    dev: false
 
   /vue-router@4.3.0(vue@3.4.21):
     resolution: {integrity: sha512-dqUcs8tUeG+ssgWhcPbjHvazML16Oga5w34uCUmsk7i0BcnskoLGwjpa15fqMr2Fa5JgVBrdL2MEgqz6XZ/6IQ==}
