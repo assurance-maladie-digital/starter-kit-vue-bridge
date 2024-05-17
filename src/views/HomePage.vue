@@ -26,6 +26,6 @@ export default defineNuxtComponent({
 		PageContainer,
 		HeaderBar,
 		FooterBar
-	},
+	}
 });
 </script>
