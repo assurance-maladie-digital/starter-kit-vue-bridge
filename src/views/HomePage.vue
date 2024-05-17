@@ -19,14 +19,13 @@
 </template>
 
 <script lang="ts">
-import {PageContainer, HeaderBar, FooterBar, NirField} from "@cnamts/synapse-bridge";
+import {PageContainer, HeaderBar, FooterBar} from "@cnamts/synapse-bridge";
 
 export default defineNuxtComponent({
 	components: {
 		PageContainer,
 		HeaderBar,
-		FooterBar,
-		NirField
+		FooterBar
 	},
 });
 </script>
