@@ -5,6 +5,7 @@
 	/>
 	<PageContainer>
 		<h1 class="text-primary">{{ $config.public.title }}</h1>
+		<HelloWorld :msg="$config.public.message"/>
 	</PageContainer>
 	<FooterBar
 		hide-a11y-link
@@ -13,30 +14,19 @@
 		hide-legal-notice-link
 		hide-sitemap-link
 	>
-		<NirField v-model="nir" label="Nir" />
+		<p class="text--secondary mb-0">Contenu supplémentaire.</p>
 	</FooterBar>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import {
-	PageContainer,
-	HeaderBar,
-	FooterBar,
-	NirField,
-} from "@cnamts/synapse-bridge";
+import {PageContainer, HeaderBar, FooterBar, NirField} from "@cnamts/synapse-bridge";
 
-export default defineComponent({
+export default defineNuxtComponent({
 	components: {
 		PageContainer,
 		HeaderBar,
 		FooterBar,
-		NirField,
-	},
-	data() {
-		return {
-			nir: "",
-		};
+		NirField
 	},
 });
 </script>
