@@ -163,6 +163,19 @@
 					@update:model-value="getValue($event)"
 				/>
 			</div>
+			<div class="mt-4 my-4">
+				<h2>DatePicker</h2>
+				<DatePicker
+					v-model="datePickerdate"
+					range
+				/>
+			</div>
+			<div class="mt-4 my-4">
+				<h2>PeriodField</h2>
+				<PeriodField
+					v-model="periodFieldDate"
+				/>
+			</div>
 		</div>
 	</PageContainer>
 	<FooterBar
@@ -203,7 +216,9 @@ import {
 	ErrorPage,
 	MaintenancePage,
 	NotFoundPage,
-	PasswordField
+	PasswordField,
+	DatePicker,
+	PeriodField
 } from "@cnamts/synapse-bridge";
 
 export default defineComponent({
@@ -231,7 +246,9 @@ export default defineComponent({
 		ErrorPage,
 		MaintenancePage,
 		NotFoundPage,
-		PasswordField
+		PasswordField,
+		DatePicker,
+		PeriodField
 	},
 	data() {
 		return {
@@ -317,7 +334,9 @@ export default defineComponent({
 					]
 				}
 			],
-			password: null as string | null
+			password: null as string | null,
+			periodFieldDate: ['01/05/2024', '13/05/2024'],
+			datePickerdate: null
 		}
 	},
 	computed: {
