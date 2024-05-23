@@ -170,11 +170,37 @@
 					range
 				/>
 			</div>
-			<div class="mt-4 my-4">
-				<h2>PeriodField</h2>
-				<PeriodField
-					v-model="periodFieldDate"
-				/>
+			<h2>PeriodField</h2>
+			<div class="mt-4 my-4 d-flex justify-sm-space-around">
+				<div>
+					<h3>Basique</h3>
+					<PeriodField v-model="date"/>
+					<p>Date saisie : {{ date }}</p>
+					<h3>No-prepend-icon</h3>
+					<PeriodField v-model="date" no-prepend-icon />
+					<p>Date saisie : {{ date }}</p
+					>
+					<h3>Append</h3>
+					<PeriodField v-model="date" append-icon />
+					<p>Date saisie : {{ date }}</p>
+					<h3>Outlined</h3>
+					<PeriodField v-model="date" outlined/>
+					<p>Date saisie : {{ date }}</p>
+				</div>
+				<div>
+					<h3>Label</h3>
+					<PeriodField v-model="date" label="Periode"/>
+					<p>Date saisie : {{ date }}</p>
+					<h3>Disabled</h3>
+					<PeriodField v-model="date" disabled/>
+					<p>Date saisie : {{ date }}</p>
+					<PeriodField v-model="date2"/>
+					<p>Date saisie : {{ date2 }}</p>
+					<p>Date saisie : {{ date3 }}</p>
+					<h3>Change Format DD/MM/YYYY to YYYY/MM/DD</h3>
+					<PeriodField v-model="changingDate" date-format="DD/MM/yyyy" date-format-return="yyyy/MM/dd"/>
+					<p>Date saisie : {{ changingDate }}</p>
+				</div>
 			</div>
 		</div>
 	</PageContainer>
@@ -192,6 +218,7 @@
 <script lang="ts">
 import {defineComponent} from "vue";
 import { mapActions, mapGetters } from "vuex";
+import dayjs from "dayjs";
 import {
 	PageContainer,
 	HeaderBar,
@@ -336,7 +363,11 @@ export default defineComponent({
 			],
 			password: null as string | null,
 			periodFieldDate: ['01/05/2024', '13/05/2024'],
-			datePickerdate: null
+			datePickerdate: null,
+			date:[dayjs().format('DD/MM/YYYY'), dayjs().add(12, 'day').format('DD/MM/YYYY')],
+			date2: [dayjs().format('DD/MM/YYYY'), dayjs().add(3, 'day').format('DD/MM/YYYY')],
+			date3: [dayjs().format('DD/MM/YYYY'), dayjs().add(5, 'day').format('DD/MM/YYYY')],
+			changingDate: [dayjs().format('YYYY/MM/DD'), dayjs().add(5, 'day').format('YYYY/MM/DD')]
 		}
 	},
 	computed: {
