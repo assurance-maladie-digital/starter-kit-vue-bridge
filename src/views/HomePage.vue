@@ -37,16 +37,9 @@
 					title-text="Paul Dupont"
 					sub-title-text="1 69 08 75 125 456 75"/>
 			</div>
-			<div class="mt-4">
-				<h2>France connect Btn</h2>
-				<FranceConnectBtn href="https://app.franceconnect.gouv.fr/"/>
-			</div>
+
 			<div class="bg-grey-lighten-1 mt-4">
-				<h2>CopyBtn</h2>
-				<CopyBtn
-					label="Copier le numéro de dossier"
-					text-to-copy="example-2"
-				/>
+
 			</div>
 			<div class="mt-4">
 				<h2>Logo</h2>
@@ -209,7 +202,7 @@ export default defineComponent({
 					to: '/not-found'
 				},
 				{
-					label: 'User Menu Btn',
+					label: 'Btns',
 					to: '/user-menu-btn'
 				},
 				{

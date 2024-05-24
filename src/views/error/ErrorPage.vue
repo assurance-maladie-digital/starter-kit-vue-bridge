@@ -131,7 +131,7 @@ export default defineComponent({
 					to: '/not-found'
 				},
 				{
-					label: 'User Menu Btn',
+					label: 'Btns',
 					to: '/user-menu-btn'
 				},
 				{

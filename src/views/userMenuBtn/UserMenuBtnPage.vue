@@ -6,6 +6,7 @@
 	/>
 	<PageContainer class="h-35">
 		<BackBtn to="/"/>
+		<h2>User Menu Btn</h2>
 		<div class="d-flex justify-sm-space-between">
 			<UserMenuBtn
 				additional-information="Information supplémentaire"
@@ -37,7 +38,64 @@
 					<VListItemTitle>{{ item }}</VListItemTitle>
 				</VListItem>
 			</UserMenuBtn>
+		</div>
+		<h2>France connect Btn</h2>
+		<div class="d-flex justify-sm-space-between">
+			<FranceConnectBtn href="https://app.franceconnect.gouv.fr/" />
+			<br />
+			<FranceConnectBtn
+				connect-plus
+				href="https://app.franceconnect.gouv.fr/"
+			/>
+		</div>
+		<h2>CopyBtn</h2>
+		<div class="d-flex justify-sm-space-between">
+		<CopyBtn
+			label="Copier le numéro de dossier"
+			text-to-copy="example-2"
+		/>
+			<CopyBtn
+				label="Copier le numéro de dossier"
+				:text-to-copy="() => 'example-1'"
+			/>
 
+			<CopyBtn
+				label="Copier le numéro de dossier"
+				text-to-copy="example-2"
+			/>
+
+			<CopyBtn
+				label="Copier le numéro de patient"
+				text-to-copy="example-3"
+				hide-tooltip
+			/>
+
+			<CopyBtn
+				:tooltip-duration="5000"
+				label="Copier le numéro de patient"
+				text-to-copy="example-4"
+			/>
+
+			<CopyBtn
+				label="Copier le numéro de ticket"
+				text-to-copy="example-6"
+			>
+				<template #icon>
+					<VIcon>
+						{{ mdiContentDuplicate }}
+					</VIcon>
+				</template>
+
+				<template #tooltip>
+					Le texte a bien été copié
+				</template>
+			</CopyBtn>
+
+			<CopyBtn
+				:vuetify-options="vuetifyOptions"
+				label="Copier le numéro d'utilisateur"
+				text-to-copy="example-5"
+			/>
 		</div>
 	</PageContainer>
 	<FooterBar
@@ -53,8 +111,6 @@
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import { mapActions, mapGetters } from "vuex";
-import dayjs from "dayjs";
 import {
 	PageContainer,
 	HeaderBar,
@@ -120,6 +176,18 @@ export default defineComponent({
 				'Profil',
 				'Paramètres'
 			],
+			vuetifyOptions: {
+				menu: {
+					location: 'bottom center',
+					offset: 2
+				},
+				btn: {
+					density: 'default'
+				},
+				icon: {
+					color: 'indigo'
+				}
+			},
 			vuetifyOptionsUserMenuBtn: {
 				menu: {
 					minWidth: '264px',
@@ -161,7 +229,7 @@ export default defineComponent({
 					to: '/not-found'
 				},
 				{
-					label: 'User Menu Btn',
+					label: 'Btns',
 					to: '/user-menu-btn'
 				},
 				{
