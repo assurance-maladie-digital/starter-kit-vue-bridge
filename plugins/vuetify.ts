@@ -4,7 +4,6 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi-svg';
 import { colorTheme, colorBoostrapTheme } from '@cnamts/design-tokens/src/colors';
 
 const theme = await $fetch<Record<string, string>>('/json/config.env.json').then((res) => res.theme);
-console.log(theme);
 
 export default defineNuxtPlugin(async (nuxtApp) => {
 	const vuetify = createVuetify({
