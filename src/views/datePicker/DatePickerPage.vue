@@ -7,11 +7,13 @@
 	<PageContainer>
 		<BackBtn to="/"/>
 		<div class="d-flex justify-sm-space-around">
-			<div>
+			<div class="wide-column">
+				<h3>Range</h3>
 				<DatePicker
 					v-model="datePickerdate"
 					range
 				/>
+				<h3>Mandatory</h3>
 				<date-picker v-model="date" :rules="validRules" label="Date"/>
 				<h3>Warning Rules</h3>
 				<date-picker v-model="date" :warning-rules="warningRules" hint="defaultHint" label="Date" outlined/>
@@ -28,7 +30,7 @@
 				<h3 class="mt-4">Disabled</h3>
 				<date-picker v-model="date" :hint="defaultHint" disabled label="Date"/>
 			</div>
-			<div>
+			<div class="min-w-100">
 			<h3 class="mt-4">Outlined</h3>
 			<date-picker v-model="date" :hint="defaultHint" label="Date" outlined/>
 
@@ -36,7 +38,7 @@
 			<date-picker v-model="date" :hint="defaultHint" birthdate label="Date d'anniversaire"/>
 
 			<h3 class="mt-4">Range</h3>
-			<div>
+			<div class="wide-column">
 				{{ dateRange }}
 				<date-picker
 					v-model="dateRange"
@@ -49,7 +51,7 @@
 			<h3 class="mt-4">DateFormat</h3>
 			{{ dateToFormat }}
 			<date-picker v-model="dateToFormat" dateFormat="DD-MM-YYYY" hint="JJ-MM-YYYY" label="Date"/>
-			<h3 class="mt-4">DateFormatReturn</h3>
+			<h3 class="mt-4">DateFormatReturn JJ/MM/YY</h3>
 			{{ dateFormatReturn }}
 			<date-picker v-model="dateFormatReturn" :hint="defaultHint" dateFormatReturn="DD/MM/YY" label="Date"/>
 			</div>
@@ -297,3 +299,9 @@ export default defineComponent({
 	}
 });
 </script>
+
+<style scoped>
+.wide-column {
+	width: 400px !important;
+}
+</style>
