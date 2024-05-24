@@ -6,7 +6,8 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		public: {
 			title: process.env.TITLE,
-			message: process.env.MESSAGE
+			message: process.env.MESSAGE,
+			theme: process.env.THEME,
 		}
 	},
 	devtools: {enabled: true},

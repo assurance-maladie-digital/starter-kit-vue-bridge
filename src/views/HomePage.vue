@@ -14,7 +14,7 @@
 		hide-legal-notice-link
 		hide-sitemap-link
 	>
-		<p class="text--secondary mb-0">Contenu supplémentaire.</p>
+		<p class="text-secondary mb-0">Contenu supplémentaire.</p>
 	</FooterBar>
 </template>
 
