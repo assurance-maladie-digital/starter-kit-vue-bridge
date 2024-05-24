@@ -3,6 +3,7 @@
 		service-title="Design System"
 		service-sub-title="Documentation du Design System"
 	/>
+	<p>Pour tester le changement de theme, il faut modifier la valeur theme dans le fichier : public/json/config.env.json (vuetify ou bootstrap)</p>
 	<PageContainer>
 		<h1 class="text-primary">{{ $config.public.title }}</h1>
 		<HelloWorld :msg="$config.public.message"/>

@@ -6,7 +6,7 @@ const routes = [
 	},
 	{
 		path: '/test-inva',
-		name: 'about',
+		name: 'Test Inva',
 		component: () => import('@/views/TestInva.vue')
 	},
 	{

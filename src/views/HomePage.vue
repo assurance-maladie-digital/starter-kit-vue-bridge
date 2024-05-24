@@ -301,6 +301,10 @@ export default defineComponent({
 					to: '/'
 				},
 				{
+					label: 'TestInva',
+					to: '/test-inva'
+				},
+				{
 					label: 'Header',
 					to: '/header'
 				},
