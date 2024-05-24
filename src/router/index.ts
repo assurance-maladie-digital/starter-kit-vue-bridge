@@ -44,6 +44,11 @@ const routes = [
 		name: 'nirfield',
 		component: () => import('@/views/nirfield/NirfieldPage.vue')
 	},
+	{
+		path: '/notification-bar',
+		name: 'notification-bar',
+		component: () => import('@/views/notificationBar/NotificationBarPage.vue')
+	},
 ];
 
 export default routes;

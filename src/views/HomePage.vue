@@ -331,6 +331,10 @@ export default defineComponent({
 				{
 					label: 'Nirfield',
 					to: '/nirfield'
+				},
+				{
+					label: 'NotifBar',
+					to: '/notification-bar'
 				}
 			],
 			dataListItems: [
