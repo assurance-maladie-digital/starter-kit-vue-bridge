@@ -1,9 +1,12 @@
 import 'vuetify/styles';
 import { createVuetify } from 'vuetify';
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg';
-import { colorTheme } from '@cnamts/design-tokens/src/colors';
+import { colorTheme, colorBoostrapTheme } from '@cnamts/design-tokens/src/colors';
 
-export default defineNuxtPlugin((nuxtApp) => {
+const theme = await $fetch<Record<string, string>>('/json/config.env.json').then((res) => res.theme);
+console.log(theme);
+
+export default defineNuxtPlugin(async (nuxtApp) => {
 	const vuetify = createVuetify({
 		ssr: true,
 		icons: {
@@ -17,7 +20,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 			defaultTheme: 'light',
 			themes: {
 				light: {
-					colors: colorTheme,
+					colors: theme === 'bootstrap' ? colorBoostrapTheme : colorTheme,
 				},
 			},
 		},
