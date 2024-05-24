@@ -3,9 +3,8 @@ import { createVuetify } from 'vuetify';
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg';
 import { colorTheme, colorBoostrapTheme } from '@cnamts/design-tokens/src/colors';
 
-const theme = await $fetch<Record<string, string>>('/json/config.env.json').then((res) => res.theme);
-
 export default defineNuxtPlugin(async (nuxtApp) => {
+	const theme = await $fetch<Record<string, string>>('/json/config.env.json').then((res) => res.theme);
 	const vuetify = createVuetify({
 		ssr: true,
 		icons: {
