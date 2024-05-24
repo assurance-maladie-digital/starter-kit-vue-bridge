@@ -49,6 +49,16 @@ const routes = [
 		name: 'notification-bar',
 		component: () => import('@/views/notificationBar/NotificationBarPage.vue')
 	},
+	{
+		path: '/period-field',
+		name: 'period-field',
+		component: () => import('@/views/periodField/PeriodFieldPage.vue')
+	},
+	{
+		path: '/date-picker',
+		name: 'date-picker',
+		component: () => import('@/views/datePicker/DatePickerPage.vue')
+	},
 ];
 
 export default routes;

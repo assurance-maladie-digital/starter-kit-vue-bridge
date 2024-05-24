@@ -1,97 +1,57 @@
 <template>
 	<HeaderBar
-		service-title="Design System"
-		service-sub-title="Documentation du Design System"
 		:navigation-items="navigationItems"
+		service-sub-title="Documentation du Design System"
+		service-title="Design System"
 	/>
 	<PageContainer>
-		<div>
-			<div class="bg-grey-lighten-1">
-				<h2>DataList</h2>
-				<DataList :items="dataListItems"></DataList>
-			</div>
-			<div class="ml-4">
-				<h2>DataListGroup</h2>
-				<DataListGroup :items="dataListGroupItems"></DataListGroup>
-			</div>
-			<div class="bg-grey-lighten-1">
-				<h2>FooterWrapper</h2>
-				<FooterWrapper>
-					<VBtn variant="tonal" class="mr-6">
-						Mentions légales
-					</VBtn>
+		<BackBtn to="/"/>
+		<div class="d-flex justify-sm-space-around">
+			<div>
+				<DatePicker
+					v-model="datePickerdate"
+					range
+				/>
+				<date-picker v-model="date" :rules="validRules" label="Date"/>
+				<h3>Warning Rules</h3>
+				<date-picker v-model="date" :warning-rules="warningRules" hint="defaultHint" label="Date" outlined/>
 
-					<VBtn variant="tonal" class="mr-6">
-						CGU
-					</VBtn>
+				<h3>No Calendar</h3>
+				<date-picker v-model="date" :hint="defaultHint" label="Date" no-calendar/>
 
-					<VBtn variant="tonal" inert>
-						Version 1.0.0
-					</VBtn>
-				</FooterWrapper>
+				<h3>TextField Activator</h3>
+				<date-picker v-model="date" :hint="defaultHint" label="Date" text-field-activator/>
+
+				<h3 class="mt-4">Show weekends</h3>
+				<date-picker v-model="date" :hint="defaultHint" label="Date" show-weekends/>
+
+				<h3 class="mt-4">Disabled</h3>
+				<date-picker v-model="date" :hint="defaultHint" disabled label="Date"/>
 			</div>
-			<div class="ml-4">
-				<h2>SubHeader</h2>
-				<SubHeader
-					back-btn-text="Back"
-					title-text="Paul Dupont"
-					sub-title-text="1 69 08 75 125 456 75"/>
-			</div>
-			<div class="mt-4">
-				<h2>France connect Btn</h2>
-				<FranceConnectBtn href="https://app.franceconnect.gouv.fr/"/>
-			</div>
-			<div class="bg-grey-lighten-1 mt-4">
-				<h2>CopyBtn</h2>
-				<CopyBtn
-					label="Copier le numéro de dossier"
-					text-to-copy="example-2"
+			<div>
+			<h3 class="mt-4">Outlined</h3>
+			<date-picker v-model="date" :hint="defaultHint" label="Date" outlined/>
+
+			<h3 class="mt-4">Birthdate</h3>
+			<date-picker v-model="date" :hint="defaultHint" birthdate label="Date d'anniversaire"/>
+
+			<h3 class="mt-4">Range</h3>
+			<div>
+				{{ dateRange }}
+				<date-picker
+					v-model="dateRange"
+					clearable
+					outlined
+					range
 				/>
 			</div>
-			<div class="mt-4">
-				<h2>Logo</h2>
-				<Logo/>
-			</div>
-			<div class="bg-grey-lighten-1 mt-4 my-4">
-				<h2>HeaderLoading</h2>
-				<HeaderLoading width="300px" height="30px"/>
-			</div>
-			<div class="bg-grey-lighten-1">
-				<h2>CookieBanner</h2>
-				<div class="d-flex flex-wrap align-center justify-center">
-					<CookieBanner
-						v-if="active"
-						cookies-route=""
-						@reject="active = false"
-						@accept="active = false"
-					/>
 
-					<VBtn
-						v-if="!active"
-						color="primary"
-						@click="active = true"
-					>
-						Réinitialiser
-					</VBtn>
-				</div>
-			</div>
-			<div class="mt-4 my-4">
-				<h2>Logo Brand Section</h2>
-				<LogoBrandSection
-					service-sub-title="Documentation du Design System"
-					service-title="Design System"
-				/>
-			</div>
-			<div class="mt-4 my-4 bg-grey-lighten-1">
-				<h2>ChipList</h2>
-				<ChipList :items="chipItems"/>
-			</div>
-			<div class="mt-4 my-4">
-				<h2>PasswordField</h2>
-				<PasswordField
-					v-model="password"
-					@update:model-value="getValue($event)"
-				/>
+			<h3 class="mt-4">DateFormat</h3>
+			{{ dateToFormat }}
+			<date-picker v-model="dateToFormat" dateFormat="DD-MM-YYYY" hint="JJ-MM-YYYY" label="Date"/>
+			<h3 class="mt-4">DateFormatReturn</h3>
+			{{ dateFormatReturn }}
+			<date-picker v-model="dateFormatReturn" :hint="defaultHint" dateFormatReturn="DD/MM/YY" label="Date"/>
 			</div>
 		</div>
 	</PageContainer>
@@ -108,38 +68,38 @@
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import { mapActions, mapGetters } from "vuex";
-import { required } from "@cnamts/synapse-bridge/rules/required";
-import { notAfterToday } from "@cnamts/synapse-bridge/rules/notAfterToday";
-import { notBeforeToday } from "@cnamts/synapse-bridge/rules/notBeforeToday";
+import {mapActions, mapGetters} from "vuex";
+import {required} from "@cnamts/synapse-bridge/rules/required";
+import {notAfterToday} from "@cnamts/synapse-bridge/rules/notAfterToday";
+import {notBeforeToday} from "@cnamts/synapse-bridge/rules/notBeforeToday";
 import dayjs from "dayjs";
 import {
-	PageContainer,
-	HeaderBar,
-	FooterBar,
-	DataList,
-	DataListGroup,
-	UserMenuBtn,
-	DialogBox,
-	FooterWrapper,
-	SubHeader,
 	BackBtn,
-	FranceConnectBtn,
-	CopyBtn,
-	Logo,
-	HeaderLoading,
 	BackToTopBtn,
+	ChipList,
 	CookieBanner,
 	CookiesPage,
-	LogoBrandSection,
-	ChipList,
-	NotificationBar,
+	CopyBtn,
+	DataList,
+	DataListGroup,
+	DatePicker,
+	DialogBox,
 	ErrorPage,
+	FooterBar,
+	FooterWrapper,
+	FranceConnectBtn,
+	HeaderBar,
+	HeaderLoading,
+	Logo,
+	LogoBrandSection,
 	MaintenancePage,
 	NotFoundPage,
+	NotificationBar,
+	PageContainer,
 	PasswordField,
-	DatePicker,
-	PeriodField
+	PeriodField,
+	SubHeader,
+	UserMenuBtn
 } from "@cnamts/synapse-bridge";
 
 export default defineComponent({
@@ -175,7 +135,6 @@ export default defineComponent({
 		return {
 			validRules: [required],
 			warningRules: [notAfterToday, notBeforeToday],
-			hint: 'Date de hint',
 			active: true,
 			dialog: false,
 			chipItems: [
@@ -297,13 +256,20 @@ export default defineComponent({
 					]
 				}
 			],
-			password: null as string | null,
-			periodFieldDate: ['01/05/2024', '13/05/2024'],
 			datePickerdate: null,
-			date:[dayjs().format('DD/MM/YYYY'), dayjs().add(12, 'day').format('DD/MM/YYYY')],
+			date: [dayjs().format('DD/MM/YYYY'), dayjs().add(12, 'day').format('DD/MM/YYYY')],
 			date2: [dayjs().format('DD/MM/YYYY'), dayjs().add(3, 'day').format('DD/MM/YYYY')],
 			date3: [dayjs().format('DD/MM/YYYY'), dayjs().add(5, 'day').format('DD/MM/YYYY')],
-			changingDate: [dayjs().format('YYYY/MM/DD'), dayjs().add(5, 'day').format('YYYY/MM/DD')]
+			date1: dayjs().add(2, 'day').format('DD/MM/YYYY'),
+			dateRange:[dayjs().format('DD/MM/YYYY'), dayjs().add(12, 'day').format('DD/MM/YYYY')],
+			startDate: null,
+			endDate: null,
+			dateDefinie: dayjs().format('DD/MM/YYYY'),
+			dateToFormat: dayjs().format('DD/MM/YYYY'),
+			dateFormatReturn: dayjs().format('DD/MM/YYYY'),
+			notAfterTodayRules: [notAfterToday],
+			notBeforeTodayRules: [notBeforeToday],
+			defaultHint: "Format JJ/MM/YYYY",
 		}
 	},
 	computed: {
