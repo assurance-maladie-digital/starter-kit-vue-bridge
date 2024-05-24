@@ -4,6 +4,10 @@
 		service-sub-title="Documentation du Design System"
 		:navigation-items="navigationItems"
 	/>
+	<SubHeader
+		hide-back-btn
+		title-text="Welcome !"
+		sub-title-text="1 69 08 75 125 456 75"/>
 	<PageContainer>
 		<div>
 			<div class="bg-grey-lighten-1">
@@ -30,14 +34,6 @@
 					</VBtn>
 				</FooterWrapper>
 			</div>
-			<div class="ml-4">
-				<h2>SubHeader</h2>
-				<SubHeader
-					back-btn-text="Back"
-					title-text="Paul Dupont"
-					sub-title-text="1 69 08 75 125 456 75"/>
-			</div>
-
 			<div class="bg-grey-lighten-1 mt-4">
 
 			</div>
