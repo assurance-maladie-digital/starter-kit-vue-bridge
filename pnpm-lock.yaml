@@ -1374,6 +1374,8 @@ packages:
     resolution: {integrity: sha512-ea8LBxb4SfUdxwMzkqR+AwFdVoSuzwZUjPBEib/GXg3tEFctlvAZDoHpC8F8zan4SPtcaKK4rSfwwf89X31UZg==}
     dev: false
 
+  /@cnamts/synapse-bridge@1.3.4-alpha.0(vue@3.4.21)(vuetify@3.5.14)(vuex@4.1.0):
+    resolution: {integrity: sha512-3V40q/eqEdsMlI45gd5lSuLMxpgyAST56qXPvD0tlwu+hv5x0K5c/v5Qs8xlItddlRwYNABzyMLx5LHxwChNAg==}
   /@cnamts/design-tokens@2.16.5:
     resolution: {integrity: sha512-P7flBJZhH2M8zTUGBqNU+FdICTAIv1M66ATNwdtRrm4iyGtlMQ21yFDGlyusvb/jCJQodVNGKPizS538eAkwyg==}
     dev: false

@@ -169,6 +169,9 @@
 					v-model="datePickerdate"
 					range
 				/>
+				<date-picker v-model="date" label="Date"  :rules="validRules"/>
+				<h3>Warning Rules</h3>
+				<date-picker v-model="date" label="Date" hint="defaultHint" :warning-rules="warningRules" outlined />
 			</div>
 			<h2>PeriodField</h2>
 			<div class="mt-4 my-4 d-flex justify-sm-space-around">
@@ -218,6 +221,9 @@
 <script lang="ts">
 import {defineComponent} from "vue";
 import { mapActions, mapGetters } from "vuex";
+import { required } from "@cnamts/synapse-bridge/rules/required";
+import { notAfterToday } from "@cnamts/synapse-bridge/rules/notAfterToday";
+import { notBeforeToday } from "@cnamts/synapse-bridge/rules/notBeforeToday";
 import dayjs from "dayjs";
 import {
 	PageContainer,
@@ -279,6 +285,9 @@ export default defineComponent({
 	},
 	data() {
 		return {
+			validRules: [required],
+			warningRules: [notAfterToday, notBeforeToday],
+			hint: 'Date de hint',
 			active: true,
 			dialog: false,
 			chipItems: [
@@ -288,13 +297,32 @@ export default defineComponent({
 			],
 			navigationItems: [
 				{
-					label: 'Error Page'
+					label: 'Home',
+					to: '/'
 				},
 				{
-					label: 'Mes projets'
+					label: 'Header',
+					to: '/header'
 				},
 				{
-					label: 'Mes outils'
+					label: 'Maintenance',
+					to: '/maintenance'
+				},
+				{
+					label: 'Error Page',
+					to: '/error'
+				},
+				{
+					label: 'Not Found Page',
+					to: '/not-found'
+				},
+				{
+					label: 'User Menu Btn',
+					to: '/user-menu-btn'
+				},
+				{
+					label: 'Dial Box',
+					to: '/dialog-box'
 				}
 			],
 			dataListItems: [

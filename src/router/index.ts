@@ -9,6 +9,36 @@ const routes = [
 		name: 'about',
 		component: () => import('@/views/TestInva.vue')
 	},
+	{
+		path: '/header',
+		name: 'header',
+		component: () => import('@/views/headers/HeadersPage.vue')
+	},
+	{
+		path: '/error',
+		name: 'error',
+		component: () => import('@/views/error/ErrorPage.vue')
+	},
+	{
+		path: '/maintenance',
+		name: 'maintenance',
+		component: () => import('@/views/maintenance/MaintenancePage.vue')
+	},
+	{
+		path: '/not-found',
+		name: 'not-found',
+		component: () => import('@/views/notFound/NotFoundPage.vue')
+	},
+	{
+		path: '/user-menu-btn',
+		name: 'user-menu-btn',
+		component: () => import('@/views/userMenuBtn/UserMenuBtnPage.vue')
+	},
+	{
+		path: '/dialog-box',
+		name: 'dialog-box',
+		component: () => import('@/views/dialogBox/DialogBoxPage.vue')
+	},
 ];
 
 export default routes;
