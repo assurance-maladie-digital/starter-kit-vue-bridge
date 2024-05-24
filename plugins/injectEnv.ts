@@ -4,7 +4,6 @@ export default defineNuxtPlugin({
 		async 'app:created'() {
 			await $fetch<Record<string, string>>('/json/config.env.json')
 				.then((res) => {
-					console.log(res);
 					for (const key in res) {
 						const config = useRuntimeConfig();
 						config.public[key] = res[key];
