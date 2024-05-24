@@ -128,6 +128,10 @@ export default defineComponent({
 					to: '/'
 				},
 				{
+					label: 'TestInva',
+					to: '/test-inva'
+				},
+				{
 					label: 'Header',
 					to: '/header'
 				},
@@ -154,6 +158,10 @@ export default defineComponent({
 				{
 					label: 'Nirfield',
 					to: '/nirfield'
+				},
+				{
+					label: 'NotifBar',
+					to: '/notification-bar'
 				}
 			],
 		}

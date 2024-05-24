@@ -107,6 +107,14 @@ export default defineComponent({
 		return {
 			navigationItems: [
 				{
+					label: 'Home',
+					to: '/'
+				},
+				{
+					label: 'TestInva',
+					to: '/test-inva'
+				},
+				{
 					label: 'Header',
 					to: '/header'
 				},
@@ -129,6 +137,14 @@ export default defineComponent({
 				{
 					label: 'Dial Box',
 					to: '/dialog-box'
+				},
+				{
+					label: 'Nirfield',
+					to: '/nirfield'
+				},
+				{
+					label: 'NotifBar',
+					to: '/notification-bar'
 				}
 			],
 		}

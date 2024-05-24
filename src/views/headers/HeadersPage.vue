@@ -193,6 +193,10 @@
 									to: '/'
 								},
 								{
+									label: 'TestInva',
+									to: '/test-inva'
+								},
+								{
 									label: 'Header',
 									to: '/header'
 								},
@@ -215,6 +219,14 @@
 								{
 									label: 'Dial Box',
 									to: '/dialog-box'
+								},
+								{
+									label: 'Nirfield',
+									to: '/nirfield'
+								},
+								{
+									label: 'NotifBar',
+									to: '/notification-bar'
 								}
 							],
 						}

@@ -2,9 +2,11 @@
 	<HeaderBar
 		service-title="Design System"
 		service-sub-title="Documentation du Design System"
+		:navigation-items="navigationItems"
 	/>
-	<p>Pour tester le changement de theme, il faut modifier la valeur theme dans le fichier : public/json/config.env.json (vuetify ou bootstrap)</p>
+	<p class="text-center">Pour tester le changement de theme, il faut modifier la valeur theme dans le fichier : public/json/config.env.json (vuetify ou bootstrap)</p>
 	<PageContainer>
+		<BackBtn to="/"/>
 		<h1 class="text-primary">{{ $config.public.title }}</h1>
 		<HelloWorld :msg="$config.public.message"/>
 		<VBtn color="primary">
@@ -66,14 +68,61 @@
 </template>
 
 <script lang="ts">
-import {PageContainer, HeaderBar, FooterBar, SubHeader} from "@cnamts/synapse-bridge";
+import {BackBtn, PageContainer, HeaderBar, FooterBar, SubHeader} from "@cnamts/synapse-bridge";
 
 export default defineNuxtComponent({
 	components: {
+		BackBtn,
 		PageContainer,
 		HeaderBar,
 		FooterBar,
 		SubHeader
+	},
+	data () {
+		return {
+			navigationItems: [
+				{
+					label: 'Home',
+					to: '/'
+				},
+				{
+					label: 'TestInva',
+					to: '/test-inva'
+				},
+				{
+					label: 'Header',
+					to: '/header'
+				},
+				{
+					label: 'Maintenance',
+					to: '/maintenance'
+				},
+				{
+					label: 'Error Page',
+					to: '/error'
+				},
+				{
+					label: 'Not Found Page',
+					to: '/not-found'
+				},
+				{
+					label: 'User Menu Btn',
+					to: '/user-menu-btn'
+				},
+				{
+					label: 'Dial Box',
+					to: '/dialog-box'
+				},
+				{
+					label: 'Nirfield',
+					to: '/nirfield'
+				},
+				{
+					label: 'NotifBar',
+					to: '/notification-bar'
+				}
+			],
+		}
 	}
 });
 </script>
