@@ -5,6 +5,7 @@
 		:navigation-items="navigationItems"
 	/>
 	<PageContainer>
+		<BackBtn to="/"/>
 		<ErrorPage
 			code="500"
 			message="La page ne fonctionne pas correctement."

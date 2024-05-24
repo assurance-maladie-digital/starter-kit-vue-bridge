@@ -5,6 +5,7 @@
 		:navigation-items="navigationItems"
 	/>
 	<PageContainer>
+		<BackBtn to="/"/>
 		<MaintenancePage />
 	</PageContainer>
 	<FooterBar
@@ -20,11 +21,6 @@
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import { mapActions, mapGetters } from "vuex";
-import { required } from "@cnamts/synapse-bridge/rules/required";
-import { notAfterToday } from "@cnamts/synapse-bridge/rules/notAfterToday";
-import { notBeforeToday } from "@cnamts/synapse-bridge/rules/notBeforeToday";
-import dayjs from "dayjs";
 import {
 	PageContainer,
 	HeaderBar,

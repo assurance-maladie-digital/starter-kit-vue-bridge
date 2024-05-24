@@ -39,6 +39,11 @@ const routes = [
 		name: 'dialog-box',
 		component: () => import('@/views/dialogBox/DialogBoxPage.vue')
 	},
+	{
+		path: '/nirfield',
+		name: 'nirfield',
+		component: () => import('@/views/nirfield/NirfieldPage.vue')
+	},
 ];
 
 export default routes;

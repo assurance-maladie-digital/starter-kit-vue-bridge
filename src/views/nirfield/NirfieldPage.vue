@@ -4,41 +4,48 @@
 		service-sub-title="Documentation du Design System"
 		:navigation-items="navigationItems"
 	/>
-	<PageContainer class="h-35">
+	<PageContainer>
 		<BackBtn to="/"/>
-		<div class="d-flex justify-sm-space-between">
-			<UserMenuBtn
-				additional-information="Information supplémentaire"
-				full-name="Virginie Beauchesne"
-			/>
-			<UserMenuBtn full-name="Édith Cartier">
-				<VListItem
-					v-for="(item, index) in items"
-					:key="index"
-				>
-					<VListItemTitle>{{ item }}</VListItemTitle>
-				</VListItem>
-			</UserMenuBtn>
-			<br/><br/>
-			<UserMenuBtn
-				additional-information="Information supplémentaire"
-				full-name="Virginie Beauchesne"
-				mobile-version
-			/>
-			<br/><br/>
-			<UserMenuBtn
-				:vuetify-options="vuetifyOptionsUserMenuBtn"
-				full-name="Édith Cartier"
-			>
-				<VListItem
-					v-for="(item, index) in items"
-					:key="index"
-				>
-					<VListItemTitle>{{ item }}</VListItemTitle>
-				</VListItem>
-			</UserMenuBtn>
-
-		</div>
+		<v-row>
+			<v-col cols="6">
+				<NirField
+					:nir-length="13"
+					outlined
+					required
+					tooltip="Tooltip infos"
+				/>
+				<NirField
+					:nir-length="13"
+					required
+					tooltip="Tooltip infos"
+				/>
+				<NirField
+					:nir-length="13"
+					tooltip="Tooltip infos"
+				/>
+				<NirField
+					@update:model-value="getValue"
+					:nir-length="13"
+				/>
+				Value: {{ value }}
+			</v-col>
+			<v-col cols="6">
+				<NirField
+					required
+					tooltip="Tooltip infos"
+					outlined
+				/>
+				<NirField
+					required
+					tooltip="Tooltip infos"
+				/>
+				<NirField
+					tooltip="Tooltip infos"
+				/>
+				<NirField @update:model-value="getValue" />
+				<p>Value:{{ value }}</p>
+			</v-col>
+		</v-row>
 	</PageContainer>
 	<FooterBar
 		hide-a11y-link
@@ -53,8 +60,6 @@
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import { mapActions, mapGetters } from "vuex";
-import dayjs from "dayjs";
 import {
 	PageContainer,
 	HeaderBar,
@@ -81,11 +86,12 @@ import {
 	NotFoundPage,
 	PasswordField,
 	DatePicker,
-	PeriodField
+	PeriodField, NirField
 } from "@cnamts/synapse-bridge";
 
 export default defineComponent({
 	components: {
+		NirField,
 		PageContainer,
 		HeaderBar,
 		FooterBar,
@@ -115,26 +121,7 @@ export default defineComponent({
 	},
 	data() {
 		return {
-			items: [
-				'Administration',
-				'Profil',
-				'Paramètres'
-			],
-			vuetifyOptionsUserMenuBtn: {
-				menu: {
-					minWidth: '264px',
-					maxWidth: '264px'
-				},
-				btn: {
-					variant: 'outlined',
-				},
-				icon: {
-					color: 'primary'
-				},
-				logoutIcon: {
-					class: 'd-none'
-				}
-			},
+			value: "",
 			navigationItems: [
 				{
 					label: 'Home',
@@ -163,6 +150,10 @@ export default defineComponent({
 				{
 					label: 'Dial Box',
 					to: '/dialog-box'
+				},
+				{
+					label: 'Nirfield',
+					to: '/nirfield'
 				}
 			],
 		}
@@ -170,6 +161,9 @@ export default defineComponent({
 	computed: {
 	},
 	methods: {
+		getValue(event: string) {
+			this.value = event;
+		},
 	}
 });
 </script>

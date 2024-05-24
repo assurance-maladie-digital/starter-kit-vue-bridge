@@ -323,6 +323,10 @@ export default defineComponent({
 				{
 					label: 'Dial Box',
 					to: '/dialog-box'
+				},
+				{
+					label: 'Nirfield',
+					to: '/nirfield'
 				}
 			],
 			dataListItems: [

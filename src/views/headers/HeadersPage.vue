@@ -5,6 +5,7 @@
 		service-title="Design System"
 	/>
 	<PageContainer>
+		<BackBtn to="/"/>
 		<HeaderBar/>
 		<HeaderBar>
 			<template #brand-content>
