@@ -1,9 +1,5 @@
 <template>
-	<HeaderBar
-		:navigation-items="navigationItems"
-		service-sub-title="Documentation du Design System"
-		service-title="Design System"
-	/>
+	<AppHeader/>
 	<PageContainer>
 		<BackBtn to="/"/>
 		<div class="d-flex justify-sm-space-around">
@@ -103,9 +99,11 @@ import {
 	SubHeader,
 	UserMenuBtn
 } from "@cnamts/synapse-bridge";
+import AppHeader from "@/views/commons/AppHeader.vue";
 
 export default defineComponent({
 	components: {
+		AppHeader,
 		PageContainer,
 		HeaderBar,
 		FooterBar,
@@ -143,56 +141,6 @@ export default defineComponent({
 				{text: 'Item 1', value: 'item1'},
 				{text: 'Item 2', value: 'item2'},
 				{text: 'Item 3', value: 'item3'},
-			],
-			navigationItems: [
-				{
-					label: 'Home',
-					to: '/'
-				},
-				{
-					label: 'TestInva',
-					to: '/test-inva'
-				},
-				{
-					label: 'Header',
-					to: '/header'
-				},
-				{
-					label: 'Maintenance',
-					to: '/maintenance'
-				},
-				{
-					label: 'Error Page',
-					to: '/error'
-				},
-				{
-					label: 'Not Found Page',
-					to: '/not-found'
-				},
-				{
-					label: 'Btns',
-					to: '/user-menu-btn'
-				},
-				{
-					label: 'Dial Box',
-					to: '/dialog-box'
-				},
-				{
-					label: 'Nirfield',
-					to: '/nirfield'
-				},
-				{
-					label: 'NotifBar',
-					to: '/notification-bar'
-				},
-				{
-					label: 'Period Field',
-					to: '/period-field'
-				},
-				{
-					label: 'DatePicker',
-					to: '/date-picker'
-				}
 			],
 			dataListItems: [
 				{

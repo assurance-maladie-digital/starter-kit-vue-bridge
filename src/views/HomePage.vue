@@ -1,9 +1,5 @@
 <template>
-	<HeaderBar
-		service-title="Design System"
-		service-sub-title="Documentation du Design System"
-		:navigation-items="navigationItems"
-	/>
+<AppHeader/>
 	<SubHeader
 		hide-back-btn
 		title-text="Welcome !"
@@ -122,9 +118,11 @@ import {
 	DatePicker,
 	PeriodField
 } from "@cnamts/synapse-bridge";
+import AppHeader from "@/views/commons/AppHeader.vue";
 
 export default defineComponent({
 	components: {
+		AppHeader,
 		PageContainer,
 		HeaderBar,
 		FooterBar,
@@ -163,64 +161,6 @@ export default defineComponent({
 				{text: 'Item 1', value: 'item1'},
 				{text: 'Item 2', value: 'item2'},
 				{text: 'Item 3', value: 'item3'},
-			],
-			navigationItems: [
-				{
-					label: 'Home',
-					to: '/'
-				},
-				{
-					label: 'TestInva',
-					to: '/test-inva'
-				},
-				{
-					label: 'Header',
-					to: '/header'
-				},
-				{
-					label: 'Maintenance',
-					to: '/maintenance'
-				},
-				{
-					label: 'Error Page',
-					to: '/error'
-				},
-				{
-					label: 'Not Found Page',
-					to: '/not-found'
-				},
-				{
-					label: 'Btns',
-					to: '/user-menu-btn'
-				},
-				{
-					label: 'Dial Box',
-					to: '/dialog-box'
-				},
-				{
-					label: 'Nirfield',
-					to: '/nirfield'
-				},
-				{
-					label: 'NotifBar',
-					to: '/notification-bar'
-				},
-				{
-					label: 'Period Field',
-					to: '/period-field'
-				},
-				{
-					label: 'DatePicker',
-					to: '/date-picker'
-				},
-				{
-					label:'DataList',
-					to:'/data-list'
-				},
-				{
-					label:'Cookie Banner',
-					to:'/cookie-banner'
-				}
 			],
 			dataListItems: [
 				{

@@ -1,12 +1,8 @@
 <template>
-	<HeaderBar
-		service-title="Design System"
-		service-sub-title="Documentation du Design System"
-		:navigation-items="navigationItems"
-	/>
 	<PageContainer>
 		<BackBtn to="/"/>
-		<v-row>
+		<AppHeader/>
+		<v-row class="mx-12 my-12">
 			<v-col cols="6">
 				<NirField
 					:nir-length="13"
@@ -88,9 +84,11 @@ import {
 	DatePicker,
 	PeriodField, NirField
 } from "@cnamts/synapse-bridge";
+import AppHeader from "@/views/commons/AppHeader.vue";
 
 export default defineComponent({
 	components: {
+		AppHeader,
 		NirField,
 		PageContainer,
 		HeaderBar,
@@ -122,48 +120,6 @@ export default defineComponent({
 	data() {
 		return {
 			value: "",
-			navigationItems: [
-				{
-					label: 'Home',
-					to: '/'
-				},
-				{
-					label: 'TestInva',
-					to: '/test-inva'
-				},
-				{
-					label: 'Header',
-					to: '/header'
-				},
-				{
-					label: 'Maintenance',
-					to: '/maintenance'
-				},
-				{
-					label: 'Error Page',
-					to: '/error'
-				},
-				{
-					label: 'Not Found Page',
-					to: '/not-found'
-				},
-				{
-					label: 'Btns',
-					to: '/user-menu-btn'
-				},
-				{
-					label: 'Dial Box',
-					to: '/dialog-box'
-				},
-				{
-					label: 'Nirfield',
-					to: '/nirfield'
-				},
-				{
-					label: 'NotifBar',
-					to: '/notification-bar'
-				}
-			],
 		}
 	},
 	computed: {

@@ -1,11 +1,24 @@
 <template>
-	<HeaderBar
-		service-title="Design System"
-		service-sub-title="Documentation du Design System"
-		:navigation-items="navigationItems"
-	/>
+	<AppHeader/>
 	<PageContainer class="h-35">
 		<BackBtn to="/"/>
+		<h2>Back Btn</h2>
+		<div class="d-flex justify-sm-space-between">
+			<BackBtn />
+			<VSheet color="primary" class="pa-4">
+				<BackBtn dark />
+			</VSheet>
+
+			<BackBtn>
+				<template #default> Précédent </template>
+
+				<template #icon>
+					<VIcon>
+						{{ backIcon }}
+					</VIcon>
+				</template>
+			</BackBtn>
+		</div>
 		<h2>User Menu Btn</h2>
 		<div class="d-flex justify-sm-space-between">
 			<UserMenuBtn
@@ -111,6 +124,7 @@
 
 <script lang="ts">
 import {defineComponent} from "vue";
+import { mdiContentDuplicate, mdiChevronLeft } from "@mdi/js";
 import {
 	PageContainer,
 	HeaderBar,
@@ -139,9 +153,11 @@ import {
 	DatePicker,
 	PeriodField
 } from "@cnamts/synapse-bridge";
+import AppHeader from "@/views/commons/AppHeader.vue";
 
 export default defineComponent({
 	components: {
+		AppHeader,
 		PageContainer,
 		HeaderBar,
 		FooterBar,
@@ -171,6 +187,7 @@ export default defineComponent({
 	},
 	data() {
 		return {
+			backIcon:mdiChevronLeft,
 			items: [
 				'Administration',
 				'Profil',
@@ -203,48 +220,6 @@ export default defineComponent({
 					class: 'd-none'
 				}
 			},
-			navigationItems: [
-				{
-					label: 'Home',
-					to: '/'
-				},
-				{
-					label: 'TestInva',
-					to: '/test-inva'
-				},
-				{
-					label: 'Header',
-					to: '/header'
-				},
-				{
-					label: 'Maintenance',
-					to: '/maintenance'
-				},
-				{
-					label: 'Error Page',
-					to: '/error'
-				},
-				{
-					label: 'Not Found Page',
-					to: '/not-found'
-				},
-				{
-					label: 'Btns',
-					to: '/user-menu-btn'
-				},
-				{
-					label: 'Dial Box',
-					to: '/dialog-box'
-				},
-				{
-					label: 'Nirfield',
-					to: '/nirfield'
-				},
-				{
-					label: 'NotifBar',
-					to: '/notification-bar'
-				}
-			],
 		}
 	},
 	computed: {

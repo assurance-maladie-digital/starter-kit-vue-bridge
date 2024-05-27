@@ -1,9 +1,5 @@
 <template>
-	<HeaderBar
-		service-title="Design System"
-		service-sub-title="Documentation du Design System"
-		:navigation-items="navigationItems"
-	/>
+	<AppHeader/>
 	<PageContainer>
 		<BackBtn to="/"/>
 		<div class="d-flex flex-wrap align-center justify-center ma-n2">
@@ -94,9 +90,11 @@ import {
 	PeriodField
 } from "@cnamts/synapse-bridge";
 import {mapActions, mapGetters} from "vuex";
+import AppHeader from "@/views/commons/AppHeader.vue";
 
 export default defineComponent({
 	components: {
+		AppHeader,
 		PageContainer,
 		HeaderBar,
 		FooterBar,
@@ -126,48 +124,6 @@ export default defineComponent({
 	},
 	data() {
 		return {
-			navigationItems: [
-				{
-					label: 'Home',
-					to: '/'
-				},
-				{
-					label: 'TestInva',
-					to: '/test-inva'
-				},
-				{
-					label: 'Header',
-					to: '/header'
-				},
-				{
-					label: 'Maintenance',
-					to: '/maintenance'
-				},
-				{
-					label: 'Error Page',
-					to: '/error'
-				},
-				{
-					label: 'Not Found Page',
-					to: '/not-found'
-				},
-				{
-					label: 'Btns',
-					to: '/user-menu-btn'
-				},
-				{
-					label: 'Dial Box',
-					to: '/dialog-box'
-				},
-				{
-					label: 'Nirfield',
-					to: '/nirfield'
-				},
-				{
-					label: 'NotifBar',
-					to: '/notification-bar'
-				}
-			],
 		}
 	},
 	computed: {
