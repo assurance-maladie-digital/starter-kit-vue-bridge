@@ -85,7 +85,24 @@
 					</h3>
 				</template>
 			</DataList>
-
+		</div>
+		<div>
+			<h2> DataList group</h2>
+			<DataListGroup
+				:items="itemsList"
+				:icons="iconsList"
+				@click:list-item="updateBirthdate"
+			/>
+			<br /><br />
+			<DataListGroup
+				:items="itemsList"
+				item-width="300px"
+			/>
+			<br /><br />
+			<DataListGroup
+				:items="itemsList"
+				loading
+			/>
 		</div>
 	</PageContainer>
 	<FooterBar
@@ -101,7 +118,7 @@
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import { mdiCalendar, mdiAccount, mdiInformationOutline } from '@mdi/js'
+import { mdiCalendar, mdiAccount, mdiInformationOutline, mdiDoctor, mdiCardAccountDetails, mdiPencil } from '@mdi/js'
 import {
 	PageContainer,
 	HeaderBar,
@@ -325,6 +342,63 @@ export default defineComponent({
 					action: 'Modifier',
 				},
 			],
+			itemsList: [
+				{
+					title: 'Informations patient',
+					items: [
+						{
+							key: 'Nom',
+							value: 'Dupont',
+							icon: 'accountIcon',
+							chip: true
+						},
+						{
+							key: 'Prénom',
+							value: 'Paul',
+							icon: 'accountIcon'
+						},
+						{
+							key: 'Date de naissance',
+							value: '24/09/1970',
+							icon: 'calendarIcon',
+							action: 'Modifier'
+						}
+					]
+				},
+				{
+					title: 'Médecin traitant',
+					items: [
+						{
+							key: 'Nom du praticien',
+							value: 'Gérard Leblanc',
+							icon: 'doctorIcon'
+						},
+
+						{
+							key: 'N° RPPS',
+							value: 'XXXXX',
+							icon: 'cardAccountIcon'
+						}
+					]
+				},
+				{
+					title: 'Autres informations',
+					items: [
+						{
+							key: 'Dernière modification',
+							value: '04/06/2020',
+							icon: 'editIcon'
+						}
+					]
+				}
+			],
+			iconsList: {
+				calendarIcon: mdiCalendar,
+				accountIcon: mdiAccount,
+				doctorIcon: mdiDoctor,
+				cardAccountIcon: mdiCardAccountDetails,
+				editIcon: mdiPencil
+			}
 		}
 	},
 	computed: {

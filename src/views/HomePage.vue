@@ -11,14 +11,6 @@
 	<PageContainer>
 		<div>
 			<div class="bg-grey-lighten-1">
-				<h2>DataList</h2>
-				<DataList :items="dataListItems"></DataList>
-			</div>
-			<div class="ml-4">
-				<h2>DataListGroup</h2>
-				<DataListGroup :items="dataListGroupItems"></DataListGroup>
-			</div>
-			<div class="bg-grey-lighten-1">
 				<h2>FooterWrapper</h2>
 				<FooterWrapper>
 					<VBtn variant="tonal" class="mr-6">
