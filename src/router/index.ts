@@ -59,6 +59,11 @@ const routes = [
 		name: 'date-picker',
 		component: () => import('@/views/datePicker/DatePickerPage.vue')
 	},
+	{
+		path: '/data-list',
+		name: 'data-list',
+		component: () => import('@/views/dataList/dataListPage.vue')
+	},
 ];
 
 export default routes;

@@ -220,6 +220,10 @@ export default defineComponent({
 				{
 					label: 'DatePicker',
 					to: '/date-picker'
+				},
+				{
+					label:'DataList',
+					to:'/data-list'
 				}
 			],
 			dataListItems: [
