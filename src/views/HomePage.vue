@@ -216,6 +216,10 @@ export default defineComponent({
 				{
 					label:'DataList',
 					to:'/data-list'
+				},
+				{
+					label:'Cookie Banner',
+					to:'/cookie-banner'
 				}
 			],
 			dataListItems: [

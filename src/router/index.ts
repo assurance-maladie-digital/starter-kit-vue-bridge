@@ -64,6 +64,11 @@ const routes = [
 		name: 'data-list',
 		component: () => import('@/views/dataList/dataListPage.vue')
 	},
+	{
+		path: '/cookie-banner',
+		name: 'cookie-banner',
+		component: () => import('@/views/cookieBanner/cookieBannerPage.vue')
+	},
 ];
 
 export default routes;
