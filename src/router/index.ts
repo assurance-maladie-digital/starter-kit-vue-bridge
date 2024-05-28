@@ -69,6 +69,16 @@ const routes = [
 		name: 'cookie-banner',
 		component: () => import('@/views/cookieBanner/cookieBannerPage.vue')
 	},
+	{
+		path: '/password-field',
+		name: 'password-field',
+		component: () => import('@/views/password/PasswordPage.vue')
+	},
+	{
+		path:'/colors',
+		name:'colors',
+		component: () => import('@/views/colors/ColorsPage.vue')
+	}
 ];
 
 export default routes;

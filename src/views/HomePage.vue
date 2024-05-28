@@ -1,75 +1,31 @@
 <template>
 <AppHeader/>
-	<SubHeader
-		hide-back-btn
-		title-text="Welcome !"
-		sub-title-text="1 69 08 75 125 456 75"/>
+<!--	<SubHeader-->
+  <!--		hide-back-btn-->
+  <!--		title-text="Welcome !"-->
+  <!--		sub-title-text="1 69 08 75 125 456 75"/>-->
 	<PageContainer>
 		<div>
-			<div class="bg-grey-lighten-1">
-				<h2>FooterWrapper</h2>
-				<FooterWrapper>
-					<VBtn variant="tonal" class="mr-6">
-						Mentions légales
-					</VBtn>
-
-					<VBtn variant="tonal" class="mr-6">
-						CGU
-					</VBtn>
-
-					<VBtn variant="tonal" inert>
-						Version 1.0.0
-					</VBtn>
-				</FooterWrapper>
-			</div>
-			<div class="bg-grey-lighten-1 mt-4">
-
-			</div>
-			<div class="mt-4">
-				<h2>Logo</h2>
-				<Logo/>
-			</div>
-			<div class="bg-grey-lighten-1 mt-4 my-4">
-				<h2>HeaderLoading</h2>
-				<HeaderLoading width="300px" height="30px"/>
-			</div>
-			<div class="bg-grey-lighten-1">
-				<h2>CookieBanner</h2>
-				<div class="d-flex flex-wrap align-center justify-center">
-					<CookieBanner
-						v-if="active"
-						cookies-route=""
-						@reject="active = false"
-						@accept="active = false"
-					/>
-
-					<VBtn
-						v-if="!active"
-						color="primary"
-						@click="active = true"
-					>
-						Réinitialiser
-					</VBtn>
-				</div>
-			</div>
-			<div class="mt-4 my-4">
-				<h2>Logo Brand Section</h2>
-				<LogoBrandSection
-					service-sub-title="Documentation du Design System"
-					service-title="Design System"
-				/>
-			</div>
-			<div class="mt-4 my-4 bg-grey-lighten-1">
-				<h2>ChipList</h2>
-				<ChipList :items="chipItems"/>
-			</div>
-			<div class="mt-4 my-4">
-				<h2>PasswordField</h2>
-				<PasswordField
-					v-model="password"
-					@update:model-value="getValue($event)"
-				/>
-			</div>
+			<img src="../views/assets/images/synapse.webp" alt="Synapse design system illustration"/>
+<!--			<div class="mt-4">-->
+<!--				<h2>Logo</h2>-->
+<!--				<Logo/>-->
+<!--			</div>-->
+<!--			<div class="bg-grey-lighten-1 mt-4 my-4">-->
+<!--				<h2>HeaderLoading</h2>-->
+<!--				<HeaderLoading width="300px" height="30px"/>-->
+<!--			</div>-->
+<!--			<div class="mt-4 my-4">-->
+<!--				<h2>Logo Brand Section</h2>-->
+<!--				<LogoBrandSection-->
+<!--					service-sub-title="Documentation du Design System"-->
+<!--					service-title="Design System"-->
+<!--				/>-->
+<!--			</div>-->
+<!--			<div class="mt-4 my-4 bg-grey-lighten-1">-->
+<!--				<h2>ChipList</h2>-->
+<!--				<ChipList :items="chipItems"/>-->
+<!--			</div>-->
 		</div>
 	</PageContainer>
 	<FooterBar
@@ -81,6 +37,19 @@
 	>
 		<p class="text-secondary mb-0">Contenu supplémentaire.</p>
 	</FooterBar>
+	<FooterWrapper>
+		<VBtn variant="tonal" class="mr-6">
+			Mentions légales
+		</VBtn>
+
+		<VBtn variant="tonal" class="mr-6">
+			CGU
+		</VBtn>
+
+		<VBtn variant="tonal" inert>
+			Version 1.0.0
+		</VBtn>
+	</FooterWrapper>
 </template>
 
 <script lang="ts">

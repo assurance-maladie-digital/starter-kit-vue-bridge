@@ -13,6 +13,10 @@ import { HeaderBar } from "@cnamts/synapse-bridge";
 		 to: '/'
 	 },
 	 {
+		 label: 'Colors/Heading',
+		 to: '/colors'
+	 },
+	 {
 		 label: 'TestInva',
 		 to: '/test-inva'
 	 },
@@ -63,6 +67,10 @@ import { HeaderBar } from "@cnamts/synapse-bridge";
 	 {
 		 label:'Cookie Banner',
 		 to:'/cookie-banner'
+	 },
+	 {
+		 label: 'Password Field',
+		 to: '/password-field'
 	 }
  ]
 
