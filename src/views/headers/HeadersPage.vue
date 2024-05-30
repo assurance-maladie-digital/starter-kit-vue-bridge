@@ -1,9 +1,5 @@
 <template>
-	<HeaderBar
-		:navigation-items="navigationItems"
-		service-sub-title="Documentation du Design System"
-		service-title="Design System"
-	/>
+	<AppHeader/>
 	<div>
 		<BackBtn class="left-0" to="/"/>
 	</div>
@@ -115,6 +111,7 @@
 
 				<script lang="ts">
 				import {defineComponent} from "vue";
+				import AppHeader from "@/views/commons/AppHeader.vue";
 				import {
 					BackBtn,
 					BackToTopBtn,
@@ -146,6 +143,7 @@
 
 				export default defineComponent({
 					components: {
+						AppHeader,
 						PageContainer,
 						HeaderBar,
 						FooterBar,
