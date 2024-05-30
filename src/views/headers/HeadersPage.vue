@@ -4,9 +4,9 @@
 		service-sub-title="Documentation du Design System"
 		service-title="Design System"
 	/>
-	<PageContainer>
-		<BackBtn to="/"/>
-		<HeaderBar/>
+	<div>
+		<BackBtn class="left-0" to="/"/>
+	</div>
 		<HeaderBar>
 			<template #brand-content>
 				<h1 class="text-caption text-md-h6 font-weight-medium text-green">
@@ -27,8 +27,7 @@
 					Pharmacies de garde
 				</h1>
 			</template>
-		</HeaderBar>-->
-		<HeaderBar :navigation-items="navigationItems" />
+		</HeaderBar>
 		<HeaderBar
 						:navigation-items="navigationItems"
 						mobile-version
@@ -103,7 +102,6 @@
 		<p>
 			{{ generateFakeWords(4000) }}
 		</p>
-					</PageContainer>
 					<FooterBar
 						hide-a11y-link
 						hide-cgu-link
