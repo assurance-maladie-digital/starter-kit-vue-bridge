@@ -183,48 +183,6 @@
 									rounded: true,
 								}
 							},
-							navigationItems: [
-								{
-									label: 'Home',
-									to: '/'
-								},
-								{
-									label: 'TestInva',
-									to: '/test-inva'
-								},
-								{
-									label: 'Header',
-									to: '/header'
-								},
-								{
-									label: 'Maintenance',
-									to: '/maintenance'
-								},
-								{
-									label: 'Error Page',
-									to: '/error'
-								},
-								{
-									label: 'Not Found Page',
-									to: '/not-found'
-								},
-								{
-									label: 'Btns',
-									to: '/user-menu-btn'
-								},
-								{
-									label: 'Dial Box',
-									to: '/dialog-box'
-								},
-								{
-									label: 'Nirfield',
-									to: '/nirfield'
-								},
-								{
-									label: 'NotifBar',
-									to: '/notification-bar'
-								}
-							],
 						}
 					},
 					computed: {
