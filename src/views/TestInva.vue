@@ -1,9 +1,16 @@
 <template>
-	<HeaderBar
-		service-title="Design System"
-		service-sub-title="Documentation du Design System"
-	/>
+	<AppHeader/>
+	<V-Alert
+		class="mx-6 my-4"
+		border="start"
+		color="primary"
+		title="Changement de theme"
+		variant="tonal"
+	>
+	<p>Pour tester le changement de theme, il faut modifier la valeur theme dans le fichier : public/json/config.env.json (vuetify ou bootstrap)</p>
+	</V-Alert>
 	<PageContainer>
+		<BackBtn to="/"/>
 		<h1 class="text-primary">{{ $config.public.title }}</h1>
 		<HelloWorld :msg="$config.public.message"/>
 		<VBtn color="primary">
@@ -65,15 +72,24 @@
 </template>
 
 <script lang="ts">
-import {PageContainer, HeaderBar, FooterBar, SubHeader} from "@cnamts/synapse-bridge";
-
+import {BackBtn, PageContainer, HeaderBar, FooterBar, SubHeader} from "@cnamts/synapse-bridge";
+import AppHeader from "@/views/commons/AppHeader.vue";
 export default defineNuxtComponent({
 	components: {
+		AppHeader,
+		BackBtn,
 		PageContainer,
 		HeaderBar,
 		FooterBar,
 		SubHeader
-	}
+	},
+	data () {
+		return {
+			theme: 'bootstrap', // default theme
+		}
+	},
+	methods: {
+	},
 });
 </script>
 
