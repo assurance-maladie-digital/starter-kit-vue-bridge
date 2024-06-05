@@ -2,7 +2,6 @@ import 'vuetify/styles';
 import { createVuetify } from 'vuetify';
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg';
 import { colorTheme, colorBoostrapTheme } from '@cnamts/design-tokens/src/colors';
-
 export default defineNuxtPlugin(async (nuxtApp) => {
 	const theme = await $fetch<Record<string, string>>('/json/config.env.json').then((res) => res.theme);
 	const vuetify = createVuetify({
@@ -23,6 +22,10 @@ export default defineNuxtPlugin(async (nuxtApp) => {
 			},
 		},
 	});
+
+	if (theme === 'bootstrap') {
+		document.body.classList.add('bootstrap');
+	}
 
 	nuxtApp.vueApp.use(vuetify);
 });
