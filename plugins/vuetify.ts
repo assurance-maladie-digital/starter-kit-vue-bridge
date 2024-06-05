@@ -22,7 +22,6 @@ export default defineNuxtPlugin(async (nuxtApp) => {
 			},
 		},
 	});
-	// document.body.style.fontFamily = theme === 'bootstrap' ? fontBoostrapTheme : fontTheme;
 
 	if (theme === 'bootstrap') {
 		document.body.classList.add('bootstrap');
