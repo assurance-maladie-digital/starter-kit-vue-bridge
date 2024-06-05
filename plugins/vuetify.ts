@@ -5,7 +5,7 @@ import { colorTheme, colorBoostrapTheme } from '@cnamts/design-tokens/src/colors
 export default defineNuxtPlugin(async (nuxtApp) => {
 	const theme = await $fetch<Record<string, string>>('/json/config.env.json').then((res) => res.theme);
 	const fontTheme = 'Source_Sans_3, sans-serif';
-	const fontBoostrapTheme =  'Tahoma, Helvetica neue, sans serif';
+	const fontBoostrapTheme =  'Calibri, sans-serif';
 	const vuetify = createVuetify({
 		ssr: true,
 		icons: {
