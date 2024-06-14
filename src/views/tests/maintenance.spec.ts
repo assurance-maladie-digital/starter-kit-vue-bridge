@@ -1,0 +1,20 @@
+import { shallowMount } from '@vue/test-utils';
+
+import Maintenance from '../maintenance.vue';
+import { vuetify } from '../../../tests/unit/setup';
+
+describe('maintenance page should render', () => {
+	it('should render', () => {
+		const wrapper = shallowMount(Maintenance,{
+			global: {
+				plugins: [
+					vuetify,
+				],
+			},
+		});
+		expect(wrapper.html()).toMatchSnapshot();
+
+		const h2Text = wrapper.find('h2').text();
+		expect(h2Text).toContain('Maintenance en cours');
+	});
+});
