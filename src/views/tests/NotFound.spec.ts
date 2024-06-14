@@ -1,11 +1,11 @@
 import { shallowMount } from '@vue/test-utils';
 
-import TestInva from '../testinva.vue';
+import NotFound from '../NotFound.vue';
 import { vuetify } from '../../../tests/unit/setup';
 
-describe('test inva page should render', () => {
+describe('not found page should render', () => {
 	it('should render', () => {
-		const wrapper = shallowMount(TestInva,{
+		const wrapper = shallowMount(NotFound,{
 			global: {
 				plugins: [
 					vuetify,
@@ -14,7 +14,7 @@ describe('test inva page should render', () => {
 		});
 		expect(wrapper.html()).toMatchSnapshot();
 
-		const h1Text = wrapper.find('h1').text();
-		expect(h1Text).toContain('Accueil');
+		const h2Text = wrapper.find('h2').text();
+		expect(h2Text).toContain('Page non trouvée');
 	});
 });

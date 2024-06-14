@@ -1,11 +1,11 @@
 import { shallowMount } from '@vue/test-utils';
 
-import NotFound from '../notfound.vue';
+import Tokens from '../Tokens.vue';
 import { vuetify } from '../../../tests/unit/setup';
 
-describe('not found page should render', () => {
+describe('tokens page should render', () => {
 	it('should render', () => {
-		const wrapper = shallowMount(NotFound,{
+		const wrapper = shallowMount(Tokens,{
 			global: {
 				plugins: [
 					vuetify,
@@ -14,7 +14,7 @@ describe('not found page should render', () => {
 		});
 		expect(wrapper.html()).toMatchSnapshot();
 
-		const h2Text = wrapper.find('h2').text();
-		expect(h2Text).toContain('Page non trouvée');
+		const h1Text = wrapper.find('h1').text();
+		expect(h1Text).toContain('Tokens');
 	});
 });

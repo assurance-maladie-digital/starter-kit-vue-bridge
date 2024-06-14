@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils';
 
-import Maintenance from '../maintenance.vue';
+import Maintenance from '../Maintenance.vue';
 import { vuetify } from '../../../tests/unit/setup';
 
 describe('maintenance page should render', () => {
