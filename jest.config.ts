@@ -10,14 +10,20 @@ const config: Config.InitialOptions = {
 		'<rootDir>/tests/unit/**/*.spec.ts'
 	],
 	moduleNameMapper: {
-		'^@/(.*)$': '<rootDir>/$1'
+		'^@/(.*)$': '<rootDir>/$1',
+		"^vuetify/lib$": "vuetify",
 	},
 	transform: {
-		'^.+\\.(js)$': 'babel-jest',
+		'^.+\\.(mjs)$': 'babel-jest',
+		'^.+\\.(js | jsx)$': 'babel-jest',
 		'^.+\\.(ts)$': 'ts-jest',
 		'^.+\\.(css|scss|png|jpg|svg)$': 'jest-transform-stub',
 		'^.+\\.(vue)$': '@vue/vue3-jest'
 	},
+	transformIgnorePatterns: [
+		'node_modules/(?!(vuetify)/)',
+		'node_modules/(?!(vite-plugin-vuetify)/)',
+	],
 	coverageReporters: [
 		'text',
 		'html',
@@ -45,7 +51,10 @@ const config: Config.InitialOptions = {
 	],
 	globals: {
 		API_URL: 'http://localhost:8080'
-	}
+	},
+	setupFilesAfterEnv: [
+		'<rootDir>/tests/unit/setup.ts'
+	],
 };
 
 export default config;
