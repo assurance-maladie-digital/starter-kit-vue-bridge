@@ -1,6 +1,6 @@
 <template>
 	<NotFoundPage
-		:key="$route.fullPath"
+		:key="route?.fullPath"
 		class="mb-6"
 	/>
 	<PageContainer
@@ -17,13 +17,18 @@
 </template>
 
 <script lang="ts">
-import {defineComponent} from "vue";
-import {PageContainer, NotFoundPage} from "@cnamts/synapse-bridge";
+import { defineComponent } from "vue";
+import { PageContainer, NotFoundPage } from "@cnamts/synapse-bridge";
 
 export default defineComponent({
 	components: {
 		PageContainer,
 		NotFoundPage
+	},
+	data() {
+	  return {
+			route: this.$route
+		};
 	},
 	methods: {
 		setSupportId(): void {

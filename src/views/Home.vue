@@ -1,5 +1,5 @@
 <template>
-	<h1 class="text-primary">{{ $config && $config.public ? $config.public.title : 'Accueil' }}</h1>
+	<h1 class="text-primary">{{ config ? config.title : 'Accueil' }}</h1>
 	<div class="mt-6 mb-12 d-flex align-center justify-center">
 		<VCard width="695" variant="tonal" class="d-flex">
 			<img src="/starter-kit.svg" alt="Starter kit"/>
@@ -18,7 +18,7 @@
 					Exemple de composant Nuxt
 				</v-card-title>
 				<v-card-item>
-					<HelloWorld :msg="$config && $config.public ? $config.public.message : 'Bonjour'"/>
+					<HelloWorld :msg="config ? config.message : 'Bonjour'"/>
 				</v-card-item>
 			</v-card>
 		</v-col>
@@ -49,10 +49,16 @@
 import {defineComponent} from "vue";
 import { BackBtn } from "@cnamts/synapse-bridge";
 import HelloWorld from "@/components/HelloWorld/HelloWorld.vue";
+import config from "../../public/json/config.env.json";
 export default defineComponent({
 	components: {
 		HelloWorld,
 		BackBtn
+	},
+	data() {
+		return {
+			config
+		};
 	}
 });
 </script>

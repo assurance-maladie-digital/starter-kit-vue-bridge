@@ -1,6 +1,7 @@
 import type { Config } from '@jest/types';
 
 const config: Config.InitialOptions = {
+	preset: 'ts-jest',
 	testEnvironment: 'jsdom',
 	testEnvironmentOptions: {
 		customExportConditions: ['node', 'node-addons']
@@ -10,20 +11,16 @@ const config: Config.InitialOptions = {
 		'<rootDir>/tests/unit/**/*.spec.ts'
 	],
 	moduleNameMapper: {
-		'^@/(.*)$': '<rootDir>/$1',
-		"^vuetify/lib$": "vuetify",
+		'^@/(.*)$': '<rootDir>/src/$1',
+		'^vuetify/lib$': 'vuetify',
 	},
 	transform: {
-		'^.+\\.(mjs)$': 'babel-jest',
-		'^.+\\.(js | jsx)$': 'babel-jest',
-		'^.+\\.(ts)$': 'ts-jest',
+		'^.+\\.(mjs|js|jsx|ts|tsx)$': 'babel-jest',
 		'^.+\\.(css|scss|png|jpg|svg)$': 'jest-transform-stub',
-		'^.+\\.(vue)$': '@vue/vue3-jest'
+		'^.+\\.(vue)$': '@vue/vue3-jest',
 	},
-	transformIgnorePatterns: [
-		'node_modules/(?!(vuetify)/)',
-		'node_modules/(?!(vite-plugin-vuetify)/)',
-	],
+	// empty to avoid ignoring default files
+	transformIgnorePatterns: [],
 	coverageReporters: [
 		'text',
 		'html',
@@ -33,22 +30,31 @@ const config: Config.InitialOptions = {
 	coverageDirectory: '<rootDir>/tests/unit/coverage',
 	collectCoverage: true,
 	collectCoverageFrom: [
-		'**/*.{ts,vue}',
-		'!**/node_modules/**',
-		'!**/*.d.ts',
-		'!**/*.config.ts',
-		'!**/decorators.ts',
-		'!**/constants/**',
-		'!**/router/**',
-		'!**/main.ts',
-		'!**/theme/**',
-		'!**/plugins/**',
-		'!**/i18n.ts',
-		'!**/store/**',
-		'!**/services/**',
-		'!**/tests/**',
-		'!**/translations/**'
+		'src/**/*.{js,vue,ts}',
+		'!src/**/*.spec.{js,vue,ts}',
+		'!src/**/*.d.ts',
+		'!src/**/*.config.{ts,js}',
+		'!src/**/decorators.ts',
+		'!src/**/constants/**',
+		'!src/**/router/**',
+		'!src/**/main.ts',
+		'!src/**/theme/**',
+		'!src/**/plugins/**',
+		'!src/**/i18n.ts',
+		'!src/**/store/**',
+		'!src/**/services/**',
+		'!src/**/tests/**',
+		'!src/**/translations/**',
+		'!node_modules/**'
 	],
+	coverageThreshold: {
+		global: {
+			branches: 80,
+			functions: 80,
+			lines: 80,
+			statements: 80
+		}
+	},
 	globals: {
 		API_URL: 'http://localhost:8080'
 	},
