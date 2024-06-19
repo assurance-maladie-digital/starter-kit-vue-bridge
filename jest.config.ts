@@ -40,7 +40,7 @@ const config: Config.InitialOptions = {
 		'!src/**/main.ts',
 		'!src/**/theme/**',
 		'!src/**/plugins/**',
-		'!src/**/i18n.ts',
+		'!src/**/i18n.config.ts',
 		'!src/**/store/**',
 		'!src/**/services/**',
 		'!src/**/tests/**',

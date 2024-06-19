@@ -2,19 +2,16 @@ import { mount } from '@vue/test-utils';
 import NotFound from '../NotFound.vue';
 import {PageContainer, NotFoundPage} from "@cnamts/synapse-bridge";
 import { vuetify } from '../../../tests/unit/setup';
-import { createRouter, createWebHistory } from 'vue-router';
-
-const router = createRouter({
-	history: createWebHistory(),
-	routes: [
-		{
-			path: '/',
-			component: NotFound,
-		},
-	],
-});
 
 describe('NotFound.vue', () => {
+	const mockRouter = {
+		push: jest.fn()
+	};
+
+	const mockRoute = {
+		path: '/some-path'
+	};
+
 	it('should render', async () => {
 		const wrapper = mount(NotFound,{
 			global: {
@@ -38,10 +35,28 @@ describe('NotFound.vue', () => {
 				mocks: {
 					PageContainer,
 					NotFoundPage
-				}
+				},
 			},
 		});
 		expect(wrapper.findComponent({ name: 'NotFoundPage' })).toBeTruthy();
 	});
+	it('should call setSupportId method', async () => {
+		const wrapper = mount(NotFound,{
+			global: {
+				plugins: [
+					vuetify,
+				],
+				mocks: {
+					PageContainer,
+					NotFoundPage,
+					$router: mockRouter,
+					$route: mockRoute
+				},
+			},
+		});
+		wrapper.vm.setSupportId();
+		await wrapper.vm.$nextTick();
 
+		expect(mockRouter.push).toHaveBeenCalled();
+	});
 });
