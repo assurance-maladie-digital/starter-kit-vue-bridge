@@ -6,9 +6,10 @@ exports[`home page should render renders default message when config is not prov
   <div class="v-card v-theme--light v-card--density-default v-card--variant-tonal d-flex" style="width: 695px;">
     <!---->
     <div class="v-card__loader">
-      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
         <!---->
-        <div class="v-progress-linear__background" style="width: 100%;"></div>
+        <div class="v-progress-linear__background"></div>
+        <div class="v-progress-linear__buffer" style="width: 0%;"></div>
         <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
           <div class="v-progress-linear__indeterminate">
             <div class="v-progress-linear__indeterminate long"></div>
@@ -29,9 +30,10 @@ exports[`home page should render renders default message when config is not prov
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -61,9 +63,10 @@ exports[`home page should render renders default message when config is not prov
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -101,9 +104,10 @@ exports[`home page should render renders default title when config is not provid
   <div class="v-card v-theme--light v-card--density-default v-card--variant-tonal d-flex" style="width: 695px;">
     <!---->
     <div class="v-card__loader">
-      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
         <!---->
-        <div class="v-progress-linear__background" style="width: 100%;"></div>
+        <div class="v-progress-linear__background"></div>
+        <div class="v-progress-linear__buffer" style="width: 0%;"></div>
         <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
           <div class="v-progress-linear__indeterminate">
             <div class="v-progress-linear__indeterminate long"></div>
@@ -124,9 +128,10 @@ exports[`home page should render renders default title when config is not provid
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -156,9 +161,10 @@ exports[`home page should render renders default title when config is not provid
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -196,9 +202,10 @@ exports[`home page should render renders message from config when provided 1`] =
   <div class="v-card v-theme--light v-card--density-default v-card--variant-tonal d-flex" style="width: 695px;">
     <!---->
     <div class="v-card__loader">
-      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
         <!---->
-        <div class="v-progress-linear__background" style="width: 100%;"></div>
+        <div class="v-progress-linear__background"></div>
+        <div class="v-progress-linear__buffer" style="width: 0%;"></div>
         <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
           <div class="v-progress-linear__indeterminate">
             <div class="v-progress-linear__indeterminate long"></div>
@@ -219,9 +226,10 @@ exports[`home page should render renders message from config when provided 1`] =
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -251,9 +259,10 @@ exports[`home page should render renders message from config when provided 1`] =
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -291,9 +300,10 @@ exports[`home page should render renders title when config is provided 1`] = `
   <div class="v-card v-theme--light v-card--density-default v-card--variant-tonal d-flex" style="width: 695px;">
     <!---->
     <div class="v-card__loader">
-      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
         <!---->
-        <div class="v-progress-linear__background" style="width: 100%;"></div>
+        <div class="v-progress-linear__background"></div>
+        <div class="v-progress-linear__buffer" style="width: 0%;"></div>
         <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
           <div class="v-progress-linear__indeterminate">
             <div class="v-progress-linear__indeterminate long"></div>
@@ -314,9 +324,10 @@ exports[`home page should render renders title when config is provided 1`] = `
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -346,9 +357,10 @@ exports[`home page should render renders title when config is provided 1`] = `
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
