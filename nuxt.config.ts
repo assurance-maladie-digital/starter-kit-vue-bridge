@@ -1,5 +1,5 @@
 import {colorTheme} from "@cnamts/design-tokens/src/colors";
-import Components from 'unplugin-vue-components/vite';
+import Components from "unplugin-vue-components/vite";
 
 export default defineNuxtConfig({
 	ssr: false,
@@ -19,7 +19,6 @@ export default defineNuxtConfig({
 	plugins: [
 		'~/plugins/vuex.ts',
 		'~/plugins/axios.ts',
-		'~/plugins/synapse.ts',
 		{src: '~/plugins/vuex-persist', mode: 'client'},
 		{src: '~/plugins/vue-input-facade', mode: 'client'}
 	],
