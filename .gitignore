@@ -32,4 +32,5 @@ logs
 **/tests/**/coverage/
 
 # Cypress
-cypress
+cypress/fixtures
+cypress/videos
