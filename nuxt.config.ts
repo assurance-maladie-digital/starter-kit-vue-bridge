@@ -19,6 +19,7 @@ export default defineNuxtConfig({
 	plugins: [
 		'~/plugins/vuex.ts',
 		'~/plugins/axios.ts',
+		'~/plugins/synapse.ts',
 		{src: '~/plugins/vuex-persist', mode: 'client'},
 		{src: '~/plugins/vue-input-facade', mode: 'client'}
 	],
