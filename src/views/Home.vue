@@ -42,6 +42,28 @@
 				</v-card-item>
 			</v-card>
 		</v-col>
+		<v-col>
+			<v-card
+				color="grey-lighten-4"
+				class="mx-auto"
+			>
+				<v-card-title>
+					Test des stores
+				</v-card-title>
+				<v-card-item>
+					{{ counter.state.count }}
+					<v-btn @click="add" class="ma-2">Incrémenter</v-btn>
+					<v-btn @click="substract" class="ma-2">Decrementer</v-btn>
+				</v-card-item>
+				<v-card-item>
+					{{ showNotificationBar ? notification?.message : '' }}
+					<div class="d-flex flex-wrap align-center justify-center">
+						<v-btn @click="createNotification" class="ma-2">Créer une notification</v-btn>
+						<v-btn @click="removeNotification" class="ma-2">Supprimer une notification</v-btn>
+					</div>
+				</v-card-item>
+			</v-card>
+		</v-col>
 	</v-row>
 </template>
 
@@ -50,6 +72,8 @@ import {defineComponent} from "vue";
 import { BackBtn } from "@cnamts/synapse-bridge";
 import HelloWorld from "@/components/HelloWorld/HelloWorld.vue";
 import config from "../../public/json/config.env.json";
+import {mapActions, mapGetters, mapMutations} from "vuex";
+import counter from '../../store/counter';
 export default defineComponent({
 	components: {
 		HelloWorld,
@@ -57,8 +81,42 @@ export default defineComponent({
 	},
 	data() {
 		return {
-			config
+			config,
+			counter
 		};
+	},
+	computed: {
+		...mapGetters('notification', {
+			notification: 'notification',
+		}),
+		showNotificationBar(): boolean {
+			return this.notification?.ref === "1";
+		},
+	},
+	methods: {
+		...mapActions('notification', {
+			dispatchNotification: 'addNotification',
+			dispatchClearNotification: 'clearNotification',
+		}),
+
+		...mapActions(['increment']),
+		createNotification() {
+			this.dispatchNotification({
+				ref: "1",
+				type: 'info',
+				message: 'Exemple de notification 1.',
+			})
+		},
+		removeNotification() {
+			this.dispatchClearNotification();
+		},
+
+		add() {
+			this.counter.commit('increment');
+		},
+		substract() {
+			this.counter.commit('decrement');
+		}
 	}
 });
 </script>
