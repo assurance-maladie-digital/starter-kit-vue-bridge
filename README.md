@@ -2,50 +2,59 @@
 
 🗃️ Ce Starter Kit contient les composants du Design System de l'Assurance Maladie réécrits en Vue 3, ainsi que les outils nécessaires pour migrer un projet Vue 2 vers Vue 3.
 
-# Prérequis
+## Prérequis
+
+SSR désactivé. 
 
 Pour utiliser ce starter kit, vous devez avoir au moins les versions suivantes de Node et PNPM :
-Node : 20.11.0
-PNPM : 8.11.0
+ - Node : 20.11.0
+ - PNPM : 8.11.0
 
-# Fonctionnalités
+## Stack Technique
 
-Ce starter kit contient les outils suivants :
 [x] Nuxt/Vue 3
 [x] Vuetify 3
 [x] Vue Router 4
 [x] Vuex 4
+
+## Outils Inclus
+
 [x] Axios
+[x] Sass
 [x] Jest pour les tests unitaires
 [x] Cypress pour les tests e2e
 
 # Installation et utilisation
 
-Clonez le dépôt : git clone https://github.com/assurance-maladie-digital/starter-kit-vue-bridge.git
-
+- Clonez le dépôt : git clone https://github.com/assurance-maladie-digital/starter-kit-vue-bridge.git
 - Accédez au répertoire du projet : `cd starter-kit-vue-bridge`
 - Installez les dépendances : `pnpm install`
 - Lancez le serveur de développement : `pnpm dev`
-- Buildez le projet : `pnpm build`
+- Ouvre le navigateur à l'adresse http://localhost:3000
 
-# Migration d'un projet Vue 2 vers Vue 3
+## Deploiement
+- Buildez le projet : `pnpm build`
+La commande build crée une application Nuxt 3 fonctionnelle, vous pouvez donc la déployer sur n'importe quel
+fournisseur d'hébergement prenant en charge Nuxt.js.
+
+## Migration d'un projet Vue 2 vers Vue 3
 
 - Voir les étapes de migration dans [la documentation du design system](https://digital-design-system.netlify.app/migration-bridge)
 - Voir le guide de migration officiel Vue3 : https://v3.vuejs.org/guide/migration/introduction.html
 - Voir le guide de migration officiel Vuetify3 : https://vuetifyjs.com/en/getting-started/migration/
 
-# Contribution
+## Contribution
 
 Nous encourageons les contributions de la communauté ! Si vous souhaitez contribuer à ce projet, veuillez suivre les étapes suivantes :
 
-## Fork du dépôt
+### Fork du dépôt
 
 - Créez une branche pour votre fonctionnalité ou correction de bogue
 - Effectuez les modifications nécessaires
 - Soumettez une pull request
 - Assurez-vous de suivre notre Guide de contribution pour plus de détails.
 
-## Support
+### Support
 
 Si vous rencontrez des problèmes ou avez des questions, n'hésitez pas à ouvrir une issue.
 
