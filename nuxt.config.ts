@@ -1,5 +1,6 @@
 import {colorTheme} from "@cnamts/design-tokens/src/colors";
 import Components from "unplugin-vue-components/vite";
+import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
 	ssr: false,
@@ -14,7 +15,7 @@ export default defineNuxtConfig({
 	modules: [
 		"vuetify-nuxt-module",
 		'dayjs-nuxt',
-		'@nuxtjs/i18n'
+		'@nuxtjs/i18n',
 	],
 	plugins: [
 		'~/plugins/vuex.ts',
