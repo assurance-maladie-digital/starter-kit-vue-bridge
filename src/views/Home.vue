@@ -52,14 +52,14 @@
 				</v-card-title>
 				<v-card-item>
 					{{ counter.state.count }}
-					<v-btn @click="add" class="ma-2">Incrémenter</v-btn>
-					<v-btn @click="substract" class="ma-2">Decrementer</v-btn>
+					<VBtn @click="add" class="ma-2">Incrémenter</VBtn>
+					<VBtn @click="substract" class="ma-2">Decrementer</VBtn>
 				</v-card-item>
 				<v-card-item>
 					{{ showNotificationBar ? notification?.message : '' }}
 					<div class="d-flex flex-wrap align-center justify-center">
-						<v-btn @click="createNotification" class="ma-2">Créer une notification</v-btn>
-						<v-btn @click="removeNotification" class="ma-2">Supprimer une notification</v-btn>
+						<VBtn @click="createNotification" class="ma-2">Créer une notification</VBtn>
+						<VBtn @click="removeNotification" class="ma-2">Supprimer une notification</VBtn>
 					</div>
 				</v-card-item>
 			</v-card>
