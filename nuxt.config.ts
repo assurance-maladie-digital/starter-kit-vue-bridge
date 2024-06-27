@@ -16,7 +16,6 @@ export default defineNuxtConfig({
 		"vuetify-nuxt-module",
 		'dayjs-nuxt',
 		'@nuxtjs/i18n',
-		'vuetify-nuxt-module'
 	],
 	plugins: [
 		'~/plugins/vuex.ts',
