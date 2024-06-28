@@ -31,7 +31,8 @@ const config: Config.InitialOptions = {
 	collectCoverage: true,
 	collectCoverageFrom: [
 		'src/**/*.{js,vue,ts}',
-		'store/**/*.{js,vue,ts}',
+		'!src/store/index.ts',
+		'!src/store/**/*.d.ts',
 		'!src/**/*.spec.{js,vue,ts}',
 		'!src/**/*.d.ts',
 		'!src/**/*.config.{ts,js}',
