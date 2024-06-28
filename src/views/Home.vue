@@ -8,7 +8,7 @@
 	<v-row justify="center">
 		<v-col
 			cols="12"
-			md="6"
+			md="4"
 		>
 			<v-card
 				color="grey-lighten-4"
@@ -24,7 +24,7 @@
 		</v-col>
 		<v-col
 			cols="12"
-			md="6"
+			md="4"
 		>
 			<v-card
 				color="grey-lighten-4"
@@ -42,7 +42,10 @@
 				</v-card-item>
 			</v-card>
 		</v-col>
-		<v-col>
+		<v-col
+			cols="12"
+			md="4"
+		>
 			<v-card
 				color="grey-lighten-4"
 				class="mx-auto"
@@ -51,15 +54,18 @@
 					Test des stores
 				</v-card-title>
 				<v-card-item>
-					{{ counter.state.count }}
-					<VBtn @click="add" class="ma-2">Incrémenter</VBtn>
-					<VBtn @click="substract" class="ma-2">Decrementer</VBtn>
+					<div>Compteur: {{ counter.state.count }}</div>
+					<div class="d-flex flex-wrap align-center justify-center">
+						<v-btn @click="increment" color="primary" class="ma-2">Incrémenter</v-btn>
+						<v-btn @click="decrement" color="primary" class="ma-2">Décrémenter</v-btn>
+						<v-btn @click="reset" color="primary" class="ma-2">Réinitialiser</v-btn>
+					</div>
 				</v-card-item>
 				<v-card-item>
 					{{ showNotificationBar ? notification?.message : '' }}
 					<div class="d-flex flex-wrap align-center justify-center">
-						<VBtn @click="createNotification" class="ma-2">Créer une notification</VBtn>
-						<VBtn @click="removeNotification" class="ma-2">Supprimer une notification</VBtn>
+						<v-btn @click="createNotification" color="primary" class="ma-2">Créer une notification</v-btn>
+						<v-btn @click="removeNotification" color="primary" class="ma-2">Supprimer une notification</v-btn>
 					</div>
 				</v-card-item>
 			</v-card>
@@ -111,11 +117,14 @@ export default defineComponent({
 			this.dispatchClearNotification();
 		},
 
-		add() {
+		increment() {
 			this.counter.commit('increment');
 		},
-		substract() {
+		decrement() {
 			this.counter.commit('decrement');
+		},
+		reset() {
+			this.counter.commit('reset');
 		}
 	}
 });
