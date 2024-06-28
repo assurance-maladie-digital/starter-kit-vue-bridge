@@ -73,7 +73,7 @@ import HelloWorld from "@/components/HelloWorld/HelloWorld.vue";
 import config from "../../public/json/config.env.json";
 
 import { mapActions, mapGetters } from "vuex";
-import counter from '@/store/counter';
+import counter from '@/stores/counter';
 
 export default defineComponent({
 	components: {
