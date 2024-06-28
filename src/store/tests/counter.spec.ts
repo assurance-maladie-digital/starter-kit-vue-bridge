@@ -22,14 +22,26 @@ describe('Counter Store', () => {
 		expect(store.state.count).toBe(1);
 	});
 
+	test('reset mutation', () => {
+		store.commit('increment');
+		store.commit('reset');
+		expect(store.state.count).toBe(0);
+	});
+
 	test('increment action', async () => {
 		await store.dispatch('increment');
-		expect(store.state.count).toBe(2);
+		expect(store.state.count).toBe(1);
 	});
 
 	test('decrement action', async () => {
 		await store.dispatch('increment');
 		await store.dispatch('decrement');
-		expect(store.state.count).toBe(2);
+		expect(store.state.count).toBe(1);
+	});
+
+	test('reset action', async () => {
+		await store.dispatch('increment');
+		await store.dispatch('reset');
+		expect(store.state.count).toBe(0);
 	});
 });
