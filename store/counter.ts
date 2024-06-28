@@ -10,6 +10,9 @@ const counter = createStore({
 		},
 		decrement(state) {
 			state.count--;
+		},
+		reset(state) {
+			state.count = 0;
 		}
 	},
 	actions: {
@@ -18,6 +21,9 @@ const counter = createStore({
 		},
 		decrement({commit}) {
 			commit('decrement');
+		},
+		reset({commit}) {
+			commit('reset');
 		}
 	}
 })
