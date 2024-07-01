@@ -9,7 +9,9 @@ const vuexLocal = new VuexPersistence<RootState>({
 });
 
 const notifications = createStore({
-	state: {},
+	state: {
+		notificationPayload: null,
+	},
 	modules: {
 		notification
 	},

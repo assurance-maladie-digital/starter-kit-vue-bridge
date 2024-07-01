@@ -8,7 +8,6 @@ describe('Notifications Store', () => {
 	});
 
 	test('initial state', () => {
-		expect(store.state.notifications).toEqual([]);
+		expect(store.state.notificationPayload).toBe(null);
 	});
-
 })
