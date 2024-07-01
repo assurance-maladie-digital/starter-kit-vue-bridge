@@ -1,6 +1,6 @@
-import {colorTheme} from "@cnamts/design-tokens/src/colors";
+import { colorTheme } from "@cnamts/design-tokens/src/colors";
 import Components from "unplugin-vue-components/vite";
-import { defineNuxtConfig } from 'nuxt/config'
+import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
 	ssr: false,
@@ -9,27 +9,28 @@ export default defineNuxtConfig({
 			title: process.env.TITLE,
 			message: process.env.MESSAGE,
 			theme: process.env.THEME,
-		}
+		},
 	},
-	devtools: {enabled: true},
+	devtools: { enabled: true },
 	modules: [
 		"vuetify-nuxt-module",
-		'dayjs-nuxt',
-		'@nuxtjs/i18n',
+		"dayjs-nuxt",
+		"@nuxtjs/i18n",
+		"@nuxt/eslint",
 	],
 	plugins: [
-		'~/plugins/vuex.ts',
-		'~/plugins/axios.ts',
-		{src: '~/plugins/vuex-persist', mode: 'client'},
-		{src: '~/plugins/vue-input-facade', mode: 'client'}
+		"~/plugins/vuex.ts",
+		"~/plugins/axios.ts",
+		{ src: "~/plugins/vuex-persist", mode: "client" },
+		{ src: "~/plugins/vue-input-facade", mode: "client" },
 	],
 	vuetify: {
 		vuetifyOptions: {
 			icons: {
-				defaultSet: 'mdi-svg',
+				defaultSet: "mdi-svg",
 			},
 			theme: {
-				defaultTheme: 'light',
+				defaultTheme: "light",
 				themes: {
 					light: {
 						colors: colorTheme,
@@ -39,25 +40,26 @@ export default defineNuxtConfig({
 		},
 	},
 	build: {
-		transpile: ["vuetify", "@cnamts/synapse-bridge", "@cnamts/design-tokens"],
+		transpile: [
+			"vuetify",
+			"@cnamts/synapse-bridge",
+			"@cnamts/design-tokens",
+		],
 	},
 	vite: {
 		plugins: [
 			// change the component dirs to match our project layout
-			Components({dts: true, dirs: ['~/components', 'src/components']})
-		]
+			Components({ dts: true, dirs: ["~/components", "src/components"] }),
+		],
 	},
-	css: [
-		'@cnamts/synapse-bridge/style.css',
-		'~/assets/styles/index.scss',
-	],
+	css: ["@cnamts/synapse-bridge/style.css", "~/assets/styles/index.scss"],
 	dayjs: {
-		locales: ['fr'],
-		plugins: ['relativeTime', 'utc', 'timezone'],
-		defaultLocale: 'fr',
-		defaultTimezone: 'Europe/Paris'
+		locales: ["fr"],
+		plugins: ["relativeTime", "utc", "timezone"],
+		defaultLocale: "fr",
+		defaultTimezone: "Europe/Paris",
 	},
 	alias: {
-		'@': '/src'
-	}
+		"@": "/src",
+	},
 });

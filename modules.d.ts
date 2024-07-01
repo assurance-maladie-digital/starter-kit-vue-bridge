@@ -1,1 +1,1 @@
-declare module 'vue-input-facade'
+declare module "vue-input-facade";

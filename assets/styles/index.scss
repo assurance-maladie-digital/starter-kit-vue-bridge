@@ -1,5 +1,5 @@
-@import './fonts.scss';
-@import '@cnamts/design-tokens/dist/tokens';
+@import "./fonts.scss";
+@import "@cnamts/design-tokens/dist/tokens";
 
 /* Default, global styles */
 * {
@@ -14,7 +14,7 @@ html,
 body {
 	/* Font size defined by the browser */
 	font-size: 100%;
-	font-family: 'Source Sans 3', 'Source Sans Pro', sans-serif;
+	font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
 }
 
 /* Hide the application while Vue.js is loading */
@@ -28,7 +28,7 @@ body {
 
 /* Apply default transition to links */
 a {
-	transition: .25s;
+	transition: 0.25s;
 	color: $vd-primary;
 }
 
@@ -60,7 +60,9 @@ a {
 }
 
 // Global Colors
-.bg-primary, .bg-secondary, .bg-error {
+.bg-primary,
+.bg-secondary,
+.bg-error {
 	--v-theme-overlay-multiplier: 0 !important;
 }
 
@@ -78,7 +80,8 @@ a {
 }
 
 // Global Colors
-.bg-primary, .bg-error {
+.bg-primary,
+.bg-error {
 	--v-theme-overlay-multiplier: 0 !important;
 }
 
@@ -93,23 +96,24 @@ a {
 	min-height: 14px;
 	min-width: 1px;
 	position: relative;
-	color: rgba(0,0,0,.6);
+	color: rgba(0, 0, 0, 0.6);
 }
 
 // VDataTable: Custom styles
-.vd-data-table, .v-data-table {
+.vd-data-table,
+.v-data-table {
 	table thead tr {
 		white-space: nowrap;
 	}
 
 	table thead th {
-		color: rgba(0, 0, 0, .6);
-		font-size: .875rem;
+		color: rgba(0, 0, 0, 0.6);
+		font-size: 0.875rem;
 	}
 
 	table :not(thead) tr {
 		&:hover {
-			background-color: rgba(0, 0, 0, .1);
+			background-color: rgba(0, 0, 0, 0.1);
 		}
 	}
 
@@ -137,20 +141,25 @@ a {
 	.v-progress-linear {
 		height: 4px !important;
 	}
-	.v-progress-linear__background, .v-progress-linear__indeterminate {
+	.v-progress-linear__background,
+	.v-progress-linear__indeterminate {
 		background: $vd-primary;
 	}
 }
 
 // Input : Custom styles
-.v-input, .v-input input, .v-input textarea {
-	color: rgba(0,0,0,.87);
+.v-input,
+.v-input input,
+.v-input textarea {
+	color: rgba(0, 0, 0, 0.87);
 }
 
 // Field : Custom styles
 .v-field {
 	&--active {
-		.v-field__prepend-inner > .v-icon, .v-field__append-inner > .v-icon, .v-field__clearable > .v-icon {
+		.v-field__prepend-inner > .v-icon,
+		.v-field__append-inner > .v-icon,
+		.v-field__clearable > .v-icon {
 			opacity: 1;
 			color: $vd-primary;
 		}

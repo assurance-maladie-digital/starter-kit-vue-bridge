@@ -2,7 +2,10 @@
 	<h1 class="text-primary">Tokens</h1>
 
 	<h2 class="py-8">Heading</h2>
-	<div :style="{ color: selectedColor, backgroundColor: '#e0e7f2' }" class="text-center">
+	<div
+		:style="{ color: selectedColor, backgroundColor: '#e0e7f2' }"
+		class="text-center"
+	>
 		<h1 class="my-1">h1. Design system heading</h1>
 		<h2 class="my-1">h2. Design system heading</h2>
 		<h3 class="my-1">h3. Design system heading</h3>
@@ -17,7 +20,10 @@
 			v-for="(color, name) in colorGroup"
 			:key="name"
 			class="d-flex child-flex color-box"
-			:style="{ backgroundColor: color, color: isDarkColor(color) ? 'white' : 'black' }"
+			:style="{
+				backgroundColor: color,
+				color: isDarkColor(color) ? 'white' : 'black',
+			}"
 		>
 			<div class="text-center">
 				{{ name }}
@@ -27,20 +33,22 @@
 </template>
 
 <script lang="ts">
-import {defineComponent} from "vue";
+import { defineComponent } from "vue";
 export default defineComponent({
 	data() {
 		return {
-			selectedColor: '',
+			selectedColor: "",
 		};
 	},
 	computed: {
 		groupedColors() {
-			const colors: Record<string, any> = this.$vuetify.theme.themes.light ? this.$vuetify.theme.themes.light.colors : {};
+			const colors: Record<string, any> = this.$vuetify.theme.themes.light
+				? this.$vuetify.theme.themes.light.colors
+				: {};
 			const grouped: Record<string, any> = {};
 			for (const color in colors) {
 				if (color) {
-					const group = color.split('-')[0]; // Get the group name (e.g., 'blue', 'cyan')
+					const group = color.split("-")[0]; // Get the group name (e.g., 'blue', 'cyan')
 					if (group && !grouped[group]) {
 						grouped[group] = {};
 					}
@@ -54,14 +62,14 @@ export default defineComponent({
 	},
 	methods: {
 		isDarkColor(color: any) {
-			const c = color.substring(1);  // strip #
-			const rgb = parseInt(c, 16);   // convert rrggbb to decimal
-			const r = (rgb >> 16) & 0xff;  // extract red
-			const g = (rgb >>  8) & 0xff;  // extract green
-			const b = (rgb >>  0) & 0xff;  // extract blue
+			const c = color.substring(1); // strip #
+			const rgb = parseInt(c, 16); // convert rrggbb to decimal
+			const r = (rgb >> 16) & 0xff; // extract red
+			const g = (rgb >> 8) & 0xff; // extract green
+			const b = (rgb >> 0) & 0xff; // extract blue
 			const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b; // per ITU-R BT.709
 			return luma < 128;
-		}
+		},
 	},
 });
 </script>

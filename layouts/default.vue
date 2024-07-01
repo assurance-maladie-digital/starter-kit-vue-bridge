@@ -6,7 +6,7 @@
 			:navigation-items="navigationItems"
 		/>
 		<PageContainer>
-			<slot/>
+			<slot />
 		</PageContainer>
 		<FooterBar
 			hide-a11y-link
@@ -21,35 +21,35 @@
 </template>
 
 <script lang="ts">
-import {defineComponent} from "vue";
-import {PageContainer, HeaderBar, FooterBar} from "@cnamts/synapse-bridge";
+import { defineComponent } from "vue";
+import { PageContainer, HeaderBar, FooterBar } from "@cnamts/synapse-bridge";
 export default defineComponent({
 	components: {
 		PageContainer,
 		HeaderBar,
-		FooterBar
+		FooterBar,
 	},
 	data() {
 		return {
 			navigationItems: [
 				{
 					label: "Accueil",
-					to: "/home"
+					to: "/home",
 				},
 				{
 					label: "Tokens",
-					to: "/tokens"
+					to: "/tokens",
 				},
 				{
 					label: "Maintenance",
-					to: "/maintenance"
+					to: "/maintenance",
 				},
 				{
 					label: "Erreur",
-					to: "/not-found"
-				}
-			]
+					to: "/not-found",
+				},
+			],
 		};
-	}
+	},
 });
 </script>

@@ -8,7 +8,7 @@ import routes from "../src/router"; // Update to match your router configuration
 
 export default <RouterConfig>{
 	// https://router.vuejs.org/api/interfaces/routeroptions.html#routes
-	routes: _routes => routes
+	routes: (_routes) => routes,
 
 	/**
 	 * If you want to use the Nuxt default routing system in addition to the
