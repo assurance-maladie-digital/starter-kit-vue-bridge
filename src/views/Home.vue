@@ -8,7 +8,7 @@
 	<v-row justify="center">
 		<v-col
 			cols="12"
-			md="6"
+			md="4"
 		>
 			<v-card
 				color="grey-lighten-4"
@@ -24,7 +24,7 @@
 		</v-col>
 		<v-col
 			cols="12"
-			md="6"
+			md="4"
 		>
 			<v-card
 				color="grey-lighten-4"
@@ -42,6 +42,27 @@
 				</v-card-item>
 			</v-card>
 		</v-col>
+		<v-col
+			cols="12"
+			md="4"
+		>
+			<v-card
+				color="grey-lighten-4"
+				class="mx-auto"
+			>
+				<v-card-title>
+					Test des stores
+				</v-card-title>
+				<v-card-item>
+					<div>Compteur: {{ counter.state.count }}</div>
+					<div class="d-flex flex-wrap align-center justify-center">
+						<v-btn @click="increment" color="primary" class="ma-2">Incrémenter</v-btn>
+						<v-btn @click="decrement" color="primary" class="ma-2">Décrémenter</v-btn>
+						<v-btn @click="reset" color="primary" class="ma-2">Réinitialiser</v-btn>
+					</div>
+				</v-card-item>
+			</v-card>
+		</v-col>
 	</v-row>
 </template>
 
@@ -50,6 +71,10 @@ import {defineComponent} from "vue";
 import { BackBtn } from "@cnamts/synapse-bridge";
 import HelloWorld from "@/components/HelloWorld/HelloWorld.vue";
 import config from "../../public/json/config.env.json";
+
+import { mapActions, mapGetters } from "vuex";
+import counter from '@/stores/counter';
+
 export default defineComponent({
 	components: {
 		HelloWorld,
@@ -57,8 +82,31 @@ export default defineComponent({
 	},
 	data() {
 		return {
-			config
+			config,
+			counter
 		};
+	},
+	computed: {
+		...mapGetters('counter', {
+			count: 'count',
+		}),
+	},
+	methods: {
+		...mapActions('counter', {
+			increment: 'increment',
+			decrement: 'decrement',
+			reset: 'reset',
+		}),
+
+		increment() {
+			this.counter.commit('increment');
+		},
+		decrement() {
+			this.counter.commit('decrement');
+		},
+		reset() {
+			this.counter.commit('reset');
+		}
 	}
 });
 </script>

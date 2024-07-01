@@ -8,8 +8,10 @@ const vuexLocal = new VuexPersistence<RootState>({
 	storage: window.sessionStorage,
 });
 
-const store = createStore({
-	state: {},
+const notifications = createStore({
+	state: {
+		notificationPayload: null,
+	},
 	modules: {
 		notification
 	},
@@ -18,4 +20,4 @@ const store = createStore({
 	]
 });
 
-export default store;
+export default notifications;

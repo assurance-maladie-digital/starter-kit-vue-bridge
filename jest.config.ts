@@ -13,6 +13,7 @@ const config: Config.InitialOptions = {
 	moduleNameMapper: {
 		'^@/(.*)$': '<rootDir>/src/$1',
 		'^vuetify/lib$': 'vuetify',
+		'^@cnamts/synapse-bridge/modules/notification/(.*)$': '<rootDir>/node_modules/@cnamts/synapse-bridge/src/modules/notification/$1',
 	},
 	transform: {
 		'^.+\\.(mjs|js|jsx|ts|tsx)$': 'babel-jest',
@@ -20,7 +21,7 @@ const config: Config.InitialOptions = {
 		'^.+\\.(vue)$': '@vue/vue3-jest',
 	},
 	// empty to avoid ignoring default files
-	transformIgnorePatterns: [],
+	transformIgnorePatterns: ['<rootDir>/node_modules/@cnamts/synapse-bridge'],
 	coverageReporters: [
 		'text',
 		'html',
@@ -31,6 +32,8 @@ const config: Config.InitialOptions = {
 	collectCoverage: true,
 	collectCoverageFrom: [
 		'src/**/*.{js,vue,ts}',
+		'!src/stores/index.ts',
+		'!src/stores/**/*.d.ts',
 		'!src/**/*.spec.{js,vue,ts}',
 		'!src/**/*.d.ts',
 		'!src/**/*.config.{ts,js}',
@@ -41,7 +44,6 @@ const config: Config.InitialOptions = {
 		'!src/**/theme/**',
 		'!src/**/plugins/**',
 		'!src/**/i18n.config.ts',
-		'!src/**/store/**',
 		'!src/**/services/**',
 		'!src/**/tests/**',
 		'!src/**/translations/**',
