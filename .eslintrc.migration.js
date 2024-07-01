@@ -16,12 +16,12 @@ module.exports = {
 	plugins: [],
 	ignorePatterns: ["**/*.json"],
 	rules: {
-		"semi": ["error", "always"],
+		semi: ["error", "always"],
 
 		// Disable style rules
-		"indent": 0,
+		indent: 0,
 		"no-tabs": 0,
-		"quotes": 0,
+		quotes: 0,
 		"quote-props": 0,
 		"comma-dangle": 0,
 		"vue/html-indent": 0,
