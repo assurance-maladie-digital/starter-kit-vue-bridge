@@ -1,13 +1,13 @@
-import notifications from '../notifications';
+import notifications from "../notifications";
 
-describe('Notifications Store', () => {
+describe("Notifications Store", () => {
 	let store;
 
 	beforeEach(() => {
 		store = notifications;
 	});
 
-	test('initial state', () => {
+	test("initial state", () => {
 		expect(store.state.notificationPayload).toBe(null);
 	});
-})
+});
