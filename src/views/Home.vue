@@ -56,9 +56,9 @@
 				<v-card-item>
 					<div>Compteur: {{ counter.state.count }}</div>
 					<div class="d-flex flex-wrap align-center justify-center">
-						<v-btn @click="increment" color="primary" class="ma-2">Incrémenter</v-btn>
-						<v-btn @click="decrement" color="primary" class="ma-2">Décrémenter</v-btn>
-						<v-btn @click="reset" color="primary" class="ma-2">Réinitialiser</v-btn>
+						<v-btn @click="increment" color="primary" class="ma-2 increment">Incrémenter</v-btn>
+						<v-btn @click="decrement" color="primary" class="ma-2 decrement">Décrémenter</v-btn>
+						<v-btn @click="reset" color="primary" class="ma-2 reset">Réinitialiser</v-btn>
 					</div>
 				</v-card-item>
 			</v-card>
