@@ -17,7 +17,8 @@ const config: Config.InitialOptions = {
 			"<rootDir>/node_modules/@cnamts/synapse-bridge/src/modules/notification/$1",
 	},
 	transform: {
-		"^.+\\.(mjs|js|jsx|ts|tsx)$": "babel-jest",
+		"^.+\\.(mjs|js|jsx)$": "babel-jest",
+		"^.+\\.(ts|tsx)$": "ts-jest",
 		"^.+\\.(css|scss|png|jpg|svg)$": "jest-transform-stub",
 		"^.+\\.(vue)$": "@vue/vue3-jest",
 	},

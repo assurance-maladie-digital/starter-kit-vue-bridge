@@ -1,7 +1,7 @@
 import counter from "../counter";
 
 describe("Counter Store", () => {
-	let store;
+	let store: any;
 
 	beforeEach(() => {
 		store = counter;

@@ -1,7 +1,7 @@
 import notifications from "../notifications";
 
 describe("Notifications Store", () => {
-	let store;
+	let store: any;
 
 	beforeEach(() => {
 		store = notifications;
