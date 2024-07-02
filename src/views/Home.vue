@@ -54,7 +54,6 @@
 				</v-card-item>
 				<v-card-item>
 					<div class="notif">
-						{{  notificationData?.message ?? '' }}
 					</div>
 					<div class="d-flex flex-wrap align-center justify-center">
 						<VBtn @click="createNotification" class="ma-2 create">Créer une notification</VBtn>

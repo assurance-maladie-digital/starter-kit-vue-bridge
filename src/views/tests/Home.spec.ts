@@ -1,7 +1,8 @@
 import { mount } from "@vue/test-utils";
 import Home from "../Home.vue";
 import { vuetify } from "../../../tests/unit/setup";
-
+import { createStore } from 'vuex';
+import notifications from '../../stores/notifications';
 describe("home page should render", () => {
 	it("renders title when config is provided", () => {
 		const wrapper = mount(Home, {
@@ -147,5 +148,4 @@ describe("home page should render", () => {
 		await incrementButton.trigger("click");
 		expect(mockCommit).toHaveBeenCalledWith("reset");
 	});
-
 });
