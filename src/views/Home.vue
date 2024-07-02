@@ -52,6 +52,15 @@
 						>
 					</div>
 				</v-card-item>
+				<v-card-item>
+					<div class="notif">
+						{{  notificationData?.message ?? '' }}
+					</div>
+					<div class="d-flex flex-wrap align-center justify-center">
+						<VBtn @click="createNotification" class="ma-2 create">Créer une notification</VBtn>
+						<VBtn @click="removeNotification" class="ma-2 remove">Supprimer une notification</VBtn>
+					</div>
+				</v-card-item>
 			</v-card>
 		</v-col>
 	</v-row>
@@ -62,10 +71,8 @@ import { defineComponent } from "vue";
 import { BackBtn } from "@cnamts/synapse-bridge";
 import HelloWorld from "@/components/HelloWorld/HelloWorld.vue";
 import config from "../../public/json/config.env.json";
-
-import { mapActions, mapGetters } from "vuex";
-import counter from "@/stores/counter";
-
+import {mapActions, mapGetters, mapMutations} from "vuex";
+import counter from '../stores/counter';
 export default defineComponent({
 	components: {
 		HelloWorld,
@@ -78,16 +85,31 @@ export default defineComponent({
 		};
 	},
 	computed: {
-		...mapGetters("counter", {
-			count: "count",
+		...mapGetters('notification', {
+			notificationData: 'notification',
 		}),
 	},
 	methods: {
+		...mapActions('notification', {
+			dispatchNotification: 'addNotification',
+			dispatchClearNotification: 'clearNotification',
+		}),
 		...mapActions("counter", {
 			increment: "increment",
 			decrement: "decrement",
 			reset: "reset",
 		}),
+
+		createNotification() {
+			this.dispatchNotification({
+				ref: "1",
+				type: 'info',
+				message: 'Exemple de notification 1.',
+			})
+		},
+		removeNotification() {
+			this.dispatchClearNotification();
+		},
 
 		increment() {
 			this.counter.commit("increment");
