@@ -13,5 +13,5 @@ export default defineComponent({
 </script>
 
 <template>
-	<h1 class="text-primary">{{ msg }}</h1>
+	<h2 class="text-primary">{{ msg }}</h2>
 </template>

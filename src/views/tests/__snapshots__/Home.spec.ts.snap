@@ -51,7 +51,7 @@ exports[`home page should render renders default message when config is not prov
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <h1 class="text-primary">Bienvenue sur l'application</h1>
+          <h2 class="text-primary">Bonjour</h2>
         </div>
         <!---->
       </div>
@@ -195,7 +195,7 @@ exports[`home page should render renders default title when config is not provid
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <h1 class="text-primary">Bienvenue sur l'application</h1>
+          <h2 class="text-primary">Bienvenue sur l'application</h2>
         </div>
         <!---->
       </div>
@@ -339,7 +339,7 @@ exports[`home page should render renders message from config when provided 1`] =
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <h1 class="text-primary">Bienvenue</h1>
+          <h2 class="text-primary">Bienvenue sur l'application</h2>
         </div>
         <!---->
       </div>
@@ -483,7 +483,7 @@ exports[`home page should render renders title when config is provided 1`] = `
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <h1 class="text-primary">Bienvenue</h1>
+          <h2 class="text-primary">Bienvenue</h2>
         </div>
         <!---->
       </div>

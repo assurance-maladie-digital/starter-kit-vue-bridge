@@ -48,7 +48,7 @@ describe("home page should render", () => {
 				return {
 					config: {
 						title: "Accueil",
-						message: "Bienvenue",
+						message: "Bienvenue sur l'application",
 						theme: "Vuetify",
 					},
 				};
@@ -59,6 +59,9 @@ describe("home page should render", () => {
 
 		const h1Text = wrapper.find("h1").text();
 		expect(h1Text).toContain("Accueil");
+
+		const h2Text = wrapper.find("h2").text();
+		expect(h2Text).toContain("Bienvenue sur l'application");
 	});
 
 	it("renders default message when config is not provided", () => {
@@ -66,12 +69,20 @@ describe("home page should render", () => {
 			global: {
 				plugins: [vuetify],
 			},
+			data() {
+				return {
+					config: null,
+				};
+			},
 		});
 
 		expect(wrapper.html()).toMatchSnapshot();
 
 		const h1Text = wrapper.find("h1").text();
 		expect(h1Text).toContain("Accueil");
+
+		const h2Text = wrapper.find("h2").text();
+		expect(h2Text).toContain("Bonjour");
 	});
 
 	it("increments counter", async () => {
