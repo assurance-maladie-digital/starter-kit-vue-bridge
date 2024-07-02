@@ -1,8 +1,8 @@
-import { createStore } from 'vuex';
-import { notification } from '@cnamts/synapse-bridge/modules/notification';
-import VuexPersistence from 'vuex-persist';
+import { createStore } from "vuex";
+import { notification } from "@cnamts/synapse-bridge/modules/notification";
+import VuexPersistence from "vuex-persist";
 
-import { RootState } from './types';
+import type { RootState } from "./types";
 
 const vuexLocal = new VuexPersistence<RootState>({
 	storage: window.sessionStorage,
@@ -11,11 +11,9 @@ const vuexLocal = new VuexPersistence<RootState>({
 const store = createStore({
 	state: {},
 	modules: {
-		notification
+		notification,
 	},
-	plugins: [
-		vuexLocal.plugin
-	]
+	plugins: [vuexLocal.plugin],
 });
 
 export default store;
