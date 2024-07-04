@@ -56,8 +56,9 @@ export default defineComponent({
 	},
 })
 </script>
+
 <template>
-	<h1 class="text-primary">{{ config ? config.title : 'Accueil' }}</h1>
+	<h1 class="text-primary">{{ config && config.title ? config.title : 'Accueil' }}</h1>
 	<div class="mt-6 mb-12 d-flex align-center justify-center">
 		<VCard width="695" variant="tonal" class="d-flex">
 			<img src="/starter-kit.svg" alt="Starter kit" />
@@ -68,7 +69,7 @@ export default defineComponent({
 			<v-card color="grey-lighten-4" class="mx-auto">
 				<v-card-title>Exemple de composant Nuxt</v-card-title>
 				<v-card-item>
-					<HelloWorld :msg="config ? config.message : 'Bonjour'" />
+					<HelloWorld :msg="config && config.message ? config.message : 'Bonjour'" />
 				</v-card-item>
 			</v-card>
 		</v-col>
@@ -119,7 +120,7 @@ export default defineComponent({
 				</v-card-item>
 				<v-card-item>
 					<div class="notif">
-						{{ notificationData?.message }}
+						{{ notificationData ? notificationData.message : '' }}
 					</div>
 					<div class="d-flex flex-wrap align-center justify-center">
 						<VBtn
