@@ -142,7 +142,7 @@ exports[`home page should render renders default message when config is not prov
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <div class="notif"></div>
+          <div class="notif"> + </div>
           <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
               <!----><span class="v-btn__content" data-no-activator="">Créer une notification</span>
               <!---->
@@ -304,7 +304,7 @@ exports[`home page should render renders default title when config is not provid
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <div class="notif"></div>
+          <div class="notif"> + </div>
           <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
               <!----><span class="v-btn__content" data-no-activator="">Créer une notification</span>
               <!---->
@@ -466,7 +466,7 @@ exports[`home page should render renders message from config when provided 1`] =
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <div class="notif"></div>
+          <div class="notif"> + </div>
           <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
               <!----><span class="v-btn__content" data-no-activator="">Créer une notification</span>
               <!---->
@@ -628,7 +628,7 @@ exports[`home page should render renders title when config is provided 1`] = `
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <div class="notif"></div>
+          <div class="notif"> + </div>
           <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
               <!----><span class="v-btn__content" data-no-activator="">Créer une notification</span>
               <!---->

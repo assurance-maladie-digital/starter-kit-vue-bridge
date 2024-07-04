@@ -1,13 +1,12 @@
 import { mount } from "@vue/test-utils";
 import Home from "../Home.vue";
 import { vuetify } from "../../../tests/unit/setup";
-import { createStore } from 'vuex';
 import notifications from '../../stores/notifications';
 describe("home page should render", () => {
 	it("renders title when config is provided", () => {
 		const wrapper = mount(Home, {
 			global: {
-				plugins: [vuetify],
+				plugins: [vuetify, notifications],
 			},
 			data() {
 				return {
@@ -29,7 +28,7 @@ describe("home page should render", () => {
 	it("renders default title when config is not provided", () => {
 		const wrapper = mount(Home, {
 			global: {
-				plugins: [vuetify],
+				plugins: [vuetify, notifications],
 			},
 		});
 
@@ -42,7 +41,7 @@ describe("home page should render", () => {
 	it("renders message from config when provided", () => {
 		const wrapper = mount(Home, {
 			global: {
-				plugins: [vuetify],
+				plugins: [vuetify, notifications],
 			},
 			data() {
 				return {
@@ -67,7 +66,7 @@ describe("home page should render", () => {
 	it("renders default message when config is not provided", () => {
 		const wrapper = mount(Home, {
 			global: {
-				plugins: [vuetify],
+				plugins: [vuetify, notifications],
 			},
 			data() {
 				return {
@@ -89,7 +88,7 @@ describe("home page should render", () => {
 		const mockCommit = jest.fn();
 		const wrapper = mount(Home, {
 			global: {
-				plugins: [vuetify],
+				plugins: [vuetify, notifications],
 			},
 			data() {
 				return {
@@ -110,7 +109,7 @@ describe("home page should render", () => {
 		const mockCommit = jest.fn();
 		const wrapper = mount(Home, {
 			global: {
-				plugins: [vuetify],
+				plugins: [vuetify, notifications],
 			},
 			data() {
 				return {
@@ -131,7 +130,7 @@ describe("home page should render", () => {
 		const mockCommit = jest.fn();
 		const wrapper = mount(Home, {
 			global: {
-				plugins: [vuetify],
+				plugins: [vuetify, notifications],
 			},
 			data() {
 				return {

@@ -1,3 +1,61 @@
+<script lang="ts">
+import { BackBtn } from "@cnamts/synapse-bridge";
+import HelloWorld from "@/components/HelloWorld/HelloWorld.vue";
+import config from "../../public/json/config.env.json";
+import {mapActions, mapGetters, mapMutations} from "vuex";
+import counter from '../stores/counter';
+import { defineComponent } from "vue";
+
+export default defineComponent({
+	components: {
+		HelloWorld,
+		BackBtn,
+	},
+	data() {
+		return {
+			config,
+			counter,
+		};
+	},
+	computed: {
+		...mapGetters('notification', {
+			notificationData: 'notification',
+		}),
+	},
+	methods: {
+		...mapActions('notification', {
+			dispatchNotification: 'addNotification',
+			dispatchClearNotification: 'clearNotification',
+		}),
+		...mapActions("counter", {
+			increment: "increment",
+			decrement: "decrement",
+			reset: "reset",
+		}),
+
+		createNotification() {
+			this.dispatchNotification({
+				ref: "1",
+				type: 'info',
+				message: 'Exemple de notification 1.',
+			})
+		},
+		removeNotification() {
+			this.dispatchClearNotification();
+		},
+
+		increment() {
+			this.counter.commit("increment");
+		},
+		decrement() {
+			this.counter.commit("decrement");
+		},
+		reset() {
+			this.counter.commit("reset");
+		},
+	},
+});
+</script>
 <template>
 	<h1 class="text-primary">{{ config ? config.title : "Accueil" }}</h1>
 	<div class="mt-6 mb-12 d-flex align-center justify-center">
@@ -54,7 +112,7 @@
 				</v-card-item>
 				<v-card-item>
 					<div class="notif">
-					</div>
++					</div>
 					<div class="d-flex flex-wrap align-center justify-center">
 						<VBtn @click="createNotification" class="ma-2 create">Créer une notification</VBtn>
 						<VBtn @click="removeNotification" class="ma-2 remove">Supprimer une notification</VBtn>
@@ -65,60 +123,3 @@
 	</v-row>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-import { BackBtn } from "@cnamts/synapse-bridge";
-import HelloWorld from "@/components/HelloWorld/HelloWorld.vue";
-import config from "../../public/json/config.env.json";
-import {mapActions, mapGetters, mapMutations} from "vuex";
-import counter from '../stores/counter';
-export default defineComponent({
-	components: {
-		HelloWorld,
-		BackBtn,
-	},
-	data() {
-		return {
-			config,
-			counter,
-		};
-	},
-	computed: {
-		...mapGetters('notification', {
-			notificationData: 'notification',
-		}),
-	},
-	methods: {
-		...mapActions('notification', {
-			dispatchNotification: 'addNotification',
-			dispatchClearNotification: 'clearNotification',
-		}),
-		...mapActions("counter", {
-			increment: "increment",
-			decrement: "decrement",
-			reset: "reset",
-		}),
-
-		createNotification() {
-			this.dispatchNotification({
-				ref: "1",
-				type: 'info',
-				message: 'Exemple de notification 1.',
-			})
-		},
-		removeNotification() {
-			this.dispatchClearNotification();
-		},
-
-		increment() {
-			this.counter.commit("increment");
-		},
-		decrement() {
-			this.counter.commit("decrement");
-		},
-		reset() {
-			this.counter.commit("reset");
-		},
-	},
-});
-</script>

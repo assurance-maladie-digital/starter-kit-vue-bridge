@@ -8,9 +8,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
 import { PageContainer, NotFoundPage } from "@cnamts/synapse-bridge";
-
+import { defineComponent } from "vue";
 export default defineComponent({
 	components: {
 		PageContainer,
