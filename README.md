@@ -8,8 +8,8 @@ SSR désactivé.
 
 Pour utiliser ce starter kit, vous devez avoir au moins les versions suivantes de Node et PNPM :
 
-- Node : 20.11.0
-- PNPM : 8.11.0
+-   Node : 20.11.0
+-   PNPM : 8.11.0
 
 ## Stack Technique
 
@@ -27,23 +27,23 @@ Pour utiliser ce starter kit, vous devez avoir au moins les versions suivantes d
 
 # Installation et utilisation
 
-- Clonez le dépôt : git clone https://github.com/assurance-maladie-digital/starter-kit-vue-bridge.git
-- Accédez au répertoire du projet : `cd starter-kit-vue-bridge`
-- Installez les dépendances : `pnpm install`
-- Lancez le serveur de développement : `pnpm dev`
-- Ouvre le navigateur à l'adresse http://localhost:3000
+-   Clonez le dépôt : git clone https://github.com/assurance-maladie-digital/starter-kit-vue-bridge.git
+-   Accédez au répertoire du projet : `cd starter-kit-vue-bridge`
+-   Installez les dépendances : `pnpm install`
+-   Lancez le serveur de développement : `pnpm dev`
+-   Ouvre le navigateur à l'adresse http://localhost:3000
 
 ## Deploiement
 
-- Buildez le projet : `pnpm build`
-  La commande build crée une application Nuxt 3 fonctionnelle, vous pouvez donc la déployer sur n'importe quel
-  fournisseur d'hébergement prenant en charge Nuxt.js.
+-   Buildez le projet : `pnpm build`
+    La commande build crée une application Nuxt 3 fonctionnelle, vous pouvez donc la déployer sur n'importe quel
+    fournisseur d'hébergement prenant en charge Nuxt.js.
 
 ## Migration d'un projet Vue 2 vers Vue 3
 
-- Voir les étapes de migration dans [la documentation du design system](https://digital-design-system.netlify.app/migration-bridge)
-- Voir le guide de migration officiel Vue3 : https://v3.vuejs.org/guide/migration/introduction.html
-- Voir le guide de migration officiel Vuetify3 : https://vuetifyjs.com/en/getting-started/migration/
+-   Voir les étapes de migration dans [la documentation du design system](https://digital-design-system.netlify.app/migration-bridge)
+-   Voir le guide de migration officiel Vue3 : https://v3.vuejs.org/guide/migration/introduction.html
+-   Voir le guide de migration officiel Vuetify3 : https://vuetifyjs.com/en/getting-started/migration/
 
 ## Contribution
 
@@ -51,10 +51,10 @@ Nous encourageons les contributions de la communauté ! Si vous souhaitez contri
 
 ### Fork du dépôt
 
-- Créez une branche pour votre fonctionnalité ou correction de bogue
-- Effectuez les modifications nécessaires
-- Soumettez une pull request
-- Assurez-vous de suivre notre Guide de contribution pour plus de détails.
+-   Créez une branche pour votre fonctionnalité ou correction de bogue
+-   Effectuez les modifications nécessaires
+-   Soumettez une pull request
+-   Assurez-vous de suivre notre Guide de contribution pour plus de détails.
 
 ### Support
 

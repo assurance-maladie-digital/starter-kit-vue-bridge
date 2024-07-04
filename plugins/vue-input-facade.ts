@@ -1,6 +1,6 @@
-import InputFacade from "vue-input-facade";
-import { defineNuxtPlugin } from "nuxt/app";
+import InputFacade from 'vue-input-facade'
+import { defineNuxtPlugin } from 'nuxt/app'
 
 export default defineNuxtPlugin((nuxtApp) => {
-	nuxtApp.vueApp.use(InputFacade);
-});
+	nuxtApp.vueApp.use(InputFacade)
+})

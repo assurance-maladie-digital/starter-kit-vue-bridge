@@ -1,4 +1,4 @@
-import { createStore } from "vuex";
+import { createStore } from 'vuex'
 
 const counter = createStore({
 	state: () => ({
@@ -6,26 +6,26 @@ const counter = createStore({
 	}),
 	mutations: {
 		increment(state) {
-			state.count++;
+			state.count++
 		},
 		decrement(state) {
-			state.count--;
+			state.count--
 		},
 		reset(state) {
-			state.count = 0;
+			state.count = 0
 		},
 	},
 	actions: {
 		increment({ commit }) {
-			commit("increment");
+			commit('increment')
 		},
 		decrement({ commit }) {
-			commit("decrement");
+			commit('decrement')
 		},
 		reset({ commit }) {
-			commit("reset");
+			commit('reset')
 		},
 	},
-});
+})
 
-export default counter;
+export default counter

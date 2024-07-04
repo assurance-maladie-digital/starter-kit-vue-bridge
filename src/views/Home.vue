@@ -1,10 +1,10 @@
 <script lang="ts">
-import { BackBtn } from "@cnamts/synapse-bridge";
-import HelloWorld from "@/components/HelloWorld/HelloWorld.vue";
-import config from "../../public/json/config.env.json";
-import {mapActions, mapGetters, mapMutations} from "vuex";
-import counter from '../stores/counter';
-import { defineComponent } from "vue";
+import { BackBtn } from '@cnamts/synapse-bridge'
+import HelloWorld from '@/components/HelloWorld/HelloWorld.vue'
+import config from '../../public/json/config.env.json'
+import { mapActions, mapGetters } from 'vuex'
+import counter from '../stores/counter'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
 	components: {
@@ -14,8 +14,8 @@ export default defineComponent({
 	data() {
 		return {
 			config,
-			counter,
-		};
+			counter
+		}
 	},
 	computed: {
 		...mapGetters('notification', {
@@ -27,37 +27,37 @@ export default defineComponent({
 			dispatchNotification: 'addNotification',
 			dispatchClearNotification: 'clearNotification',
 		}),
-		...mapActions("counter", {
-			increment: "increment",
-			decrement: "decrement",
-			reset: "reset",
+		...mapActions('counter', {
+			increment: 'increment',
+			decrement: 'decrement',
+			reset: 'reset',
 		}),
 
 		createNotification() {
 			this.dispatchNotification({
-				ref: "1",
+				ref: '1',
 				type: 'info',
 				message: 'Exemple de notification 1.',
 			})
 		},
 		removeNotification() {
-			this.dispatchClearNotification();
+			this.dispatchClearNotification()
 		},
 
 		increment() {
-			this.counter.commit("increment");
+			this.counter.commit('increment')
 		},
 		decrement() {
-			this.counter.commit("decrement");
+			this.counter.commit('decrement')
 		},
 		reset() {
-			this.counter.commit("reset");
+			this.counter.commit('reset')
 		},
 	},
-});
+})
 </script>
 <template>
-	<h1 class="text-primary">{{ config ? config.title : "Accueil" }}</h1>
+	<h1 class="text-primary">{{ config ? config.title : 'Accueil' }}</h1>
 	<div class="mt-6 mb-12 d-flex align-center justify-center">
 		<VCard width="695" variant="tonal" class="d-flex">
 			<img src="/starter-kit.svg" alt="Starter kit" />
@@ -66,7 +66,7 @@ export default defineComponent({
 	<v-row justify="center">
 		<v-col cols="12" md="4">
 			<v-card color="grey-lighten-4" class="mx-auto">
-				<v-card-title> Exemple de composant Nuxt </v-card-title>
+				<v-card-title>Exemple de composant Nuxt</v-card-title>
 				<v-card-item>
 					<HelloWorld :msg="config ? config.message : 'Bonjour'" />
 				</v-card-item>
@@ -74,10 +74,11 @@ export default defineComponent({
 		</v-col>
 		<v-col cols="12" md="4">
 			<v-card color="grey-lighten-4" class="mx-auto">
-				<v-card-title> Exemple de composant DS </v-card-title>
+				<v-card-title>Exemple de composant DS</v-card-title>
 				<v-card-item>
 					<BackBtn to="/home" />
-					<br /><br />
+					<br />
+					<br />
 					<a
 						href="https://digital-design-system.netlify.app/demarrer/introduction/"
 						target="_blank"
@@ -89,7 +90,7 @@ export default defineComponent({
 		</v-col>
 		<v-col cols="12" md="4">
 			<v-card color="grey-lighten-4" class="mx-auto">
-				<v-card-title> Test des stores </v-card-title>
+				<v-card-title>Test des stores</v-card-title>
 				<v-card-item>
 					<div>Compteur: {{ counter.state.count }}</div>
 					<div class="d-flex flex-wrap align-center justify-center">
@@ -97,29 +98,47 @@ export default defineComponent({
 							color="primary"
 							class="ma-2 increment"
 							@click="increment"
-							>Incrémenter</v-btn
 						>
+							Incrémenter
+						</v-btn>
 						<v-btn
 							color="primary"
 							class="ma-2 decrement"
 							@click="decrement"
-							>Décrémenter</v-btn
 						>
-						<v-btn color="primary" class="ma-2 reset" @click="reset"
-							>Réinitialiser</v-btn
+							Décrémenter
+						</v-btn>
+						<v-btn
+							color="primary"
+							class="ma-2 reset"
+							@click="reset"
 						>
+							Réinitialiser
+						</v-btn>
 					</div>
 				</v-card-item>
 				<v-card-item>
 					<div class="notif">
-+					</div>
+						{{ notificationData?.message }}
+					</div>
 					<div class="d-flex flex-wrap align-center justify-center">
-						<VBtn @click="createNotification" class="ma-2 create">Créer une notification</VBtn>
-						<VBtn @click="removeNotification" class="ma-2 remove">Supprimer une notification</VBtn>
+						<VBtn
+							color="primary"
+							class="ma-2 create"
+							@click="createNotification"
+						>
+							Créer une notification
+						</VBtn>
+						<VBtn
+							color="primary"
+							class="ma-2 create"
+							@click="removeNotification"
+						>
+							Supprimer une notification
+						</VBtn>
 					</div>
 				</v-card-item>
 			</v-card>
 		</v-col>
 	</v-row>
 </template>
-

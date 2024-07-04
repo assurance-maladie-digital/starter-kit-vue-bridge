@@ -33,45 +33,45 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
 export default defineComponent({
 	data() {
 		return {
-			selectedColor: "",
-		};
+			selectedColor: '',
+		}
 	},
 	computed: {
 		groupedColors() {
 			const colors: Record<string, any> = this.$vuetify.theme.themes.light
 				? this.$vuetify.theme.themes.light.colors
-				: {};
-			const grouped: Record<string, any> = {};
+				: {}
+			const grouped: Record<string, any> = {}
 			for (const color in colors) {
 				if (color) {
-					const group = color.split("-")[0]; // Get the group name (e.g., 'blue', 'cyan')
+					const group = color.split('-')[0] // Get the group name (e.g., 'blue', 'cyan')
 					if (group && !grouped[group]) {
-						grouped[group] = {};
+						grouped[group] = {}
 					}
 					if (group) {
-						grouped[group][color] = colors[color];
+						grouped[group][color] = colors[color]
 					}
 				}
 			}
-			return grouped;
+			return grouped
 		},
 	},
 	methods: {
 		isDarkColor(color: any) {
-			const c = color.substring(1); // strip #
-			const rgb = parseInt(c, 16); // convert rrggbb to decimal
-			const r = (rgb >> 16) & 0xff; // extract red
-			const g = (rgb >> 8) & 0xff; // extract green
-			const b = (rgb >> 0) & 0xff; // extract blue
-			const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b; // per ITU-R BT.709
-			return luma < 128;
+			const c = color.substring(1) // strip #
+			const rgb = parseInt(c, 16) // convert rrggbb to decimal
+			const r = (rgb >> 16) & 0xff // extract red
+			const g = (rgb >> 8) & 0xff // extract green
+			const b = (rgb >> 0) & 0xff // extract blue
+			const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b // per ITU-R BT.709
+			return luma < 128
 		},
 	},
-});
+})
 </script>
 
 <style scoped>

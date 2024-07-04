@@ -1,5 +1,5 @@
-import notifications from "./notifications";
-import counter from "./counter";
+import notifications from './notifications'
+import counter from './counter'
 
-export { notifications, counter };
-export default notifications;
+export { notifications, counter }
+export default notifications

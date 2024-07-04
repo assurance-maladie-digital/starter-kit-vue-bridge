@@ -8,8 +8,8 @@
 </template>
 
 <script lang="ts">
-import { PageContainer, NotFoundPage } from "@cnamts/synapse-bridge";
-import { defineComponent } from "vue";
+import { PageContainer, NotFoundPage } from '@cnamts/synapse-bridge'
+import { defineComponent } from 'vue'
 export default defineComponent({
 	components: {
 		PageContainer,
@@ -18,17 +18,17 @@ export default defineComponent({
 	data() {
 		return {
 			route: this.$route,
-		};
+		}
 	},
 	methods: {
 		setSupportId(): void {
 			this.$router.push({
 				path: this.$route.path,
 				query: {
-					support_id: "1178926558455813315",
+					support_id: '1178926558455813315',
 				},
-			});
+			})
 		},
 	},
-});
+})
 </script>

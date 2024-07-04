@@ -45,7 +45,7 @@ exports[`home page should render renders default message when config is not prov
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant Nuxt </div>
+      <div class="v-card-title">Exemple de composant Nuxt</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -78,7 +78,7 @@ exports[`home page should render renders default message when config is not prov
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant DS </div>
+      <div class="v-card-title">Exemple de composant DS</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -114,7 +114,7 @@ exports[`home page should render renders default message when config is not prov
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Test des stores </div>
+      <div class="v-card-title">Test des stores</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -122,15 +122,15 @@ exports[`home page should render renders default message when config is not prov
           <!---->
           <div>Compteur: 0</div>
           <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 increment"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Incrémenter</span>
+              <!----><span class="v-btn__content" data-no-activator=""> Incrémenter </span>
               <!---->
               <!---->
             </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 decrement"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Décrémenter</span>
+              <!----><span class="v-btn__content" data-no-activator=""> Décrémenter </span>
               <!---->
               <!---->
             </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 reset"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Réinitialiser</span>
+              <!----><span class="v-btn__content" data-no-activator=""> Réinitialiser </span>
               <!---->
               <!---->
             </button></div>
@@ -143,12 +143,12 @@ exports[`home page should render renders default message when config is not prov
           <!---->
           <!---->
           <div class="notif"> + </div>
-          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Créer une notification</span>
+          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Créer une notification </span>
               <!---->
               <!---->
-            </button><button type="button" class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 remove"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Supprimer une notification</span>
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Supprimer une notification </span>
               <!---->
               <!---->
             </button></div>
@@ -207,7 +207,7 @@ exports[`home page should render renders default title when config is not provid
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant Nuxt </div>
+      <div class="v-card-title">Exemple de composant Nuxt</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -240,7 +240,7 @@ exports[`home page should render renders default title when config is not provid
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant DS </div>
+      <div class="v-card-title">Exemple de composant DS</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -276,7 +276,7 @@ exports[`home page should render renders default title when config is not provid
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Test des stores </div>
+      <div class="v-card-title">Test des stores</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -284,15 +284,15 @@ exports[`home page should render renders default title when config is not provid
           <!---->
           <div>Compteur: 0</div>
           <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 increment"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Incrémenter</span>
+              <!----><span class="v-btn__content" data-no-activator=""> Incrémenter </span>
               <!---->
               <!---->
             </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 decrement"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Décrémenter</span>
+              <!----><span class="v-btn__content" data-no-activator=""> Décrémenter </span>
               <!---->
               <!---->
             </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 reset"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Réinitialiser</span>
+              <!----><span class="v-btn__content" data-no-activator=""> Réinitialiser </span>
               <!---->
               <!---->
             </button></div>
@@ -305,12 +305,12 @@ exports[`home page should render renders default title when config is not provid
           <!---->
           <!---->
           <div class="notif"> + </div>
-          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Créer une notification</span>
+          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Créer une notification </span>
               <!---->
               <!---->
-            </button><button type="button" class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 remove"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Supprimer une notification</span>
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Supprimer une notification </span>
               <!---->
               <!---->
             </button></div>
@@ -369,7 +369,7 @@ exports[`home page should render renders message from config when provided 1`] =
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant Nuxt </div>
+      <div class="v-card-title">Exemple de composant Nuxt</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -402,7 +402,7 @@ exports[`home page should render renders message from config when provided 1`] =
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant DS </div>
+      <div class="v-card-title">Exemple de composant DS</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -438,7 +438,7 @@ exports[`home page should render renders message from config when provided 1`] =
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Test des stores </div>
+      <div class="v-card-title">Test des stores</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -446,15 +446,15 @@ exports[`home page should render renders message from config when provided 1`] =
           <!---->
           <div>Compteur: 0</div>
           <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 increment"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Incrémenter</span>
+              <!----><span class="v-btn__content" data-no-activator=""> Incrémenter </span>
               <!---->
               <!---->
             </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 decrement"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Décrémenter</span>
+              <!----><span class="v-btn__content" data-no-activator=""> Décrémenter </span>
               <!---->
               <!---->
             </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 reset"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Réinitialiser</span>
+              <!----><span class="v-btn__content" data-no-activator=""> Réinitialiser </span>
               <!---->
               <!---->
             </button></div>
@@ -467,12 +467,12 @@ exports[`home page should render renders message from config when provided 1`] =
           <!---->
           <!---->
           <div class="notif"> + </div>
-          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Créer une notification</span>
+          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Créer une notification </span>
               <!---->
               <!---->
-            </button><button type="button" class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 remove"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Supprimer une notification</span>
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Supprimer une notification </span>
               <!---->
               <!---->
             </button></div>
@@ -531,7 +531,7 @@ exports[`home page should render renders title when config is provided 1`] = `
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant Nuxt </div>
+      <div class="v-card-title">Exemple de composant Nuxt</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -564,7 +564,7 @@ exports[`home page should render renders title when config is provided 1`] = `
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant DS </div>
+      <div class="v-card-title">Exemple de composant DS</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -600,7 +600,7 @@ exports[`home page should render renders title when config is provided 1`] = `
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Test des stores </div>
+      <div class="v-card-title">Test des stores</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -608,15 +608,15 @@ exports[`home page should render renders title when config is provided 1`] = `
           <!---->
           <div>Compteur: 0</div>
           <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 increment"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Incrémenter</span>
+              <!----><span class="v-btn__content" data-no-activator=""> Incrémenter </span>
               <!---->
               <!---->
             </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 decrement"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Décrémenter</span>
+              <!----><span class="v-btn__content" data-no-activator=""> Décrémenter </span>
               <!---->
               <!---->
             </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 reset"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Réinitialiser</span>
+              <!----><span class="v-btn__content" data-no-activator=""> Réinitialiser </span>
               <!---->
               <!---->
             </button></div>
@@ -629,12 +629,12 @@ exports[`home page should render renders title when config is provided 1`] = `
           <!---->
           <!---->
           <div class="notif"> + </div>
-          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Créer une notification</span>
+          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Créer une notification </span>
               <!---->
               <!---->
-            </button><button type="button" class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 remove"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-              <!----><span class="v-btn__content" data-no-activator="">Supprimer une notification</span>
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Supprimer une notification </span>
               <!---->
               <!---->
             </button></div>
