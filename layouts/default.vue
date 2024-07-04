@@ -21,8 +21,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import { PageContainer, HeaderBar, FooterBar } from "@cnamts/synapse-bridge";
+import { defineComponent } from 'vue'
+import { PageContainer, HeaderBar, FooterBar } from '@cnamts/synapse-bridge'
 export default defineComponent({
 	components: {
 		PageContainer,
@@ -33,23 +33,23 @@ export default defineComponent({
 		return {
 			navigationItems: [
 				{
-					label: "Accueil",
-					to: "/home",
+					label: 'Accueil',
+					to: '/home',
 				},
 				{
-					label: "Tokens",
-					to: "/tokens",
+					label: 'Tokens',
+					to: '/tokens',
 				},
 				{
-					label: "Maintenance",
-					to: "/maintenance",
+					label: 'Maintenance',
+					to: '/maintenance',
 				},
 				{
-					label: "Erreur",
-					to: "/not-found",
+					label: 'Erreur',
+					to: '/not-found',
 				},
 			],
-		};
+		}
 	},
-});
+})
 </script>

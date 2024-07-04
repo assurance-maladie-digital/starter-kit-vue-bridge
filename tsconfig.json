@@ -8,7 +8,10 @@
 		"allowJs": true,
 		"types": ["@types/jest", "@types/node"],
 		"paths": {
-			"@/*": ["./src/*"]
+			"@/*": ["./src/*"],
+			"@cnamts/synapse-bridge/modules/notification": [
+				"./node_modules/@cnamts/synapse-bridge/src/modules/notification"
+			]
 		}
 	},
 	"include": ["src/**/*"],

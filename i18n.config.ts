@@ -1,6 +1,6 @@
 export default defineI18nConfig(() => ({
 	legacy: false,
 	globalInjection: true,
-	locale: "fr",
+	locale: 'fr',
 	messages: {},
-}));
+}))

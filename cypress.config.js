@@ -1,4 +1,4 @@
-import { defineConfig } from "cypress";
+import { defineConfig } from 'cypress'
 
 module.exports = defineConfig({
 	e2e: {
@@ -7,4 +7,4 @@ module.exports = defineConfig({
 			// implement node event listeners here
 		},
 	},
-});
+})

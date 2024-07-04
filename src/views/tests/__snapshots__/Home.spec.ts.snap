@@ -6,9 +6,10 @@ exports[`home page should render renders default message when config is not prov
   <div class="v-card v-theme--light v-card--density-default v-card--variant-tonal d-flex" style="width: 695px;">
     <!---->
     <div class="v-card__loader">
-      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
         <!---->
-        <div class="v-progress-linear__background" style="width: 100%;"></div>
+        <div class="v-progress-linear__background"></div>
+        <div class="v-progress-linear__buffer" style="width: 0%;"></div>
         <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
           <div class="v-progress-linear__indeterminate">
             <div class="v-progress-linear__indeterminate long"></div>
@@ -25,13 +26,14 @@ exports[`home page should render renders default message when config is not prov
   </div>
 </div>
 <div class="v-row justify-center">
-  <div class="v-col-md-6 v-col-12">
+  <div class="v-col-md-4 v-col-12">
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -43,13 +45,13 @@ exports[`home page should render renders default message when config is not prov
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant Nuxt </div>
+      <div class="v-card-title">Exemple de composant Nuxt</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <h1 class="text-primary">Bienvenue sur l'application</h1>
+          <h2 class="text-primary">Bonjour</h2>
         </div>
         <!---->
       </div>
@@ -57,13 +59,14 @@ exports[`home page should render renders default message when config is not prov
       <!----><span class="v-card__underlay"></span>
     </div>
   </div>
-  <div class="v-col-md-6 v-col-12">
+  <div class="v-col-md-4 v-col-12">
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -75,7 +78,7 @@ exports[`home page should render renders default message when config is not prov
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant DS </div>
+      <div class="v-card-title">Exemple de composant DS</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -85,6 +88,70 @@ exports[`home page should render renders default message when config is not prov
             <!---->
             <!---->
           </a><br><br><a href="https://digital-design-system.netlify.app/demarrer/introduction/" target="_blank"> Voir la documentation des composants du Design System. </a>
+        </div>
+        <!---->
+      </div>
+      <!---->
+      <!----><span class="v-card__underlay"></span>
+    </div>
+  </div>
+  <div class="v-col-md-4 v-col-12">
+    <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
+      <!---->
+      <div class="v-card__loader">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+          <!---->
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
+          <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
+            <div class="v-progress-linear__indeterminate">
+              <div class="v-progress-linear__indeterminate long"></div>
+              <div class="v-progress-linear__indeterminate short"></div>
+            </div>
+          </transition-stub>
+          <!---->
+        </div>
+      </div>
+      <!---->
+      <!---->
+      <div class="v-card-title">Test des stores</div>
+      <div class="v-card-item">
+        <!---->
+        <div class="v-card-item__content">
+          <!---->
+          <!---->
+          <div>Compteur: 0</div>
+          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 increment"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Incrémenter </span>
+              <!---->
+              <!---->
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 decrement"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Décrémenter </span>
+              <!---->
+              <!---->
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 reset"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Réinitialiser </span>
+              <!---->
+              <!---->
+            </button></div>
+        </div>
+        <!---->
+      </div>
+      <div class="v-card-item">
+        <!---->
+        <div class="v-card-item__content">
+          <!---->
+          <!---->
+          <div class="notif"></div>
+          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Créer une notification </span>
+              <!---->
+              <!---->
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Supprimer une notification </span>
+              <!---->
+              <!---->
+            </button></div>
         </div>
         <!---->
       </div>
@@ -101,9 +168,10 @@ exports[`home page should render renders default title when config is not provid
   <div class="v-card v-theme--light v-card--density-default v-card--variant-tonal d-flex" style="width: 695px;">
     <!---->
     <div class="v-card__loader">
-      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
         <!---->
-        <div class="v-progress-linear__background" style="width: 100%;"></div>
+        <div class="v-progress-linear__background"></div>
+        <div class="v-progress-linear__buffer" style="width: 0%;"></div>
         <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
           <div class="v-progress-linear__indeterminate">
             <div class="v-progress-linear__indeterminate long"></div>
@@ -120,13 +188,14 @@ exports[`home page should render renders default title when config is not provid
   </div>
 </div>
 <div class="v-row justify-center">
-  <div class="v-col-md-6 v-col-12">
+  <div class="v-col-md-4 v-col-12">
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -138,13 +207,13 @@ exports[`home page should render renders default title when config is not provid
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant Nuxt </div>
+      <div class="v-card-title">Exemple de composant Nuxt</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <h1 class="text-primary">Bienvenue sur l'application</h1>
+          <h2 class="text-primary">Bonjour</h2>
         </div>
         <!---->
       </div>
@@ -152,13 +221,14 @@ exports[`home page should render renders default title when config is not provid
       <!----><span class="v-card__underlay"></span>
     </div>
   </div>
-  <div class="v-col-md-6 v-col-12">
+  <div class="v-col-md-4 v-col-12">
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -170,7 +240,7 @@ exports[`home page should render renders default title when config is not provid
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant DS </div>
+      <div class="v-card-title">Exemple de composant DS</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -180,6 +250,70 @@ exports[`home page should render renders default title when config is not provid
             <!---->
             <!---->
           </a><br><br><a href="https://digital-design-system.netlify.app/demarrer/introduction/" target="_blank"> Voir la documentation des composants du Design System. </a>
+        </div>
+        <!---->
+      </div>
+      <!---->
+      <!----><span class="v-card__underlay"></span>
+    </div>
+  </div>
+  <div class="v-col-md-4 v-col-12">
+    <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
+      <!---->
+      <div class="v-card__loader">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+          <!---->
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
+          <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
+            <div class="v-progress-linear__indeterminate">
+              <div class="v-progress-linear__indeterminate long"></div>
+              <div class="v-progress-linear__indeterminate short"></div>
+            </div>
+          </transition-stub>
+          <!---->
+        </div>
+      </div>
+      <!---->
+      <!---->
+      <div class="v-card-title">Test des stores</div>
+      <div class="v-card-item">
+        <!---->
+        <div class="v-card-item__content">
+          <!---->
+          <!---->
+          <div>Compteur: 0</div>
+          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 increment"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Incrémenter </span>
+              <!---->
+              <!---->
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 decrement"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Décrémenter </span>
+              <!---->
+              <!---->
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 reset"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Réinitialiser </span>
+              <!---->
+              <!---->
+            </button></div>
+        </div>
+        <!---->
+      </div>
+      <div class="v-card-item">
+        <!---->
+        <div class="v-card-item__content">
+          <!---->
+          <!---->
+          <div class="notif"></div>
+          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Créer une notification </span>
+              <!---->
+              <!---->
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Supprimer une notification </span>
+              <!---->
+              <!---->
+            </button></div>
         </div>
         <!---->
       </div>
@@ -196,9 +330,10 @@ exports[`home page should render renders message from config when provided 1`] =
   <div class="v-card v-theme--light v-card--density-default v-card--variant-tonal d-flex" style="width: 695px;">
     <!---->
     <div class="v-card__loader">
-      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
         <!---->
-        <div class="v-progress-linear__background" style="width: 100%;"></div>
+        <div class="v-progress-linear__background"></div>
+        <div class="v-progress-linear__buffer" style="width: 0%;"></div>
         <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
           <div class="v-progress-linear__indeterminate">
             <div class="v-progress-linear__indeterminate long"></div>
@@ -215,13 +350,14 @@ exports[`home page should render renders message from config when provided 1`] =
   </div>
 </div>
 <div class="v-row justify-center">
-  <div class="v-col-md-6 v-col-12">
+  <div class="v-col-md-4 v-col-12">
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -233,13 +369,13 @@ exports[`home page should render renders message from config when provided 1`] =
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant Nuxt </div>
+      <div class="v-card-title">Exemple de composant Nuxt</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <h1 class="text-primary">Bienvenue</h1>
+          <h2 class="text-primary">Bienvenue sur l'application</h2>
         </div>
         <!---->
       </div>
@@ -247,13 +383,14 @@ exports[`home page should render renders message from config when provided 1`] =
       <!----><span class="v-card__underlay"></span>
     </div>
   </div>
-  <div class="v-col-md-6 v-col-12">
+  <div class="v-col-md-4 v-col-12">
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -265,7 +402,7 @@ exports[`home page should render renders message from config when provided 1`] =
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant DS </div>
+      <div class="v-card-title">Exemple de composant DS</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -275,6 +412,70 @@ exports[`home page should render renders message from config when provided 1`] =
             <!---->
             <!---->
           </a><br><br><a href="https://digital-design-system.netlify.app/demarrer/introduction/" target="_blank"> Voir la documentation des composants du Design System. </a>
+        </div>
+        <!---->
+      </div>
+      <!---->
+      <!----><span class="v-card__underlay"></span>
+    </div>
+  </div>
+  <div class="v-col-md-4 v-col-12">
+    <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
+      <!---->
+      <div class="v-card__loader">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+          <!---->
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
+          <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
+            <div class="v-progress-linear__indeterminate">
+              <div class="v-progress-linear__indeterminate long"></div>
+              <div class="v-progress-linear__indeterminate short"></div>
+            </div>
+          </transition-stub>
+          <!---->
+        </div>
+      </div>
+      <!---->
+      <!---->
+      <div class="v-card-title">Test des stores</div>
+      <div class="v-card-item">
+        <!---->
+        <div class="v-card-item__content">
+          <!---->
+          <!---->
+          <div>Compteur: 0</div>
+          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 increment"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Incrémenter </span>
+              <!---->
+              <!---->
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 decrement"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Décrémenter </span>
+              <!---->
+              <!---->
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 reset"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Réinitialiser </span>
+              <!---->
+              <!---->
+            </button></div>
+        </div>
+        <!---->
+      </div>
+      <div class="v-card-item">
+        <!---->
+        <div class="v-card-item__content">
+          <!---->
+          <!---->
+          <div class="notif"></div>
+          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Créer une notification </span>
+              <!---->
+              <!---->
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Supprimer une notification </span>
+              <!---->
+              <!---->
+            </button></div>
         </div>
         <!---->
       </div>
@@ -286,14 +487,15 @@ exports[`home page should render renders message from config when provided 1`] =
 `;
 
 exports[`home page should render renders title when config is provided 1`] = `
-"<h1 class="text-primary">Accueil</h1>
+"<h1 class="text-primary">Hello</h1>
 <div class="mt-6 mb-12 d-flex align-center justify-center">
   <div class="v-card v-theme--light v-card--density-default v-card--variant-tonal d-flex" style="width: 695px;">
     <!---->
     <div class="v-card__loader">
-      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+      <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
         <!---->
-        <div class="v-progress-linear__background" style="width: 100%;"></div>
+        <div class="v-progress-linear__background"></div>
+        <div class="v-progress-linear__buffer" style="width: 0%;"></div>
         <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
           <div class="v-progress-linear__indeterminate">
             <div class="v-progress-linear__indeterminate long"></div>
@@ -310,13 +512,14 @@ exports[`home page should render renders title when config is provided 1`] = `
   </div>
 </div>
 <div class="v-row justify-center">
-  <div class="v-col-md-6 v-col-12">
+  <div class="v-col-md-4 v-col-12">
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -328,13 +531,13 @@ exports[`home page should render renders title when config is provided 1`] = `
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant Nuxt </div>
+      <div class="v-card-title">Exemple de composant Nuxt</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <h1 class="text-primary">Bienvenue</h1>
+          <h2 class="text-primary">Bienvenue</h2>
         </div>
         <!---->
       </div>
@@ -342,13 +545,14 @@ exports[`home page should render renders title when config is provided 1`] = `
       <!----><span class="v-card__underlay"></span>
     </div>
   </div>
-  <div class="v-col-md-6 v-col-12">
+  <div class="v-col-md-4 v-col-12">
     <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
       <!---->
       <div class="v-card__loader">
-        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
           <!---->
-          <div class="v-progress-linear__background" style="width: 100%;"></div>
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
           <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
             <div class="v-progress-linear__indeterminate">
               <div class="v-progress-linear__indeterminate long"></div>
@@ -360,7 +564,7 @@ exports[`home page should render renders title when config is provided 1`] = `
       </div>
       <!---->
       <!---->
-      <div class="v-card-title"> Exemple de composant DS </div>
+      <div class="v-card-title">Exemple de composant DS</div>
       <div class="v-card-item">
         <!---->
         <div class="v-card-item__content">
@@ -370,6 +574,70 @@ exports[`home page should render renders title when config is provided 1`] = `
             <!---->
             <!---->
           </a><br><br><a href="https://digital-design-system.netlify.app/demarrer/introduction/" target="_blank"> Voir la documentation des composants du Design System. </a>
+        </div>
+        <!---->
+      </div>
+      <!---->
+      <!----><span class="v-card__underlay"></span>
+    </div>
+  </div>
+  <div class="v-col-md-4 v-col-12">
+    <div class="v-card v-theme--light bg-grey-lighten-4 v-card--density-default v-card--variant-elevated mx-auto">
+      <!---->
+      <div class="v-card__loader">
+        <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+          <!---->
+          <div class="v-progress-linear__background"></div>
+          <div class="v-progress-linear__buffer" style="width: 0%;"></div>
+          <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
+            <div class="v-progress-linear__indeterminate">
+              <div class="v-progress-linear__indeterminate long"></div>
+              <div class="v-progress-linear__indeterminate short"></div>
+            </div>
+          </transition-stub>
+          <!---->
+        </div>
+      </div>
+      <!---->
+      <!---->
+      <div class="v-card-title">Test des stores</div>
+      <div class="v-card-item">
+        <!---->
+        <div class="v-card-item__content">
+          <!---->
+          <!---->
+          <div>Compteur: 0</div>
+          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 increment"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Incrémenter </span>
+              <!---->
+              <!---->
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 decrement"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Décrémenter </span>
+              <!---->
+              <!---->
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 reset"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Réinitialiser </span>
+              <!---->
+              <!---->
+            </button></div>
+        </div>
+        <!---->
+      </div>
+      <div class="v-card-item">
+        <!---->
+        <div class="v-card-item__content">
+          <!---->
+          <!---->
+          <div class="notif"></div>
+          <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Créer une notification </span>
+              <!---->
+              <!---->
+            </button><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+              <!----><span class="v-btn__content" data-no-activator=""> Supprimer une notification </span>
+              <!---->
+              <!---->
+            </button></div>
         </div>
         <!---->
       </div>
