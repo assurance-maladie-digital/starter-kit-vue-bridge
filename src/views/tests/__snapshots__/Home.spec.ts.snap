@@ -142,7 +142,7 @@ exports[`home page should render renders default message when config is not prov
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <div class="notif"> + </div>
+          <div class="notif"></div>
           <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
               <!----><span class="v-btn__content" data-no-activator=""> Créer une notification </span>
               <!---->
@@ -213,7 +213,7 @@ exports[`home page should render renders default title when config is not provid
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <h2 class="text-primary">Bienvenue sur l'application</h2>
+          <h2 class="text-primary">Bonjour</h2>
         </div>
         <!---->
       </div>
@@ -304,7 +304,7 @@ exports[`home page should render renders default title when config is not provid
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <div class="notif"> + </div>
+          <div class="notif"></div>
           <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
               <!----><span class="v-btn__content" data-no-activator=""> Créer une notification </span>
               <!---->
@@ -466,7 +466,7 @@ exports[`home page should render renders message from config when provided 1`] =
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <div class="notif"> + </div>
+          <div class="notif"></div>
           <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
               <!----><span class="v-btn__content" data-no-activator=""> Créer une notification </span>
               <!---->
@@ -487,7 +487,7 @@ exports[`home page should render renders message from config when provided 1`] =
 `;
 
 exports[`home page should render renders title when config is provided 1`] = `
-"<h1 class="text-primary">Accueil</h1>
+"<h1 class="text-primary">Hello</h1>
 <div class="mt-6 mb-12 d-flex align-center justify-center">
   <div class="v-card v-theme--light v-card--density-default v-card--variant-tonal d-flex" style="width: 695px;">
     <!---->
@@ -628,7 +628,7 @@ exports[`home page should render renders title when config is provided 1`] = `
         <div class="v-card-item__content">
           <!---->
           <!---->
-          <div class="notif"> + </div>
+          <div class="notif"></div>
           <div class="d-flex flex-wrap align-center justify-center"><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated ma-2 create"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
               <!----><span class="v-btn__content" data-no-activator=""> Créer une notification </span>
               <!---->

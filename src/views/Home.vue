@@ -1,10 +1,10 @@
 <script lang="ts">
+import { defineComponent } from 'vue'
 import { BackBtn } from '@cnamts/synapse-bridge'
 import HelloWorld from '@/components/HelloWorld/HelloWorld.vue'
 import config from '../../public/json/config.env.json'
 import { mapActions, mapGetters } from 'vuex'
 import counter from '../stores/counter'
-import { defineComponent } from 'vue'
 
 export default defineComponent({
 	components: {

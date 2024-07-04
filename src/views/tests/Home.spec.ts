@@ -11,7 +11,7 @@ describe('home page should render', () => {
 			data() {
 				return {
 					config: {
-						title: 'Accueil',
+						title: 'Hello',
 						message: 'Bienvenue',
 						theme: 'Vuetify',
 					},
@@ -22,13 +22,18 @@ describe('home page should render', () => {
 		expect(wrapper.html()).toMatchSnapshot()
 
 		const h1Text = wrapper.find('h1').text()
-		expect(h1Text).toContain('Accueil')
+		expect(h1Text).toContain('Hello')
 	})
 
 	it('renders default title when config is not provided', () => {
 		const wrapper = mount(Home, {
 			global: {
 				plugins: [vuetify, notifications],
+			},
+			data() {
+				return {
+					config: undefined,
+				}
 			},
 		})
 
@@ -70,7 +75,7 @@ describe('home page should render', () => {
 			},
 			data() {
 				return {
-					config: null,
+					config: undefined,
 				}
 			},
 		})
