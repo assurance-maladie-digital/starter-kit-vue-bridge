@@ -2,7 +2,14 @@
 
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
+import { defineNuxtPlugin } from 'nuxt/app'
 
-dayjs.extend(customParseFormat);
+export default defineNuxtPlugin(() => {
+	return {
+		provide: {
+			customParseFormat,
+		}
+	}
+})
 
-export default dayjs;
+
