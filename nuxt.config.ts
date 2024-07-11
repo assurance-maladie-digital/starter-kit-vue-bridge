@@ -15,7 +15,6 @@ export default defineNuxtConfig({
 	modules: [
 		'vuetify-nuxt-module',
 		'dayjs-nuxt',
-		'@nuxtjs/i18n',
 		'@nuxt/eslint',
 	],
 	plugins: [
