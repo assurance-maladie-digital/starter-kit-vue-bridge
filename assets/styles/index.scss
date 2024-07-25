@@ -178,3 +178,7 @@ a {
 		}
 	}
 }
+
+.v-tooltip > .v-overlay__content {
+	background: rgba(0, 0, 0, 0.54) !important;
+}
