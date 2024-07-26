@@ -182,3 +182,14 @@ a {
 .v-tooltip > .v-overlay__content {
 	background: rgba(0, 0, 0, 0.54) !important;
 }
+
+// fix notch height for outlined fields
+.vd-date-picker {
+	.v-field--variant-outlined .v-field__outline__notch, .v-field--variant-outlined:focus-within .v-field__outline__notch:after, .v-field--variant-outlined .v-field__outline__notch:after {
+		height: calc(100% + 1px) !important;
+	}
+
+	.v-field--variant-outlined:focus-within .v-field__outline__notch, .v-field--variant-outlined:focus-within .v-field__outline__notch:after {
+		height: calc(100% + 2px) !important;
+	}
+}
