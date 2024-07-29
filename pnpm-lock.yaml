@@ -9,8 +9,8 @@ dependencies:
     specifier: 2.16.6
     version: 2.16.6
   '@cnamts/synapse-bridge':
-    specifier: 1.4.5-alpha.0
-    version: 1.4.5-alpha.0(vue@3.4.31)(vuetify@3.6.11)(vuex@4.1.0)
+    specifier: 1.4.10-alpha.0
+    version: 1.4.10-alpha.0(vue@3.4.31)(vuetify@3.6.11)(vuex@4.1.0)
   '@mdi/js':
     specifier: 7.2.96
     version: 7.2.96
@@ -1451,8 +1451,8 @@ packages:
     resolution: {integrity: sha512-at3kWqPxgNuVFcnoiPEex96/DXG22g6osI+IDNA2ttuBb2SfClDSRlrj/MroVMUfzvLGRzf3IggO5uG98fqiJQ==}
     dev: false
 
-  /@cnamts/synapse-bridge@1.4.5-alpha.0(vue@3.4.31)(vuetify@3.6.11)(vuex@4.1.0):
-    resolution: {integrity: sha512-jMn4Qimqh76udALtZ7I4lZuV82glByGclsZb8cYnCv9Efr32l76G0VRE5qSF73GneGJ0y/vmmLCtlHVwqq7pXg==}
+  /@cnamts/synapse-bridge@1.4.10-alpha.0(vue@3.4.31)(vuetify@3.6.11)(vuex@4.1.0):
+    resolution: {integrity: sha512-UTCNtFAXtzNx9e9MTjZGkCJqhIDNi2Tqt0vuck8/ylOh1LWfPmnYO4ubnalMRpRfaDUMsV2mVsVEXmSERPAxrw==}
     peerDependencies:
       vue: ^3.4.21
       vuetify: 3.5.10
@@ -2080,8 +2080,8 @@ packages:
       source-map-js: 1.2.0
     dev: false
 
-  /@intlify/shared@10.0.0-beta.2:
-    resolution: {integrity: sha512-u3ey3jn7VZl8SfuBH1nZC1xvdu59/PYkjR6UjXMWiDoowmr/PuPzmIRmOD8jZvRfCbKnKWYRK33HN4uTWLr/Yw==}
+  /@intlify/shared@10.0.0-beta.5:
+    resolution: {integrity: sha512-g9bq5Y1bOcC9qxtNk4UWtF3sXm6Wh0fGISb7vD5aLyF7yQv7ZFjxQjJzBP2GqG/9+PAGYutqjP1GGadNqFtyAQ==}
     engines: {node: '>= 16'}
     dev: false
 
@@ -12107,7 +12107,7 @@ packages:
       vue-router:
         optional: true
     dependencies:
-      '@intlify/shared': 10.0.0-beta.2
+      '@intlify/shared': 10.0.0-beta.5
       '@intlify/vue-i18n-bridge': 0.8.0(vue-i18n@9.3.0-beta.27)
       '@intlify/vue-router-bridge': 0.8.0(vue@3.4.31)
       ufo: 1.5.3
