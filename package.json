@@ -24,7 +24,7 @@
 		"lint:fix": "eslint . --fix && prettier --write --list-different ."
 	},
 	"dependencies": {
-		"@cnamts/design-tokens": "2.16.6",
+		"@cnamts/design-tokens": "2.16.8",
 		"@cnamts/synapse-bridge": "1.4.10-alpha.0",
 		"@mdi/js": "7.2.96",
 		"@nuxtjs/i18n": "8.0.0-rc.4",
