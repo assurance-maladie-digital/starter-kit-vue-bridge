@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@cnamts/design-tokens':
-    specifier: 2.16.6
-    version: 2.16.6
+    specifier: 2.16.8
+    version: 2.16.8
   '@cnamts/synapse-bridge':
     specifier: 1.4.10-alpha.0
     version: 1.4.10-alpha.0(vue@3.4.31)(vuetify@3.6.11)(vuex@4.1.0)
@@ -1447,8 +1447,8 @@ packages:
     resolution: {integrity: sha512-ea8LBxb4SfUdxwMzkqR+AwFdVoSuzwZUjPBEib/GXg3tEFctlvAZDoHpC8F8zan4SPtcaKK4rSfwwf89X31UZg==}
     dev: false
 
-  /@cnamts/design-tokens@2.16.6:
-    resolution: {integrity: sha512-at3kWqPxgNuVFcnoiPEex96/DXG22g6osI+IDNA2ttuBb2SfClDSRlrj/MroVMUfzvLGRzf3IggO5uG98fqiJQ==}
+  /@cnamts/design-tokens@2.16.8:
+    resolution: {integrity: sha512-kfB6/w36usiHbudDoBa8PdLgPlHhk0f8/dnZf539OdN9Hm58lmW6/vgKqp8d9Rikf60nhlE0LCX46CKl/ztu1A==}
     dev: false
 
   /@cnamts/synapse-bridge@1.4.10-alpha.0(vue@3.4.31)(vuetify@3.6.11)(vuex@4.1.0):
