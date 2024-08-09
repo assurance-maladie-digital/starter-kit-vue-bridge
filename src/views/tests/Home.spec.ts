@@ -2,6 +2,8 @@ import { mount } from '@vue/test-utils'
 import Home from '../Home.vue'
 import { vuetify } from '../../../tests/unit/setup'
 import notifications from '../../stores/notifications'
+import axios from 'axios'
+
 describe('home page should render', () => {
 	it('renders title when config is provided', () => {
 		const wrapper = mount(Home, {
@@ -151,5 +153,18 @@ describe('home page should render', () => {
 		const incrementButton = wrapper.find('.reset')
 		await incrementButton.trigger('click')
 		expect(mockCommit).toHaveBeenCalledWith('reset')
+	})
+
+	it('fetches data from API', async () => {
+		const mockData = { data: '/user' }
+		jest.spyOn(axios, 'get').mockResolvedValue(mockData)
+		const wrapper = mount(Home, {
+			global: {
+				plugins: [vuetify, notifications],
+			},
+		})
+		await wrapper.vm.callApiAxios()
+
+		expect(axios.get).toHaveBeenCalledWith('/user')
 	})
 })

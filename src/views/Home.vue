@@ -5,6 +5,7 @@ import HelloWorld from '@/components/HelloWorld/HelloWorld.vue'
 import config from '../../public/json/config.env.json'
 import { mapActions, mapGetters } from 'vuex'
 import counter from '../stores/counter'
+import axios from 'axios'
 
 export default defineComponent({
 	components: {
@@ -53,6 +54,11 @@ export default defineComponent({
 		reset() {
 			this.counter.commit('reset')
 		},
+
+		async callApiAxios() {
+			const response = await axios.get('/user')
+			console.log(response)
+		},
 	},
 })
 </script>
@@ -80,6 +86,15 @@ export default defineComponent({
 					<BackBtn to="/home" />
 					<br />
 					<br />
+					<VBtn
+						color="primary"
+						height="auto"
+						min-height="30px"
+						class="api"
+						@click="callApiAxios"
+					>
+						api rest avec axios
+					</VBtn>
 					<a
 						href="https://digital-design-system.netlify.app/demarrer/introduction/"
 						target="_blank"

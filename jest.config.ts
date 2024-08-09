@@ -15,6 +15,7 @@ const config: Config.InitialOptions = {
 		'^vuetify/lib$': 'vuetify',
 		'^@cnamts/synapse-bridge/modules/notification/(.*)$':
 			'<rootDir>/node_modules/@cnamts/synapse-bridge/src/modules/notification/$1',
+		'^axios$': require.resolve('axios'),
 	},
 	transform: {
 		'^.+\\.(mjs|js|jsx)$': 'babel-jest',
