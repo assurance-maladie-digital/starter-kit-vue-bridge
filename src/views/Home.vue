@@ -147,7 +147,7 @@ export default defineComponent({
 						</VBtn>
 						<VBtn
 							color="primary"
-							class="ma-2 create"
+							class="ma-2 remove"
 							@click="removeNotification"
 						>
 							Supprimer une notification
