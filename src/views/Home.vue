@@ -1,68 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-import { BackBtn } from '@cnamts/synapse-bridge'
-import HelloWorld from '@/components/HelloWorld/HelloWorld.vue'
-import config from '../../public/json/config.env.json'
-import { mapActions, mapGetters } from 'vuex'
-import counter from '../stores/counter'
-import axios from 'axios'
-
-export default defineComponent({
-	components: {
-		HelloWorld,
-		BackBtn,
-	},
-	data() {
-		return {
-			config,
-			counter
-		}
-	},
-	computed: {
-		...mapGetters('notification', {
-			notificationData: 'notification',
-		}),
-	},
-	methods: {
-		...mapActions('notification', {
-			dispatchNotification: 'addNotification',
-			dispatchClearNotification: 'clearNotification',
-		}),
-		...mapActions('counter', {
-			increment: 'increment',
-			decrement: 'decrement',
-			reset: 'reset',
-		}),
-
-		createNotification() {
-			this.dispatchNotification({
-				ref: '1',
-				type: 'info',
-				message: 'Exemple de notification 1.',
-			})
-		},
-		removeNotification() {
-			this.dispatchClearNotification()
-		},
-
-		increment() {
-			this.counter.commit('increment')
-		},
-		decrement() {
-			this.counter.commit('decrement')
-		},
-		reset() {
-			this.counter.commit('reset')
-		},
-
-		async callApiAxios() {
-			const response = await axios.get('/user')
-			console.log(response)
-		},
-	},
-})
-</script>
-
 <template>
 	<h1 class="text-primary">{{ config && config.title ? config.title : 'Accueil' }}</h1>
 	<div class="mt-6 mb-12 d-flex align-center justify-center">
@@ -158,3 +93,68 @@ export default defineComponent({
 		</v-col>
 	</v-row>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+import { BackBtn } from '@cnamts/synapse-bridge'
+import HelloWorld from '@/components/HelloWorld/HelloWorld.vue'
+import config from '../../public/json/config.env.json'
+import { mapActions, mapGetters } from 'vuex'
+import counter from '../stores/counter'
+import axios from 'axios'
+
+export default defineComponent({
+	components: {
+		HelloWorld,
+		BackBtn,
+	},
+	data() {
+		return {
+			config,
+			counter
+		}
+	},
+	computed: {
+		...mapGetters('notification', {
+			notificationData: 'notification',
+		}),
+	},
+	methods: {
+		...mapActions('notification', {
+			dispatchNotification: 'addNotification',
+			dispatchClearNotification: 'clearNotification',
+		}),
+		...mapActions('counter', {
+			increment: 'increment',
+			decrement: 'decrement',
+			reset: 'reset',
+		}),
+
+		createNotification() {
+			this.dispatchNotification({
+				ref: '1',
+				type: 'info',
+				message: 'Exemple de notification 1.',
+			})
+		},
+		removeNotification() {
+			this.dispatchClearNotification()
+		},
+
+		increment() {
+			this.counter.commit('increment')
+		},
+		decrement() {
+			this.counter.commit('decrement')
+		},
+		reset() {
+			this.counter.commit('reset')
+		},
+
+		callApiAxios() {
+			const response = axios.get('/user')
+			console.log(response)
+		},
+	},
+})
+</script>

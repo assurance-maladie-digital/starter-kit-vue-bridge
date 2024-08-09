@@ -155,52 +155,6 @@ describe('home page should render', () => {
 		expect(mockCommit).toHaveBeenCalledWith('reset')
 	})
 
-	/*it('createNotification', async () => {
-		const mockCommit = jest.fn()
-		const wrapper = mount(Home, {
-			global: {
-				plugins: [vuetify, notifications],
-			},
-			data() {
-				return {
-					notifications: {
-						state: {
-							notifications: [],
-						},
-						commit: mockCommit,
-					}
-				}
-			},
-		})
-
-		const notificationCallButton = wrapper.find('.create')
-		await notificationCallButton.trigger('click')
-		expect(mockCommit).toHaveBeenCalledWith('addNotification')
-	})*/
-
-	/*it('removeNotification', async () => {
-		const mockCommit = jest.fn()
-		const wrapper = mount(Home, {
-			global: {
-				plugins: [vuetify, notifications],
-			},
-			data() {
-				return {
-					notifications: {
-						state: {
-							notifications: [],
-						},
-						commit: mockCommit,
-					}
-				}
-			},
-		})
-
-		const notificationCallButton = wrapper.find('.remove')
-		await notificationCallButton.trigger('click')
-		expect(mockCommit).toHaveBeenCalledWith('removeNotification')
-	})*/
-
 	it('fetches data from API', async () => {
 		const mockData = { data: '/user' }
 		jest.spyOn(axios, 'get').mockResolvedValue(mockData)
@@ -212,5 +166,9 @@ describe('home page should render', () => {
 		await wrapper.vm.callApiAxios()
 
 		expect(axios.get).toHaveBeenCalledWith('/user')
+		expect(axios.get).toHaveBeenCalledTimes(1)
+		expect(axios.get).toHaveReturnedWith(Promise.resolve(mockData))
 	})
 })
+
+
