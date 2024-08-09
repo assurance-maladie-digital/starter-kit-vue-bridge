@@ -21,15 +21,6 @@
 					<BackBtn to="/home" />
 					<br />
 					<br />
-					<VBtn
-						color="primary"
-						height="auto"
-						min-height="30px"
-						class="api"
-						@click="callApiAxios"
-					>
-						api rest avec axios
-					</VBtn>
 					<a
 						href="https://digital-design-system.netlify.app/demarrer/introduction/"
 						target="_blank"
@@ -92,6 +83,15 @@
 			</v-card>
 		</v-col>
 	</v-row>
+	<VBtn
+		color="primary"
+		height="auto"
+		min-height="30px"
+		class="api"
+		@click="callApiAxios"
+	>
+		api rest avec axios
+	</VBtn>
 </template>
 
 <script lang="ts">
@@ -152,8 +152,14 @@ export default defineComponent({
 		},
 
 		callApiAxios() {
-			const response = axios.get('/user')
-			console.log(response)
+			axios
+				.get('/user')
+				.then((response) => {
+					console.log(response)
+				})
+				.catch((error) => {
+					console.log(error)
+				})
 		},
 	},
 })
