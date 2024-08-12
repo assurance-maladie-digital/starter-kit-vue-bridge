@@ -194,6 +194,11 @@ const routes = [
 		name: 'uploadWorflow',
 		component: () => import('@/views/uploadWorkflow/UploadWorkflowPage.vue')
 	},
+	{
+		path: '/selectBtnField',
+		name: 'selectBtnField',
+		component: () => import('@/views/selectBtnField/SelectBtnField.vue')
+	}
 ];
 
 export default routes
