@@ -87,11 +87,7 @@ exports[`home page should render renders default message when config is not prov
             <!----><span class="v-btn__content" data-no-activator=""><i data-v-1ec4f162="" class="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z mdi v-icon notranslate v-theme--light v-icon--size-default text-primary mr-1" aria-hidden="true"></i>Retour</span>
             <!---->
             <!---->
-          </a><br><br><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated api" style="height: auto; min-height: 30px;"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-            <!----><span class="v-btn__content" data-no-activator=""> api rest avec axios </span>
-            <!---->
-            <!---->
-          </button><a href="https://digital-design-system.netlify.app/demarrer/introduction/" target="_blank"> Voir la documentation des composants du Design System. </a>
+          </a><br><br><a href="https://digital-design-system.netlify.app/demarrer/introduction/" target="_blank"> Voir la documentation des composants du Design System. </a>
         </div>
         <!---->
       </div>
@@ -163,7 +159,12 @@ exports[`home page should render renders default message when config is not prov
       <!----><span class="v-card__underlay"></span>
     </div>
   </div>
-</div>"
+</div>
+<button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated api" style="height: auto; min-height: 30px;"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+  <!----><span class="v-btn__content" data-no-activator=""> api rest avec axios </span>
+  <!---->
+  <!---->
+</button>"
 `;
 
 exports[`home page should render renders default title when config is not provided 1`] = `
@@ -253,11 +254,7 @@ exports[`home page should render renders default title when config is not provid
             <!----><span class="v-btn__content" data-no-activator=""><i data-v-1ec4f162="" class="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z mdi v-icon notranslate v-theme--light v-icon--size-default text-primary mr-1" aria-hidden="true"></i>Retour</span>
             <!---->
             <!---->
-          </a><br><br><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated api" style="height: auto; min-height: 30px;"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-            <!----><span class="v-btn__content" data-no-activator=""> api rest avec axios </span>
-            <!---->
-            <!---->
-          </button><a href="https://digital-design-system.netlify.app/demarrer/introduction/" target="_blank"> Voir la documentation des composants du Design System. </a>
+          </a><br><br><a href="https://digital-design-system.netlify.app/demarrer/introduction/" target="_blank"> Voir la documentation des composants du Design System. </a>
         </div>
         <!---->
       </div>
@@ -329,7 +326,12 @@ exports[`home page should render renders default title when config is not provid
       <!----><span class="v-card__underlay"></span>
     </div>
   </div>
-</div>"
+</div>
+<button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated api" style="height: auto; min-height: 30px;"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+  <!----><span class="v-btn__content" data-no-activator=""> api rest avec axios </span>
+  <!---->
+  <!---->
+</button>"
 `;
 
 exports[`home page should render renders message from config when provided 1`] = `
@@ -419,11 +421,7 @@ exports[`home page should render renders message from config when provided 1`] =
             <!----><span class="v-btn__content" data-no-activator=""><i data-v-1ec4f162="" class="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z mdi v-icon notranslate v-theme--light v-icon--size-default text-primary mr-1" aria-hidden="true"></i>Retour</span>
             <!---->
             <!---->
-          </a><br><br><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated api" style="height: auto; min-height: 30px;"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-            <!----><span class="v-btn__content" data-no-activator=""> api rest avec axios </span>
-            <!---->
-            <!---->
-          </button><a href="https://digital-design-system.netlify.app/demarrer/introduction/" target="_blank"> Voir la documentation des composants du Design System. </a>
+          </a><br><br><a href="https://digital-design-system.netlify.app/demarrer/introduction/" target="_blank"> Voir la documentation des composants du Design System. </a>
         </div>
         <!---->
       </div>
@@ -495,7 +493,12 @@ exports[`home page should render renders message from config when provided 1`] =
       <!----><span class="v-card__underlay"></span>
     </div>
   </div>
-</div>"
+</div>
+<button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated api" style="height: auto; min-height: 30px;"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+  <!----><span class="v-btn__content" data-no-activator=""> api rest avec axios </span>
+  <!---->
+  <!---->
+</button>"
 `;
 
 exports[`home page should render renders title when config is provided 1`] = `
@@ -585,11 +588,7 @@ exports[`home page should render renders title when config is provided 1`] = `
             <!----><span class="v-btn__content" data-no-activator=""><i data-v-1ec4f162="" class="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z mdi v-icon notranslate v-theme--light v-icon--size-default text-primary mr-1" aria-hidden="true"></i>Retour</span>
             <!---->
             <!---->
-          </a><br><br><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated api" style="height: auto; min-height: 30px;"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-            <!----><span class="v-btn__content" data-no-activator=""> api rest avec axios </span>
-            <!---->
-            <!---->
-          </button><a href="https://digital-design-system.netlify.app/demarrer/introduction/" target="_blank"> Voir la documentation des composants du Design System. </a>
+          </a><br><br><a href="https://digital-design-system.netlify.app/demarrer/introduction/" target="_blank"> Voir la documentation des composants du Design System. </a>
         </div>
         <!---->
       </div>
@@ -661,5 +660,10 @@ exports[`home page should render renders title when config is provided 1`] = `
       <!----><span class="v-card__underlay"></span>
     </div>
   </div>
-</div>"
+</div>
+<button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-elevated api" style="height: auto; min-height: 30px;"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+  <!----><span class="v-btn__content" data-no-activator=""> api rest avec axios </span>
+  <!---->
+  <!---->
+</button>"
 `;

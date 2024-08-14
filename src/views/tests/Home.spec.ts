@@ -3,7 +3,7 @@ import Home from '../Home.vue'
 import { vuetify } from '../../../tests/unit/setup'
 import notifications from '../../stores/notifications'
 import axios from 'axios'
-import {Store} from "vuex";
+import type {Store} from "vuex";
 
 describe('home page should render', () => {
 	it('renders title when config is provided', () => {
