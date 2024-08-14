@@ -3,7 +3,8 @@ import Home from '../Home.vue'
 import { vuetify } from '../../../tests/unit/setup'
 import notifications from '../../stores/notifications'
 import axios from 'axios'
-import type {Store} from "vuex";
+import type { Store } from 'vuex'
+import { describe, it, expect, vi } from 'vitest'
 
 describe('home page should render', () => {
 	it('renders title when config is provided', () => {
@@ -93,7 +94,7 @@ describe('home page should render', () => {
 	})
 
 	it('increments counter', async () => {
-		const mockCommit = jest.fn()
+		const mockCommit = vi.fn()
 		const wrapper = mount(Home, {
 			global: {
 				plugins: [vuetify, notifications],
@@ -114,7 +115,7 @@ describe('home page should render', () => {
 		expect(mockCommit).toHaveBeenCalledWith('increment')
 	})
 	it('decrements counter', async () => {
-		const mockCommit = jest.fn()
+		const mockCommit = vi.fn()
 		const wrapper = mount(Home, {
 			global: {
 				plugins: [vuetify, notifications],
@@ -135,7 +136,7 @@ describe('home page should render', () => {
 		expect(mockCommit).toHaveBeenCalledWith('decrement')
 	})
 	it('reset counter', async () => {
-		const mockCommit = jest.fn()
+		const mockCommit = vi.fn()
 		const wrapper = mount(Home, {
 			global: {
 				plugins: [vuetify, notifications],
@@ -158,7 +159,7 @@ describe('home page should render', () => {
 
 	it('fetches data from API', async () => {
 		const mockData = { data: '/user' }
-		jest.spyOn(axios, 'get').mockResolvedValue(mockData)
+		vi.spyOn(axios, 'get').mockResolvedValue(mockData)
 		const wrapper = mount(Home, {
 			global: {
 				plugins: [vuetify, notifications],

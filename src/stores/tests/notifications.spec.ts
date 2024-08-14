@@ -1,4 +1,5 @@
 import notifications from '../notifications'
+import {describe, beforeEach, test, expect} from 'vitest'
 
 describe('Notifications Store', () => {
 	let store: any

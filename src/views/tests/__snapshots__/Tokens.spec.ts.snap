@@ -1,0 +1,79 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`tokens page > mount correctly 1`] = `
+"<div class="v-application v-theme--light v-layout v-layout--full-height v-locale--is-ltr">
+  <div class="v-application__wrap">
+    <h1 data-v-175683a8="" class="text-primary">Tokens</h1>
+    <h2 data-v-175683a8="" class="py-8">Heading</h2>
+    <div data-v-175683a8="" style="background-color: #e0e7f2;" class="text-center">
+      <h1 class="my-1" data-v-175683a8="">h1. Design system heading</h1>
+      <h2 class="my-1" data-v-175683a8="">h2. Design system heading</h2>
+      <h3 class="my-1" data-v-175683a8="">h3. Design system heading</h3>
+      <h4 class="my-1" data-v-175683a8="">h4. Design system heading</h4>
+      <h5 class="my-1" data-v-175683a8="">h5. Design system heading</h5>
+      <h6 class="my-1" data-v-175683a8="">h6. Design system heading</h6>
+    </div>
+    <h2 data-v-175683a8="" class="py-8">Couleurs du theme Vuetify</h2>
+    <div data-v-175683a8="" class="v-row">
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #FFFFFF; color: black;">
+        <div data-v-175683a8="" class="text-center">background</div>
+      </div>
+    </div>
+    <div data-v-175683a8="" class="v-row">
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #FFFFFF; color: black;">
+        <div data-v-175683a8="" class="text-center">surface</div>
+      </div>
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #FFFFFF; color: black;">
+        <div data-v-175683a8="" class="text-center">surface-bright</div>
+      </div>
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #EEEEEE; color: black;">
+        <div data-v-175683a8="" class="text-center">surface-light</div>
+      </div>
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #424242; color: white;">
+        <div data-v-175683a8="" class="text-center">surface-variant</div>
+      </div>
+    </div>
+    <div data-v-175683a8="" class="v-row">
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #EEEEEE; color: black;">
+        <div data-v-175683a8="" class="text-center">on-surface-variant</div>
+      </div>
+    </div>
+    <div data-v-175683a8="" class="v-row">
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #1867C0; color: white;">
+        <div data-v-175683a8="" class="text-center">primary</div>
+      </div>
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #1F5592; color: white;">
+        <div data-v-175683a8="" class="text-center">primary-darken-1</div>
+      </div>
+    </div>
+    <div data-v-175683a8="" class="v-row">
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #48A9A6; color: black;">
+        <div data-v-175683a8="" class="text-center">secondary</div>
+      </div>
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #018786; color: white;">
+        <div data-v-175683a8="" class="text-center">secondary-darken-1</div>
+      </div>
+    </div>
+    <div data-v-175683a8="" class="v-row">
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #B00020; color: white;">
+        <div data-v-175683a8="" class="text-center">error</div>
+      </div>
+    </div>
+    <div data-v-175683a8="" class="v-row">
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #2196F3; color: black;">
+        <div data-v-175683a8="" class="text-center">info</div>
+      </div>
+    </div>
+    <div data-v-175683a8="" class="v-row">
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #4CAF50; color: black;">
+        <div data-v-175683a8="" class="text-center">success</div>
+      </div>
+    </div>
+    <div data-v-175683a8="" class="v-row">
+      <div data-v-175683a8="" class="v-col d-flex child-flex color-box" style="background-color: #FB8C00; color: black;">
+        <div data-v-175683a8="" class="text-center">warning</div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

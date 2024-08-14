@@ -155,10 +155,14 @@ export default defineComponent({
 			axios
 				.get('/user')
 				.then((response) => {
-					console.log(response)
+					console.log('response', response);
+
+					console.error(response)
 				})
 				.catch((error) => {
-					console.log(error)
+					console.log('error', error);
+
+					console.error(error)
 				})
 		},
 	},
