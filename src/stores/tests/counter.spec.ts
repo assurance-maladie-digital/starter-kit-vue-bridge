@@ -1,4 +1,5 @@
 import counter from '../counter'
+import { describe, test, expect,beforeEach } from 'vitest'
 
 describe('Counter Store', () => {
 	let store: any

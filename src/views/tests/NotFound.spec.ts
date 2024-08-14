@@ -2,10 +2,12 @@ import { mount } from '@vue/test-utils'
 import NotFound from '../NotFound.vue'
 import { PageContainer, NotFoundPage } from '@cnamts/synapse-bridge'
 import { vuetify } from '../../../tests/unit/setup'
+import {describe, it, expect, vi} from 'vitest'
+
 
 describe('NotFound.vue', () => {
 	const mockRouter = {
-		push: jest.fn(),
+		push: vi.fn(),
 	}
 
 	const mockRoute = {
