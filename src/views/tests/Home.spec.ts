@@ -2,6 +2,9 @@ import { mount } from '@vue/test-utils'
 import Home from '../Home.vue'
 import { vuetify } from '../../../tests/unit/setup'
 import notifications from '../../stores/notifications'
+import axios from 'axios'
+import type {Store} from "vuex";
+
 describe('home page should render', () => {
 	it('renders title when config is provided', () => {
 		const wrapper = mount(Home, {
@@ -102,7 +105,7 @@ describe('home page should render', () => {
 							count: 0,
 						},
 						commit: mockCommit,
-					},
+					} as unknown as Store<{ count: number }>,
 				}
 			},
 		})
@@ -123,7 +126,7 @@ describe('home page should render', () => {
 							count: 0,
 						},
 						commit: mockCommit,
-					},
+					} as unknown as Store<{ count: number }>,
 				}
 			},
 		})
@@ -144,7 +147,7 @@ describe('home page should render', () => {
 							count: 0,
 						},
 						commit: mockCommit,
-					},
+					} as unknown as Store<{ count: number }>,
 				}
 			},
 		})
@@ -152,4 +155,21 @@ describe('home page should render', () => {
 		await incrementButton.trigger('click')
 		expect(mockCommit).toHaveBeenCalledWith('reset')
 	})
+
+	it('fetches data from API', async () => {
+		const mockData = { data: '/user' }
+		jest.spyOn(axios, 'get').mockResolvedValue(mockData)
+		const wrapper = mount(Home, {
+			global: {
+				plugins: [vuetify, notifications],
+			},
+		})
+		wrapper.vm.callApiAxios()
+
+		expect(axios.get).toHaveBeenCalledWith('/user')
+		expect(axios.get).toHaveBeenCalledTimes(1)
+		expect(axios.get).toHaveReturnedWith(Promise.resolve(mockData))
+	})
 })
+
+

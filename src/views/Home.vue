@@ -1,62 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-import { BackBtn } from '@cnamts/synapse-bridge'
-import HelloWorld from '@/components/HelloWorld/HelloWorld.vue'
-import config from '../../public/json/config.env.json'
-import { mapActions, mapGetters } from 'vuex'
-import counter from '../stores/counter'
-
-export default defineComponent({
-	components: {
-		HelloWorld,
-		BackBtn,
-	},
-	data() {
-		return {
-			config,
-			counter
-		}
-	},
-	computed: {
-		...mapGetters('notification', {
-			notificationData: 'notification',
-		}),
-	},
-	methods: {
-		...mapActions('notification', {
-			dispatchNotification: 'addNotification',
-			dispatchClearNotification: 'clearNotification',
-		}),
-		...mapActions('counter', {
-			increment: 'increment',
-			decrement: 'decrement',
-			reset: 'reset',
-		}),
-
-		createNotification() {
-			this.dispatchNotification({
-				ref: '1',
-				type: 'info',
-				message: 'Exemple de notification 1.',
-			})
-		},
-		removeNotification() {
-			this.dispatchClearNotification()
-		},
-
-		increment() {
-			this.counter.commit('increment')
-		},
-		decrement() {
-			this.counter.commit('decrement')
-		},
-		reset() {
-			this.counter.commit('reset')
-		},
-	},
-})
-</script>
-
 <template>
 	<h1 class="text-primary">{{ config && config.title ? config.title : 'Accueil' }}</h1>
 	<div class="mt-6 mb-12 d-flex align-center justify-center">
@@ -132,7 +73,7 @@ export default defineComponent({
 						</VBtn>
 						<VBtn
 							color="primary"
-							class="ma-2 create"
+							class="ma-2 remove"
 							@click="removeNotification"
 						>
 							Supprimer une notification
@@ -142,4 +83,84 @@ export default defineComponent({
 			</v-card>
 		</v-col>
 	</v-row>
+	<VBtn
+		color="primary"
+		height="auto"
+		min-height="30px"
+		class="api"
+		@click="callApiAxios"
+	>
+		api rest avec axios
+	</VBtn>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+import { BackBtn } from '@cnamts/synapse-bridge'
+import HelloWorld from '@/components/HelloWorld/HelloWorld.vue'
+import config from '../../public/json/config.env.json'
+import { mapActions, mapGetters } from 'vuex'
+import counter from '../stores/counter'
+import axios from 'axios'
+
+export default defineComponent({
+	components: {
+		HelloWorld,
+		BackBtn,
+	},
+	data() {
+		return {
+			config,
+			counter
+		}
+	},
+	computed: {
+		...mapGetters('notification', {
+			notificationData: 'notification',
+		}),
+	},
+	methods: {
+		...mapActions('notification', {
+			dispatchNotification: 'addNotification',
+			dispatchClearNotification: 'clearNotification',
+		}),
+		...mapActions('counter', {
+			increment: 'increment',
+			decrement: 'decrement',
+			reset: 'reset',
+		}),
+
+		createNotification() {
+			this.dispatchNotification({
+				ref: '1',
+				type: 'info',
+				message: 'Exemple de notification 1.',
+			})
+		},
+		removeNotification() {
+			this.dispatchClearNotification()
+		},
+
+		increment() {
+			this.counter.commit('increment')
+		},
+		decrement() {
+			this.counter.commit('decrement')
+		},
+		reset() {
+			this.counter.commit('reset')
+		},
+
+		callApiAxios() {
+			axios
+				.get('/user')
+				.then((response) => {
+					console.log(response)
+				})
+				.catch((error) => {
+					console.log(error)
+				})
+		},
+	},
+})
+</script>
