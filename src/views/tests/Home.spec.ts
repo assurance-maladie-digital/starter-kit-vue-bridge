@@ -3,6 +3,7 @@ import Home from '../Home.vue'
 import { vuetify } from '../../../tests/unit/setup'
 import notifications from '../../stores/notifications'
 import axios from 'axios'
+import {Store} from "vuex";
 
 describe('home page should render', () => {
 	it('renders title when config is provided', () => {
@@ -104,7 +105,7 @@ describe('home page should render', () => {
 							count: 0,
 						},
 						commit: mockCommit,
-					},
+					} as unknown as Store<{ count: number }>,
 				}
 			},
 		})
@@ -125,7 +126,7 @@ describe('home page should render', () => {
 							count: 0,
 						},
 						commit: mockCommit,
-					},
+					} as unknown as Store<{ count: number }>,
 				}
 			},
 		})
@@ -146,7 +147,7 @@ describe('home page should render', () => {
 							count: 0,
 						},
 						commit: mockCommit,
-					},
+					} as unknown as Store<{ count: number }>,
 				}
 			},
 		})
@@ -163,7 +164,7 @@ describe('home page should render', () => {
 				plugins: [vuetify, notifications],
 			},
 		})
-		await wrapper.vm.callApiAxios()
+		wrapper.vm.callApiAxios()
 
 		expect(axios.get).toHaveBeenCalledWith('/user')
 		expect(axios.get).toHaveBeenCalledTimes(1)
