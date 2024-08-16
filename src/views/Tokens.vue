@@ -6,9 +6,9 @@
 		:style="{ color: selectedColor, backgroundColor: '#e0e7f2' }"
 		class="text-center"
 	>
-		<h1 class="my-1">h1. Design system heading</h1>
-		<h2 class="my-1">h2. Design system heading</h2>
-		<h3 class="my-1">h3. Design system heading</h3>
+		<h1 class="my-1 title">h1. Design system heading</h1>
+		<h2 class="my-1 alt-title">h2. Design system heading</h2>
+		<h3 class="my-1 body-text">h3. Design system heading</h3>
 		<h4 class="my-1">h4. Design system heading</h4>
 		<h5 class="my-1">h5. Design system heading</h5>
 		<h6 class="my-1">h6. Design system heading</h6>
