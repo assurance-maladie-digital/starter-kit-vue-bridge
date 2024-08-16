@@ -1,5 +1,5 @@
 import { colorTheme } from '@cnamts/design-tokens/src/colors'
-import { bootstrapLightTheme } from '@cnamts/design-system-v3/designTokens/index'
+import { cnamLightTheme } from '@cnamts/design-system-v3/designTokens/index'
 import Components from 'unplugin-vue-components/vite'
 import { defineNuxtConfig } from 'nuxt/config'
 
@@ -33,7 +33,7 @@ export default defineNuxtConfig({
 				defaultTheme: 'light',
 				themes: {
 					light: {
-						colors: bootstrapLightTheme,
+						colors: cnamLightTheme,
 					},
 				},
 			},
@@ -53,7 +53,7 @@ export default defineNuxtConfig({
 		],
 	},
 	css: [
-		'@cnamts/synapse-bridge/style.css',
+		'@cnamts/design-system-v3/assets/tokens.scss',
 		'~/assets/settings.scss'
 	],
 	dayjs: {
