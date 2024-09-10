@@ -12,8 +12,8 @@ importers:
         specifier: 2.16.8
         version: 2.16.8
       '@cnamts/synapse-bridge':
-        specifier: 3.0.0
-        version: 3.0.0(vue@3.4.31(typescript@5.5.3))(vuetify@3.6.11(typescript@5.5.3)(vite-plugin-vuetify@2.0.3)(vue-i18n@9.3.0-beta.27(vue@3.4.31(typescript@5.5.3)))(vue@3.4.31(typescript@5.5.3)))(vuex@4.1.0(vue@3.4.31(typescript@5.5.3)))
+        specifier: 3.0.1
+        version: 3.0.1(vue@3.4.31(typescript@5.5.3))(vuetify@3.6.11(typescript@5.5.3)(vite-plugin-vuetify@2.0.3)(vue-i18n@9.3.0-beta.27(vue@3.4.31(typescript@5.5.3)))(vue@3.4.31(typescript@5.5.3)))(vuex@4.1.0(vue@3.4.31(typescript@5.5.3)))
       '@mdi/js':
         specifier: 7.2.96
         version: 7.2.96
@@ -770,11 +770,12 @@ packages:
   '@cnamts/design-tokens@2.16.8':
     resolution: {integrity: sha512-kfB6/w36usiHbudDoBa8PdLgPlHhk0f8/dnZf539OdN9Hm58lmW6/vgKqp8d9Rikf60nhlE0LCX46CKl/ztu1A==}
 
-  '@cnamts/synapse-bridge@3.0.0':
-    resolution: {integrity: sha512-OUZFEbibHAIy7V3cBmbcMSZCSVg4BcJPg3nF4MEkXuD/XqtEZ0bq72VKksyJkEmDrAQTx5WM9Zl4EtGTkNz4Og==}
+  '@cnamts/synapse-bridge@3.0.1':
+    resolution: {integrity: sha512-Nef+jkMBp9L8t5XenSaAZVra4x4Cb5bd0bl2g/ocknD1SiV4iMdy3hpA4gxrKOpnQ3oNsav1QqTh+YBGmulV7w==}
+    engines: {node: '>=20.11.0', pnpm: '>=9.0.0'}
     peerDependencies:
       vue: ^3.4.21
-      vuetify: 3.5.10
+      vuetify: 3.5.12
       vuex: ^4.1.0
 
   '@colors/colors@1.5.0':
@@ -1153,8 +1154,8 @@ packages:
     resolution: {integrity: sha512-GC8rSbd7V67Zu+a9Z0bpV4riBek11YCURJU50YaEhV4Ub2JHEPtoYxK5r2eIsq/kp+M2hJyGLiC4NJUrGa2VwQ==}
     engines: {node: '>= 16'}
 
-  '@intlify/shared@10.0.0-rc.1':
-    resolution: {integrity: sha512-Rfw7EDfALlpzJu4COe/CMEmhpFc3o6t6mmACoRd48AI3lLYBQxsnIGSp0XaSrjHYIj8dIbCBCj0ij0s2nrmyoA==}
+  '@intlify/shared@10.0.0':
+    resolution: {integrity: sha512-6ngLfI7DOTew2dcF9WMJx+NnMWghMBhIiHbGg+wRvngpzD5KZJZiJVuzMsUQE1a5YebEmtpTEfUrDp/NqVGdiw==}
     engines: {node: '>= 16'}
 
   '@intlify/shared@9.13.1':
@@ -7372,7 +7373,7 @@ snapshots:
 
   '@cnamts/design-tokens@2.16.8': {}
 
-  '@cnamts/synapse-bridge@3.0.0(vue@3.4.31(typescript@5.5.3))(vuetify@3.6.11(typescript@5.5.3)(vite-plugin-vuetify@2.0.3)(vue-i18n@9.3.0-beta.27(vue@3.4.31(typescript@5.5.3)))(vue@3.4.31(typescript@5.5.3)))(vuex@4.1.0(vue@3.4.31(typescript@5.5.3)))':
+  '@cnamts/synapse-bridge@3.0.1(vue@3.4.31(typescript@5.5.3))(vuetify@3.6.11(typescript@5.5.3)(vite-plugin-vuetify@2.0.3)(vue-i18n@9.3.0-beta.27(vue@3.4.31(typescript@5.5.3)))(vue@3.4.31(typescript@5.5.3)))(vuex@4.1.0(vue@3.4.31(typescript@5.5.3)))':
     dependencies:
       '@cnamts/design-tokens': 2.12.0
       '@vuepic/vue-datepicker': 8.8.1(vue@3.4.31(typescript@5.5.3))
@@ -7672,7 +7673,7 @@ snapshots:
       '@intlify/shared': 9.3.0-beta.27
       source-map-js: 1.2.0
 
-  '@intlify/shared@10.0.0-rc.1': {}
+  '@intlify/shared@10.0.0': {}
 
   '@intlify/shared@9.13.1': {}
 
@@ -14071,7 +14072,7 @@ snapshots:
 
   vue-i18n-routing@0.13.4(vue-i18n@9.3.0-beta.27(vue@3.4.31(typescript@5.5.3)))(vue-router@4.4.0(vue@3.4.31(typescript@5.5.3)))(vue@3.4.31(typescript@5.5.3)):
     dependencies:
-      '@intlify/shared': 10.0.0-rc.1
+      '@intlify/shared': 10.0.0
       '@intlify/vue-i18n-bridge': 0.8.0(vue-i18n@9.3.0-beta.27(vue@3.4.31(typescript@5.5.3)))
       '@intlify/vue-router-bridge': 0.8.0(vue-router@4.4.0(vue@3.4.31(typescript@5.5.3)))(vue@3.4.31(typescript@5.5.3))
       ufo: 1.5.3
