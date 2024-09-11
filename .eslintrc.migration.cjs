@@ -8,11 +8,7 @@ module.exports = {
 	parserOptions: {
 		parser: '@typescript-eslint/parser',
 	},
-	extends: [
-		//'@nuxtjs/eslint-config-typescript',
-		'plugin:vue/base',
-		'plugin:vuetify/base',
-	],
+	extends: ['plugin:vue/base', 'plugin:vuetify/base'],
 	plugins: [],
 	ignorePatterns: ['**/*.json'],
 	rules: {
