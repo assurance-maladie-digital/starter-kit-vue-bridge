@@ -1,5 +1,5 @@
-/* describe('template spec', () => {
-	it('passes', () => {
-		cy.visit('https://example.cypress.io')
-	})
-}) */
+it('adds todos', () => {
+	cy.visit('https://example.cypress.io/')
+
+	cy.get('.home-list').find('a').contains('type').click()
+})

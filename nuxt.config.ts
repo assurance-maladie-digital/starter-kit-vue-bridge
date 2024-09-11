@@ -12,11 +12,7 @@ export default defineNuxtConfig({
 		},
 	},
 	devtools: { enabled: true },
-	modules: [
-		'vuetify-nuxt-module',
-		'dayjs-nuxt',
-		'@nuxt/eslint',
-	],
+	modules: ['vuetify-nuxt-module', 'dayjs-nuxt', '@nuxt/eslint'],
 	plugins: [
 		'~/plugins/vuex.ts',
 		'~/plugins/axios.ts',
@@ -51,10 +47,7 @@ export default defineNuxtConfig({
 			Components({ dts: true, dirs: ['~/components', 'src/components'] }),
 		],
 	},
-	css: [
-		'@cnamts/synapse-bridge/style.css',
-		'~/assets/settings.scss'
-	],
+	css: ['@cnamts/synapse-bridge/style.css', '~/assets/settings.scss'],
 	dayjs: {
 		locales: ['fr'],
 		plugins: ['relativeTime', 'utc', 'timezone'],
