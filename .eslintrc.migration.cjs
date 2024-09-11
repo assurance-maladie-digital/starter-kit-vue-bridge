@@ -16,9 +16,8 @@ module.exports = {
 	plugins: [],
 	ignorePatterns: ['**/*.json'],
 	rules: {
-		semi: ['error', 'always'],
-
 		// Disable style rules
+		semi: 0,
 		indent: 0,
 		'no-tabs': 0,
 		quotes: 0,
