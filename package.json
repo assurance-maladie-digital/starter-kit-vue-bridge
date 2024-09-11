@@ -17,8 +17,8 @@
 		"test:e2e": "cypress run",
 		"cypress:open": "cypress open",
 		"lint": "pnpm lint:eslint && pnpm lint:prettier",
-		"lint:migrate": "eslint --ext .ts,.js,.vue --ignore-path .gitignore . -c .eslintrc.migration.js",
-		"lint:migrate:fix": "eslint --ext .ts,.js,.vue --ignore-path .gitignore . --fix -c .eslintrc.migration.js",
+		"lint:migrate": "npx eslint@6 --ext .ts,.js,.vue --ignore-path .gitignore . -c .eslintrc.migration.cjs",
+		"lint:migrate:fix": "npx eslint@6 --ext .ts,.js,.vue --ignore-path .gitignore . --fix -c .eslintrc.migration.cjs",
 		"lint:eslint": "eslint .",
 		"lint:prettier": "pnpm exec prettier . --write",
 		"lint:fix": "eslint . --fix && prettier --write --list-different ."
