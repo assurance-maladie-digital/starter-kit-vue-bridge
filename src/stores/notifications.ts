@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-import { notification } from '@cnamts/synapse-bridge/modules/notification'
+import { notification } from '@cnamts/synapse-bridge'
 import VuexPersistence from 'vuex-persist'
 
 import type { RootState } from './types'
