@@ -25,7 +25,7 @@ dependencies:
     version: 1.1.2
   nuxt:
     specifier: 3.12.0
-    version: 3.12.0(@types/node@18.17.0)(eslint@9.10.0)(sass@1.66.1)(typescript@5.6.2)(vite@5.4.5)
+    version: 3.12.0(@types/node@18.17.0)(eslint@9.10.0)(sass@1.66.1)(typescript@5.6.2)(vite@5.4.6)
   sass:
     specifier: 1.66.1
     version: 1.66.1
@@ -43,7 +43,7 @@ dependencies:
     version: 3.7.1(typescript@5.6.2)(vite-plugin-vuetify@2.0.4)(vue@3.5.6)
   vuetify-nuxt-module:
     specifier: ^0.14.1
-    version: 0.14.1(typescript@5.6.2)(vite@5.4.5)(vue@3.5.6)
+    version: 0.14.1(typescript@5.6.2)(vite@5.4.6)(vue@3.5.6)
   vuex:
     specifier: 4.1.0
     version: 4.1.0(vue@3.5.6)
@@ -57,10 +57,10 @@ devDependencies:
     version: 7.22.15(@babel/core@7.25.2)
   '@nuxt/devtools':
     specifier: latest
-    version: 1.4.2(vite@5.4.5)(vue@3.5.6)
+    version: 1.4.2(vite@5.4.6)(vue@3.5.6)
   '@nuxt/eslint':
     specifier: ^0.3.13
-    version: 0.3.13(eslint@9.10.0)(typescript@5.6.2)(vite@5.4.5)
+    version: 0.3.13(eslint@9.10.0)(typescript@5.6.2)(vite@5.4.6)
   '@nuxtjs/eslint-config-typescript':
     specifier: ^12.1.0
     version: 12.1.0(eslint@9.10.0)(typescript@5.6.2)
@@ -2499,7 +2499,7 @@ packages:
     resolution: {integrity: sha512-GBzP8zOc7CGWyFQS6dv1lQz8VVpz5C2yRszbXufwG/9zhStTIH50EtD87NmWbTMwXDvZLNg8GIpb1UFdH93JCA==}
     dev: false
 
-  /@nuxt/devtools-kit@1.4.2(magicast@0.3.5)(vite@5.4.5):
+  /@nuxt/devtools-kit@1.4.2(magicast@0.3.5)(vite@5.4.6):
     resolution: {integrity: sha512-8a5PhVnC7E94318/sHbNSe9mI2MlsQ8+pJLGs2Hh1OJyidB9SWe6hoFc8q4K9VOtXak9uCFVb5V2JGXS1q+1aA==}
     peerDependencies:
       vite: '*'
@@ -2507,7 +2507,7 @@ packages:
       '@nuxt/kit': 3.13.2(magicast@0.3.5)
       '@nuxt/schema': 3.13.2
       execa: 7.2.0
-      vite: 5.4.5(@types/node@18.17.0)(sass@1.66.1)
+      vite: 5.4.6(@types/node@18.17.0)(sass@1.66.1)
     transitivePeerDependencies:
       - magicast
       - rollup
@@ -2529,17 +2529,17 @@ packages:
       rc9: 2.1.2
       semver: 7.6.3
 
-  /@nuxt/devtools@1.4.2(vite@5.4.5)(vue@3.5.6):
+  /@nuxt/devtools@1.4.2(vite@5.4.6)(vue@3.5.6):
     resolution: {integrity: sha512-Ok3g2P7iwKyK8LiwozbYVAZTo8t91iXSmlJj2ozeo1okKQ2Qi1AtwB6nYgIlkUHZmo155ZjG/LCHYI5uhQ/sGw==}
     hasBin: true
     peerDependencies:
       vite: '*'
     dependencies:
       '@antfu/utils': 0.7.10
-      '@nuxt/devtools-kit': 1.4.2(magicast@0.3.5)(vite@5.4.5)
+      '@nuxt/devtools-kit': 1.4.2(magicast@0.3.5)(vite@5.4.6)
       '@nuxt/devtools-wizard': 1.4.2
       '@nuxt/kit': 3.13.2(magicast@0.3.5)
-      '@vue/devtools-core': 7.4.4(vite@5.4.5)(vue@3.5.6)
+      '@vue/devtools-core': 7.4.4(vite@5.4.6)(vue@3.5.6)
       '@vue/devtools-kit': 7.4.4
       birpc: 0.2.17
       consola: 3.2.3
@@ -2568,9 +2568,9 @@ packages:
       sirv: 2.0.4
       tinyglobby: 0.2.6
       unimport: 3.12.0(rollup@4.21.3)
-      vite: 5.4.5(@types/node@18.17.0)(sass@1.66.1)
-      vite-plugin-inspect: 0.8.7(@nuxt/kit@3.13.2)(vite@5.4.5)
-      vite-plugin-vue-inspector: 5.2.0(vite@5.4.5)
+      vite: 5.4.6(@types/node@18.17.0)(sass@1.66.1)
+      vite-plugin-inspect: 0.8.7(@nuxt/kit@3.13.2)(vite@5.4.6)
+      vite-plugin-vue-inspector: 5.2.0(vite@5.4.6)
       which: 3.0.1
       ws: 8.18.0
     transitivePeerDependencies:
@@ -2622,7 +2622,7 @@ packages:
       - typescript
     dev: true
 
-  /@nuxt/eslint@0.3.13(eslint@9.10.0)(typescript@5.6.2)(vite@5.4.5):
+  /@nuxt/eslint@0.3.13(eslint@9.10.0)(typescript@5.6.2)(vite@5.4.6):
     resolution: {integrity: sha512-3NSD713MVLlHuwXDSqNOS1KUj0L+CP/3a1vwdOpdTJd8h3vdZaJAQ3XBtsvV33fvNDgZ5DEHSMc/+5/xDh3Xpw==}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
@@ -2635,7 +2635,7 @@ packages:
         optional: true
     dependencies:
       '@eslint/config-inspector': 0.4.12(eslint@9.10.0)
-      '@nuxt/devtools-kit': 1.4.2(magicast@0.3.5)(vite@5.4.5)
+      '@nuxt/devtools-kit': 1.4.2(magicast@0.3.5)(vite@5.4.6)
       '@nuxt/eslint-config': 0.3.13(eslint@9.10.0)(typescript@5.6.2)
       '@nuxt/eslint-plugin': 0.3.13(eslint@9.10.0)(typescript@5.6.2)
       '@nuxt/kit': 3.13.2(magicast@0.3.5)
@@ -2801,8 +2801,8 @@ packages:
     dependencies:
       '@nuxt/kit': 3.12.0
       '@rollup/plugin-replace': 5.0.7(rollup@4.21.3)
-      '@vitejs/plugin-vue': 5.1.3(vite@5.4.5)(vue@3.5.6)
-      '@vitejs/plugin-vue-jsx': 4.0.1(vite@5.4.5)(vue@3.5.6)
+      '@vitejs/plugin-vue': 5.1.3(vite@5.4.6)(vue@3.5.6)
+      '@vitejs/plugin-vue-jsx': 4.0.1(vite@5.4.6)(vue@3.5.6)
       autoprefixer: 10.4.20(postcss@8.4.47)
       clear: 0.1.0
       consola: 3.2.3
@@ -2829,9 +2829,9 @@ packages:
       ufo: 1.5.4
       unenv: 1.10.0
       unplugin: 1.14.1
-      vite: 5.4.5(@types/node@18.17.0)(sass@1.66.1)
+      vite: 5.4.6(@types/node@18.17.0)(sass@1.66.1)
       vite-node: 1.6.0(@types/node@18.17.0)(sass@1.66.1)
-      vite-plugin-checker: 0.6.4(eslint@9.10.0)(typescript@5.6.2)(vite@5.4.5)
+      vite-plugin-checker: 0.6.4(eslint@9.10.0)(typescript@5.6.2)(vite@5.4.6)
       vue: 3.5.6(typescript@5.6.2)
       vue-bundle-renderer: 2.1.0
     transitivePeerDependencies:
@@ -3384,7 +3384,7 @@ packages:
     peerDependencies:
       eslint: '>=8.40.0'
     dependencies:
-      '@typescript-eslint/utils': 8.5.0(eslint@9.10.0)(typescript@5.6.2)
+      '@typescript-eslint/utils': 8.6.0(eslint@9.10.0)(typescript@5.6.2)
       eslint: 9.10.0
       eslint-visitor-keys: 4.0.0
       espree: 10.1.0
@@ -3686,12 +3686,12 @@ packages:
       '@typescript-eslint/visitor-keys': 7.18.0
     dev: true
 
-  /@typescript-eslint/scope-manager@8.5.0:
-    resolution: {integrity: sha512-06JOQ9Qgj33yvBEx6tpC8ecP9o860rsR22hWMEd12WcTRrfaFgHr2RB/CA/B+7BMhHkXT4chg2MyboGdFGawYg==}
+  /@typescript-eslint/scope-manager@8.6.0:
+    resolution: {integrity: sha512-ZuoutoS5y9UOxKvpc/GkvF4cuEmpokda4wRg64JEia27wX+PysIE9q+lzDtlHHgblwUWwo5/Qn+/WyTUvDwBHw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dependencies:
-      '@typescript-eslint/types': 8.5.0
-      '@typescript-eslint/visitor-keys': 8.5.0
+      '@typescript-eslint/types': 8.6.0
+      '@typescript-eslint/visitor-keys': 8.6.0
     dev: true
 
   /@typescript-eslint/type-utils@6.21.0(eslint@9.10.0)(typescript@5.6.2):
@@ -3744,8 +3744,8 @@ packages:
     engines: {node: ^18.18.0 || >=20.0.0}
     dev: true
 
-  /@typescript-eslint/types@8.5.0:
-    resolution: {integrity: sha512-qjkormnQS5wF9pjSi6q60bKUHH44j2APxfh9TQRXK8wbYVeDYYdYJGIROL87LGZZ2gz3Rbmjc736qyL8deVtdw==}
+  /@typescript-eslint/types@8.6.0:
+    resolution: {integrity: sha512-rojqFZGd4MQxw33SrOy09qIDS8WEldM8JWtKQLAjf/X5mGSeEFh5ixQlxssMNyPslVIk9yzWqXCsV2eFhYrYUw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dev: true
 
@@ -3793,8 +3793,8 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/typescript-estree@8.5.0(typescript@5.6.2):
-    resolution: {integrity: sha512-vEG2Sf9P8BPQ+d0pxdfndw3xIXaoSjliG0/Ejk7UggByZPKXmJmw3GW5jV2gHNQNawBUyfahoSiCFVov0Ruf7Q==}
+  /@typescript-eslint/typescript-estree@8.6.0(typescript@5.6.2):
+    resolution: {integrity: sha512-MOVAzsKJIPIlLK239l5s06YXjNqpKTVhBVDnqUumQJja5+Y94V3+4VUFRA0G60y2jNnTVwRCkhyGQpavfsbq/g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       typescript: '*'
@@ -3802,8 +3802,8 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@typescript-eslint/types': 8.5.0
-      '@typescript-eslint/visitor-keys': 8.5.0
+      '@typescript-eslint/types': 8.6.0
+      '@typescript-eslint/visitor-keys': 8.6.0
       debug: 4.3.7(supports-color@8.1.1)
       fast-glob: 3.3.2
       is-glob: 4.0.3
@@ -3850,16 +3850,16 @@ packages:
       - typescript
     dev: true
 
-  /@typescript-eslint/utils@8.5.0(eslint@9.10.0)(typescript@5.6.2):
-    resolution: {integrity: sha512-6yyGYVL0e+VzGYp60wvkBHiqDWOpT63pdMV2CVG4LVDd5uR6q1qQN/7LafBZtAtNIn/mqXjsSeS5ggv/P0iECw==}
+  /@typescript-eslint/utils@8.6.0(eslint@9.10.0)(typescript@5.6.2):
+    resolution: {integrity: sha512-eNp9cWnYf36NaOVjkEUznf6fEgVy1TWpE0o52e4wtojjBx7D1UV2WAWGzR+8Y5lVFtpMLPwNbC67T83DWSph4A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.10.0)
-      '@typescript-eslint/scope-manager': 8.5.0
-      '@typescript-eslint/types': 8.5.0
-      '@typescript-eslint/typescript-estree': 8.5.0(typescript@5.6.2)
+      '@typescript-eslint/scope-manager': 8.6.0
+      '@typescript-eslint/types': 8.6.0
+      '@typescript-eslint/typescript-estree': 8.6.0(typescript@5.6.2)
       eslint: 9.10.0
     transitivePeerDependencies:
       - supports-color
@@ -3882,11 +3882,11 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@typescript-eslint/visitor-keys@8.5.0:
-    resolution: {integrity: sha512-yTPqMnbAZJNy2Xq2XU8AdtOW9tJIr+UQb64aXB9f3B1498Zx9JorVgFJcZpEc9UBuCCrdzKID2RGAMkYcDtZOw==}
+  /@typescript-eslint/visitor-keys@8.6.0:
+    resolution: {integrity: sha512-wapVFfZg9H0qOYh4grNVQiMklJGluQrOUiOhYRrQWhx7BY/+I1IYb8BczWNbbUpO+pqy0rDciv3lQH5E1bCLrg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dependencies:
-      '@typescript-eslint/types': 8.5.0
+      '@typescript-eslint/types': 8.6.0
       eslint-visitor-keys: 3.4.3
     dev: true
 
@@ -3952,7 +3952,7 @@ packages:
       - supports-color
     dev: false
 
-  /@vitejs/plugin-vue-jsx@4.0.1(vite@5.4.5)(vue@3.5.6):
+  /@vitejs/plugin-vue-jsx@4.0.1(vite@5.4.6)(vue@3.5.6):
     resolution: {integrity: sha512-7mg9HFGnFHMEwCdB6AY83cVK4A6sCqnrjFYF4WIlebYAQVVJ/sC/CiTruVdrRlhrFoeZ8rlMxY9wYpPTIRhhAg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
@@ -3962,20 +3962,20 @@ packages:
       '@babel/core': 7.25.2
       '@babel/plugin-transform-typescript': 7.25.2(@babel/core@7.25.2)
       '@vue/babel-plugin-jsx': 1.2.5(@babel/core@7.25.2)
-      vite: 5.4.5(@types/node@18.17.0)(sass@1.66.1)
+      vite: 5.4.6(@types/node@18.17.0)(sass@1.66.1)
       vue: 3.5.6(typescript@5.6.2)
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /@vitejs/plugin-vue@5.1.3(vite@5.4.5)(vue@3.5.6):
+  /@vitejs/plugin-vue@5.1.3(vite@5.4.6)(vue@3.5.6):
     resolution: {integrity: sha512-3xbWsKEKXYlmX82aOHufFQVnkbMC/v8fLpWwh6hWOUrK5fbbtBh9Q/WWse27BFgSy2/e2c0fz5Scgya9h2GLhw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.4.5(@types/node@18.17.0)(sass@1.66.1)
+      vite: 5.4.6(@types/node@18.17.0)(sass@1.66.1)
       vue: 3.5.6(typescript@5.6.2)
     dev: false
 
@@ -4076,7 +4076,7 @@ packages:
     resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
     dev: false
 
-  /@vue/devtools-core@7.4.4(vite@5.4.5)(vue@3.5.6):
+  /@vue/devtools-core@7.4.4(vite@5.4.6)(vue@3.5.6):
     resolution: {integrity: sha512-DLxgA3DfeADkRzhAfm3G2Rw/cWxub64SdP5b+s5dwL30+whOGj+QNhmyFpwZ8ZTrHDFRIPj0RqNzJ8IRR1pz7w==}
     peerDependencies:
       vue: ^3.0.0
@@ -4086,7 +4086,7 @@ packages:
       mitt: 3.0.1
       nanoid: 3.3.7
       pathe: 1.1.2
-      vite-hot-client: 0.2.3(vite@5.4.5)
+      vite-hot-client: 0.2.3(vite@5.4.6)
       vue: 3.5.6(typescript@5.6.2)
     transitivePeerDependencies:
       - vite
@@ -4743,7 +4743,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001660
-      electron-to-chromium: 1.5.23
+      electron-to-chromium: 1.5.24
       node-releases: 2.0.18
       update-browserslist-db: 1.1.0(browserslist@4.23.3)
 
@@ -5738,8 +5738,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: false
 
-  /electron-to-chromium@1.5.23:
-    resolution: {integrity: sha512-mBhODedOXg4v5QWwl21DjM5amzjmI1zw9EPrPK/5Wx7C8jt33bpZNrC7OhHUG3pxRtbLpr3W2dXT+Ph1SsfRZA==}
+  /electron-to-chromium@1.5.24:
+    resolution: {integrity: sha512-0x0wLCmpdKFCi9ulhvYZebgcPmHTkFVUfU2wzDykadkslKwT4oAmDTHEKLnlrDsMGZe4B+ksn8quZfZjYsBetA==}
 
   /emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -9025,7 +9025,7 @@ packages:
       fsevents: 2.3.3
     dev: false
 
-  /nuxt@3.12.0(@types/node@18.17.0)(eslint@9.10.0)(sass@1.66.1)(typescript@5.6.2)(vite@5.4.5):
+  /nuxt@3.12.0(@types/node@18.17.0)(eslint@9.10.0)(sass@1.66.1)(typescript@5.6.2)(vite@5.4.6):
     resolution: {integrity: sha512-JlrgqqWx9GjhkP2QFjJ1cB4Fa/QVa9ZEfJueIYFerphoHlJTdoWO915k3Bt2OGBZXv319qPvJa3lK55UghUIhw==}
     engines: {node: ^14.18.0 || >=16.10.0}
     hasBin: true
@@ -9039,7 +9039,7 @@ packages:
         optional: true
     dependencies:
       '@nuxt/devalue': 2.0.2
-      '@nuxt/devtools': 1.4.2(vite@5.4.5)(vue@3.5.6)
+      '@nuxt/devtools': 1.4.2(vite@5.4.6)(vue@3.5.6)
       '@nuxt/kit': 3.12.0
       '@nuxt/schema': 3.12.0
       '@nuxt/telemetry': 2.6.0
@@ -11463,12 +11463,12 @@ packages:
       extsprintf: 1.3.0
     dev: true
 
-  /vite-hot-client@0.2.3(vite@5.4.5):
+  /vite-hot-client@0.2.3(vite@5.4.6):
     resolution: {integrity: sha512-rOGAV7rUlUHX89fP2p2v0A2WWvV3QMX2UYq0fRqsWSvFvev4atHWqjwGoKaZT1VTKyLGk533ecu3eyd0o59CAg==}
     peerDependencies:
       vite: ^2.6.0 || ^3.0.0 || ^4.0.0 || ^5.0.0-0
     dependencies:
-      vite: 5.4.5(@types/node@18.17.0)(sass@1.66.1)
+      vite: 5.4.6(@types/node@18.17.0)(sass@1.66.1)
 
   /vite-node@1.6.0(@types/node@18.17.0)(sass@1.66.1):
     resolution: {integrity: sha512-de6HJgzC+TFzOu0NTC4RAIsyf/DY/ibWDYQUcuEA84EMHhcefTUGkjFHKKEJhQN4A+6I0u++kr3l36ZF2d7XRw==}
@@ -11479,7 +11479,7 @@ packages:
       debug: 4.3.7(supports-color@8.1.1)
       pathe: 1.1.2
       picocolors: 1.1.0
-      vite: 5.4.5(@types/node@18.17.0)(sass@1.66.1)
+      vite: 5.4.6(@types/node@18.17.0)(sass@1.66.1)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -11492,7 +11492,7 @@ packages:
       - terser
     dev: false
 
-  /vite-plugin-checker@0.6.4(eslint@9.10.0)(typescript@5.6.2)(vite@5.4.5):
+  /vite-plugin-checker@0.6.4(eslint@9.10.0)(typescript@5.6.2)(vite@5.4.6):
     resolution: {integrity: sha512-2zKHH5oxr+ye43nReRbC2fny1nyARwhxdm0uNYp/ERy4YvU9iZpNOsueoi/luXw5gnpqRSvjcEPxXbS153O2wA==}
     engines: {node: '>=14.16'}
     peerDependencies:
@@ -11536,14 +11536,14 @@ packages:
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.3
       typescript: 5.6.2
-      vite: 5.4.5(@types/node@18.17.0)(sass@1.66.1)
+      vite: 5.4.6(@types/node@18.17.0)(sass@1.66.1)
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.0.8
     dev: false
 
-  /vite-plugin-inspect@0.8.7(@nuxt/kit@3.13.2)(vite@5.4.5):
+  /vite-plugin-inspect@0.8.7(@nuxt/kit@3.13.2)(vite@5.4.6):
     resolution: {integrity: sha512-/XXou3MVc13A5O9/2Nd6xczjrUwt7ZyI9h8pTnUMkr5SshLcb0PJUOVq2V+XVkdeU4njsqAtmK87THZuO2coGA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -11563,12 +11563,12 @@ packages:
       perfect-debounce: 1.0.0
       picocolors: 1.1.0
       sirv: 2.0.4
-      vite: 5.4.5(@types/node@18.17.0)(sass@1.66.1)
+      vite: 5.4.6(@types/node@18.17.0)(sass@1.66.1)
     transitivePeerDependencies:
       - rollup
       - supports-color
 
-  /vite-plugin-vue-inspector@5.2.0(vite@5.4.5):
+  /vite-plugin-vue-inspector@5.2.0(vite@5.4.6):
     resolution: {integrity: sha512-wWxyb9XAtaIvV/Lr7cqB1HIzmHZFVUJsTNm3yAxkS87dgh/Ky4qr2wDEWNxF23fdhVa3jQ8MZREpr4XyiuaRqA==}
     peerDependencies:
       vite: ^3.0.0-0 || ^4.0.0-0 || ^5.0.0-0
@@ -11582,11 +11582,11 @@ packages:
       '@vue/compiler-dom': 3.5.6
       kolorist: 1.8.0
       magic-string: 0.30.11
-      vite: 5.4.5(@types/node@18.17.0)(sass@1.66.1)
+      vite: 5.4.6(@types/node@18.17.0)(sass@1.66.1)
     transitivePeerDependencies:
       - supports-color
 
-  /vite-plugin-vuetify@2.0.4(vite@5.4.5)(vue@3.5.6)(vuetify@3.7.1):
+  /vite-plugin-vuetify@2.0.4(vite@5.4.6)(vue@3.5.6)(vuetify@3.7.1):
     resolution: {integrity: sha512-A4cliYUoP/u4AWSRVRvAPKgpgR987Pss7LpFa7s1GvOe8WjgDq92Rt3eVXrvgxGCWvZsPKziVqfHHdCMqeDhfw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
@@ -11597,14 +11597,14 @@ packages:
       '@vuetify/loader-shared': 2.0.3(vue@3.5.6)(vuetify@3.7.1)
       debug: 4.3.7(supports-color@8.1.1)
       upath: 2.0.1
-      vite: 5.4.5(@types/node@18.17.0)(sass@1.66.1)
+      vite: 5.4.6(@types/node@18.17.0)(sass@1.66.1)
       vue: 3.5.6(typescript@5.6.2)
       vuetify: 3.7.1(typescript@5.6.2)(vite-plugin-vuetify@2.0.4)(vue@3.5.6)
     transitivePeerDependencies:
       - supports-color
 
-  /vite@5.4.5(@types/node@18.17.0)(sass@1.66.1):
-    resolution: {integrity: sha512-pXqR0qtb2bTwLkev4SE3r4abCNioP3GkjvIDLlzziPpXtHgiJIjuKl+1GN6ESOT3wMjG3JTeARopj2SwYaHTOA==}
+  /vite@5.4.6(@types/node@18.17.0)(sass@1.66.1):
+    resolution: {integrity: sha512-IeL5f8OO5nylsgzd9tq4qD2QqI0k2CQLGrWD0rCN0EQJZpBK5vJAx0I+GDkMOXxQX/OfFHMuLIx6ddAxGX/k+Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -11823,7 +11823,7 @@ packages:
       '@vue/shared': 3.5.6
       typescript: 5.6.2
 
-  /vuetify-nuxt-module@0.14.1(typescript@5.6.2)(vite@5.4.5)(vue@3.5.6):
+  /vuetify-nuxt-module@0.14.1(typescript@5.6.2)(vite@5.4.6)(vue@3.5.6):
     resolution: {integrity: sha512-rv7iFc0HrhFSO3JyWbFNXjuPuTfOx8unIdtTYat822vn5b9TVdZf5LffKv4fRrNgKEjmE/v9WT4yzxRVj3WIFA==}
     dependencies:
       '@nuxt/kit': 3.13.2(magicast@0.3.5)
@@ -11834,7 +11834,7 @@ packages:
       perfect-debounce: 1.0.0
       ufo: 1.5.4
       unconfig: 0.3.13
-      vite-plugin-vuetify: 2.0.4(vite@5.4.5)(vue@3.5.6)(vuetify@3.7.1)
+      vite-plugin-vuetify: 2.0.4(vite@5.4.6)(vue@3.5.6)(vuetify@3.7.1)
       vuetify: 3.7.1(typescript@5.6.2)(vite-plugin-vuetify@2.0.4)(vue@3.5.6)
     transitivePeerDependencies:
       - magicast
@@ -11864,7 +11864,7 @@ packages:
         optional: true
     dependencies:
       typescript: 5.6.2
-      vite-plugin-vuetify: 2.0.4(vite@5.4.5)(vue@3.5.6)(vuetify@3.7.1)
+      vite-plugin-vuetify: 2.0.4(vite@5.4.6)(vue@3.5.6)(vuetify@3.7.1)
       vue: 3.5.6(typescript@5.6.2)
 
   /vuex-persist@3.1.3(vuex@4.1.0):
